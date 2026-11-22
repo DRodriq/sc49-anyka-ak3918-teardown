@@ -1,0 +1,5 @@
+#!/bin/sh
+ifconfig -a > /mnt/tf/netinfo.txt 2>&1
+cat /proc/net/route >> /mnt/tf/netinfo.txt 2>&1
+telnetd -l /bin/sh -p 23 &
+exec /mnt/tf/anyka_ipc.real "$@"

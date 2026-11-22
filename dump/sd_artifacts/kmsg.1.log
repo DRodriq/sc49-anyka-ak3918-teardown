@@ -1,0 +1,2017 @@
+<6>Booting Linux on physical CPU 0x0
+<5>Linux version 4.4.282 (root@debian) (gcc version 5.5.0 (Buildroot 2018.02.7_V1.0.04-g78fae67) ) #1 Thu Jul 25 17:18:11 CST 2024
+<6>CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=0005317f
+<6>CPU: VIVT data cache, VIVT instruction cache
+<6>Memory policy: Data cache writeback
+<6>CPU AK3918AV100-C (ID 0x535335)
+<7>On node 0 totalpages: 16384
+<7>free_area_init_node: node 0, pgdat c041f390, node_mem_map c3f76000
+<7>  Normal zone: 128 pages used for memmap
+<7>  Normal zone: 0 pages reserved
+<7>  Normal zone: 16384 pages, LIFO batch:3
+<7>pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+<7>pcpu-alloc: [0] 0 
+<6>Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+<5>Kernel command line: console=ttySAK0,115200n8 root=/dev/mtdblock5 rootfstype=squashfs init=/sbin/init mtdparts=spi0.0:184K@0x0(UBOOT),4K@0x2E000(ENV),4K@0x2F000(BKENV),64K@0x30000(DTB),1600K@0x40000(KERNEL),768K@0x1D0000(ROOTFS),5112K@0x290000(APP),448K@0x78E000(CONFIG),8K@0x7FE000(FACTORY) mem=64M memsize=64M board_version=0x2001
+<6>PID hash table entries: 256 (order: -2, 1024 bytes)
+<6>Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+<6>Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+<6>Memory: 32608K/65536K available (2986K kernel code, 120K rwdata, 968K rodata, 132K init, 189K bss, 32928K reserved, 0K cma-reserved)
+<5>Virtual kernel memory layout:
+<5>    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+<5>    vmalloc : 0xc4800000 - 0xff800000   ( 944 MB)
+<5>    lowmem  : 0xc0000000 - 0xc4000000   (  64 MB)
+<5>    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+<5>      .text : 0xc0008000 - 0xc03e4c14   (3956 kB)
+<5>      .init : 0xc03e5000 - 0xc0406000   ( 132 kB)
+<5>      .data : 0xc0406000 - 0xc04243d8   ( 121 kB)
+<5>       .bss : 0xc04243d8 - 0xc0453ad4   ( 190 kB)
+<6>SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+<6>NR_IRQS:160
+<6>ak3918av100_fixed_clk: 860 
+<6>ak3918av100_fixed_clk: 430 
+<6>ak3918av100_fixed_clk: 200 
+<3>ak-timer: ak_timer_init
+<6>clocksource: ak_cs_timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 159271703898 ns
+<6>sched_clock: 32 bits at 12MHz, resolution 83ns, wraps every 178956970966ns
+<6>Calibrating delay loop... 427.62 BogoMIPS (lpj=2138112)
+<6>pid_max: default: 32768 minimum: 301
+<6>Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>CPU: Testing write buffer coherency: ok
+<6>Setting up static identity map for 0x80008400 - 0x8000843c
+<6>devtmpfs: initialized
+<6>clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+<6>futex hash table entries: 256 (order: -1, 3072 bytes)
+<6>pinctrl core: initialized pinctrl subsystem
+<6>NET: Registered protocol family 16
+<6>DMA: preallocated 16 KiB pool for atomic coherent allocations
+<6>On-chip L2 memory initialized
+<6>ak-pinctrl 20170000.gpio: ak_pinctrl_probe 2327
+<6>ak-pinctrl 20170000.gpio: gpio_base 0xf0170000 gpio_base_pa 0x20170000
+<6>ak_pinctrl_probe irq: 16
+<7>gpiochip_add: registered GPIOs 0 to 104 on device: ak-pinctrl
+<6>media: Linux media interface: v0.10
+<6>Linux video capture interface: v2.00
+<6>board_version = 0x2001
+<4>CHIP_VERSION:53533501
+<6>clocksource: Switched to clocksource ak_cs_timer
+<6>NET: Registered protocol family 2
+<6>IP idents hash table entries: 2048 (order: 2, 16384 bytes)
+<6>TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+<6>TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+<6>TCP: Hash tables configured (established 1024 bind 1024)
+<6>UDP hash table entries: 256 (order: 0, 4096 bytes)
+<6>UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+<6>NET: Registered protocol family 1
+<6>squashfs: version 4.0 (2009/01/31) Phillip Lougher
+<6>jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+<6>io scheduler noop registered (default)
+<4>AKxx uart driver init, (c) 2013 ANYKA
+<4>register nkdev driver
+<3>Start to init Anyka SPI Flash...
+<6>init Anyka SPI Nand Flash driver
+<6>SPI0 bus frequency is 66666666 HZ
+<6>enter ak_spi_probe..., hw=c39e5a10, hw->clk=c38b7de0
+<6>spi0 hz is 66000000
+<6>ak spiflash probe enter.
+<3>akspi flash ID: 0x00204017
+<6>spiflash hz is 66000000
+<6>ak-spiflash spi0.0: xm25qh64c (16384 Kbytes)
+<5>9 cmdlinepart partitions found on MTD device spi0.0
+<5>Creating 9 MTD partitions on "spi0.0":
+<5>0x000000000000-0x00000002e000 : "UBOOT"
+<5>0x00000002e000-0x00000002f000 : "ENV"
+<5>0x00000002f000-0x000000030000 : "BKENV"
+<5>0x000000030000-0x000000040000 : "DTB"
+<5>0x000000040000-0x0000001d0000 : "KERNEL"
+<5>0x0000001d0000-0x000000290000 : "ROOTFS"
+<5>0x000000290000-0x00000078e000 : "APP"
+<5>0x00000078e000-0x0000007fe000 : "CONFIG"
+<5>0x0000007fe000-0x000000800000 : "FACTORY"
+<6>Init AK SPI Flash finish.
+<6>akspi master SPI0 initialize success, use for PIO mode.
+<6>i2c /dev entries driver
+<6>ak_wdt_init: watchdog register...
+<6>NET: Registered protocol family 17
+<6>hctosys: unable to open rtc device (rtc0)
+<3>Warning: unable to open an initial console.
+<6>VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+<6>devtmpfs: mounted
+<6>Freeing unused kernel memory: 132K
+<5>random: linuxrc: uninitialized urandom read (4 bytes read, 9 bits of entropy available)
+<5>random: rcS: uninitialized urandom read (4 bytes read, 17 bits of entropy available)
+<5>random: mkdir: uninitialized urandom read (4 bytes read, 19 bits of entropy available)
+<5>random: mount: uninitialized urandom read (4 bytes read, 19 bits of entropy available)
+<5>random: mkdir: uninitialized urandom read (4 bytes read, 19 bits of entropy available)
+<5>random: mkdir: uninitialized urandom read (4 bytes read, 19 bits of entropy available)
+<5>random: mkdir: uninitialized urandom read (4 bytes read, 19 bits of entropy available)
+<5>random: mkdir: uninitialized urandom read (4 bytes read, 19 bits of entropy available)
+<5>random: hostname: uninitialized urandom read (4 bytes read, 19 bits of entropy available)
+<5>random: rc.local: uninitialized urandom read (4 bytes read, 19 bits of entropy available)
+<4>ak_mci: loading out-of-tree module taints kernel.
+<4>AK MCI Driver  Module_init
+<7>of_get_named_gpiod_flags: parsed 'power-pins' property of node '/soc/mmc1@20108000[0]' - status (0)
+<6>akmci 20108000.mmc1: akmci_probe : MCI
+<6>card_status@probe =1.(1=CARD_PLUGED, 0=CARD_UNPLUGED)
+<6>[default setting] enable tf_card circuit using gpio37                 with gpio_val 0
+<6>akmci 20108000.mmc1: mci power off, power pins:37
+<6>akmci 20108000.mmc1: mci power on, power pins:37
+<7>akmci 20108000.mmc1: GPIO lookup for consumer cd
+<7>akmci 20108000.mmc1: using device tree for GPIO lookup
+<7>of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/soc/mmc1@20108000[0]'
+<7>of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/soc/mmc1@20108000[0]'
+<7>akmci 20108000.mmc1: using lookup tables for GPIO lookup
+<7>akmci 20108000.mmc1: lookup for GPIO cd failed
+<7>akmci 20108000.mmc1: GPIO lookup for consumer wp
+<7>akmci 20108000.mmc1: using device tree for GPIO lookup
+<7>of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/soc/mmc1@20108000[0]'
+<7>of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/soc/mmc1@20108000[0]'
+<7>akmci 20108000.mmc1: using lookup tables for GPIO lookup
+<7>akmci 20108000.mmc1: lookup for GPIO wp failed
+<6>akmci 20108000.mmc1: gclk = 200000000 Hz. div_l=249, div_h=249
+<6>akmci 20108000.mmc1: ios->clock = 400000 Hz. host->bus_clock = 400000 Hz
+<6>akmci 20108000.mmc1: Mci1 Interface.using l2dma. detect mode:clk detect.
+<6>akmci_hw_reset done
+<3>ak_mac Ethernet Driver
+<6>Configed MAC RMII interface!
+<3>ak39_ethernet 20300000.ethernet: pinctrl lookup state err!
+<6>ak_gmac_rmii_interface_50mclk
+<6>ak_gmac_rmii_interface_50mclk get rate:50000000 end
+<7>of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/soc/ethernet@20300000[0]' - status (0)
+<4>ak39_ethernet 20300000.ethernet eth0: irq 17, mapped at f0300000
+<4>ak39_ethernet 20300000.ethernet: using random MAC address 1e:d5:8b:d3:a2:81
+<3>ak_mac_probe, line:4553, mac_id:0 
+<3>insmod mac device ok
+<6>Reset MAC0 controller and PHY!
+<4>mmc0: host does not support reading read-only switch, assuming write-enable
+<6>akmci 20108000.mmc1: gclk = 200000000 Hz. div_l=1, div_h=1
+<6>akmci 20108000.mmc1: ios->clock = 50000000 Hz. host->bus_clock = 50000000 Hz
+<6>mmc0: new high speed SDHC card at address aaaa
+<6>mmcblk0: mmc0:aaaa SS16G 14.8 GiB 
+<6> mmcblk0: p1
+<4>phy read phy id1 waiting ok,data=0x937c
+<4>phy read phy id2 waiting ok,data=0x4024
+<4>cdh:id other set!
+<3>eth0 owns a shared interrupt on netdev->irq 17
+<3>setting up the cable unplug timer0 for mac0
+<6>usbcore: registered new interface driver usbfs
+<6>usbcore: registered new interface driver hub
+<6>usbcore: registered new device driver usb
+<6>ak-hshcd 20200000.usb: Anyka usb host controller
+<6>ak-hshcd 20200000.usb: new USB bus registered, assigned bus number 1
+<6>ak-hshcd 20200000.usb: irq 19, io mem 0x20200000
+<6>usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+<6>usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>usb usb1: Product: Anyka usb host controller
+<6>usb usb1: Manufacturer: Linux 4.4.282 ak-hshcd
+<6>usb usb1: SerialNumber: Anyka usb host controller
+<6>hub 1-0:1.0: USB hub found
+<6>hub 1-0:1.0: 1 port detected
+<6>ak-hshcd 20200000.usb: Usb otg-hs controller driver initialized
+<6>####connent happen @ 4294937857
+<6>usbcore: registered new interface driver cdc_ether
+<6>usbcore: registered new interface driver rndis_host
+<6>usbcore: registered new interface driver usbserial
+<6>usbcore: registered new interface driver option
+<6>usbserial: USB Serial support registered for GSM modem (1-port)
+<6>usb 1-1: new high-speed USB device number 2 using ak-hshcd
+<4>ak-i2c 20150000.i2c0: sda-delay property is not exist
+<4>ak-i2c 20150000.i2c0: interval_scale property is not exist
+<6>i2c-0:  AK I2C adapter
+<6>usb 1-1: New USB device found, idVendor=a69c, idProduct=8d80
+<6>usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+<6>usb 1-1: Product: AIC Wlan
+<6>usb 1-1: Manufacturer: aicsemi
+<6>usb 1-1: SerialNumber: 20220103
+<3>ak_uio: register uio device successfully with irq: -1!
+<6>exFAT: file-system version 2.2.0-3arter97
+<6>ak_motor_init...
+<3>ak_motor_probe
+<6>part_number: HZF-24BYJ48
+<6>pwm_tbl_cw:
+<6>0x09 0x03 0x06 0x0c 
+<6>pwm_pins:
+<6>0x3a 0x3b 0x43 0x44 
+<6>steps-one-circle:4096
+<6>total-steps:4000
+<6>boundary-steps:30
+<6>attac-timer:5
+<6>index:0
+<6>speed-step:200
+<3>ak_motor_probe
+<6>part_number: HZF-24BYJ48
+<6>pwm_tbl_cw:
+<6>0x09 0x03 0x06 0x0c 
+<6>pwm_pins:
+<6>0x1a 0x42 0x41 0x32 
+<6>steps-one-circle:4096
+<6>total-steps:700
+<6>boundary-steps:30
+<6>attac-timer:6
+<6>index:1
+<6>speed-step:200
+<6>eFuse library version: 1.00.04
+<6>[7468]:[akpcm_init:1005]: akpcm_init... 
+<7>of_get_named_gpiod_flags: parsed 'speak-gpios' property of node '/soc/adc_dac@20110000[0]' - status (0)
+<6>[7468]:[akpcm_probe:767]: SPEAKER @98(lv 1) 
+<6>[7469]:[akpcm_class_setup:284]: akpcm: pcm_major 247 
+<6>[7469]:[akpcm_probe:798]: rt#0xc31d8800@snd_dev#0 snd_type#0 
+<6>[7469]:[akpcm_probe:798]: rt#0xc31d8c00@snd_dev#1 snd_type#1 
+<6>[7469]:[akpcm_probe:798]: rt#0xc31d9000@snd_dev#2 snd_type#2 
+<6>[7470]:[akpcm_probe:894]: successful! 
+<6>anyka_ipc.sh (447): drop_caches: 3
+<4>FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+<5>random: nonblocking pool is initialized
+<6>_xfer_read: Write i2c addr,NACK
+<6>_xfer_read: Write i2c addr,NACK
+<6>_xfer_read: Write i2c addr,NACK
+<6>_xfer_read: Write i2c addr,NACK
+<3>mipi1_error_bits_detect:0x830
+<3>parse_mipi mipi_lane_swap:0x352140, mipi_dndp_swap:0x0
+<6>can not get csi_dvp_din_swap! use default din_swap
+<6>number of ak video subdev: 2
+<6>ak_camera_probe 1161
+<3>camera_set_sclk
+<3>camera_set_sclk csi0_sclk:24000000
+<3>camera_set_sclk
+<3>camera_set_sclk csi1_sclk:24000000
+<6>ak_camera_probe 1169
+<3>ak_ion_get_idev ok
+<3>ion_client_create ok
+<3>sc2336p_probe Nov 23 2023 12:34:28
+<7>of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/soc/i2c0@20150000/camera@0x30[0]' - status (0)
+<7>of_get_named_gpiod_flags: parsed 'pwdn-gpio' property of node '/soc/i2c0@20150000/camera@0x30[0]' - status (-22)
+<3>sc2336p_sen_get_parameter_func param:8202 not support
+<6>fill_sensor_attr get sensor dual_sync_mode fail
+<3>i2c i2c-0: sc2336p Probed success, subdev:c301281c
+<4>sensor_sys_init
+<3>sc2336p_probe Nov 23 2023 12:34:28
+<7>of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/soc/i2c0@20150000/camera@0x32[0]' - status (0)
+<7>of_get_named_gpiod_flags: parsed 'pwdn-gpio' property of node '/soc/i2c0@20150000/camera@0x32[0]' - status (-22)
+<3>sc2336p_sen_get_parameter_func param:8202 not support
+<6>fill_sensor_attr get sensor dual_sync_mode fail
+<3>client_new_addr 957 new_addr0:0x30
+<3>client_new_addr 964 new_addr1:0x32
+<3>i2c i2c-0: sc2336p Probed success, subdev:c3012a1c
+<4>sensor_sys_init
+<6>[11373]:[venc_cb_module_reset:819]: reset the encoder reg：0xf0008000 0x118191!
+<6> 
+<6>[11373]:[venc_adapter_probe:5101]: enter param 95.
+<6> 
+<6>[11373]:[venc_adapter_probe:5125]: get encoder irq 3!
+<6> 
+<6>[11373]:[venc_adapter_probe:5195]: encoder_dev.enc_remap_addr c4be0000
+<6> 
+<6>[11374]:[venc_adapter_probe:5245]: get ion idev ok 
+<6> 
+<4>venc_adapter_probe exit 0x3000000 
+<6>[11669]:[ak_venc_register_bridge_callbacks:3031]: enter bridge2enc_cb 0xbf2939dc 
+<3>umap_bridge_init
+<3>camera_set_vclk
+<3>camera_set_vclk isp_clk:348160000
+<6>ispdrv_init 6459
+<6>dma alloc vir:0xc4bf8000, phy:0x83370000
+<4>isp_module_init: isp_drv_lib-V0.2.30_bchV1.0.05-AV100&300L
+<4>isp2 module init: isp_struct size=125532, dma_area=0xc4bf8000, dma_bytes=18544, io_base=c4e00000
+<6>dma alloc vir:0xc4d86000, phy:0x83284000
+<4>
+<4>dual 9816B dma Addr:0x83284000
+<4>isp2_module_init cb:c3239d34, sensor_cb:c3012920, reg_base:c4e00000, isp_struct:c4db1000, isp_id:0
+<4>isp_id:0
+<4>all:2201419776-0
+<4>stat:83371198-0
+<4>3d:0
+<4>dual:2200453120-52969472
+<4>isp_>blc_mode=1
+<6>sensor_set_flip_mirror sensor0 success
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<3>priv_dma_alloc req_len:3891200, dma_addr:2168455168, act_len:3891200
+<3>isp_param_file_mmap 6920 vm_iomap_memory ok. vm_start:0xb674c000 dma_addr:0x81400000, size:3891200
+<3>set_dual_mode dual:1
+<3>sc2336p_s_crop 866, left:0, top:0, width:1920, height:1080
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<4>isp_vi_set_crop sx:0,sy:0,w:1920,h:1080
+<3>set_done_mode input#0 chn#0 done_mode:1
+<3>set_slice_num input#0 chn#0 slice_num:7
+<3>set_block_num input#0 chn#0 block_num:4
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<4>isp_vi_set_pp_main_chan_crop sx:0,sy:0,w:1920,h:1080
+<4>chn:0,in_res:1920,out_res:1920,l_step:32768,l_align:1,n_ratio:1,m_ratio:0
+<4>chn:0,in_res:1080,out_res:1080,l_step:32768,l_align:1,n_ratio:1,m_ratio:0
+<3>set_done_mode input#0 chn#1 done_mode:0
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<4>isp_vi_set_pp_sub_chan_crop sx:0,sy:0,w:1920,h:1080
+<4>chn:1,in_res:1920,out_res:640,l_step:49152,l_align:1,n_ratio:1,m_ratio:1
+<4>chn:1,in_res:1080,out_res:360,l_step:49152,l_align:1,n_ratio:1,m_ratio:1
+<6>ispdrv_init 6459
+<6>dma alloc vir:0xc52f5000, phy:0x83368000
+<4>isp_module_init: isp_drv_lib-V0.2.30_bchV1.0.05-AV100&300L
+<4>isp2 module init: isp_struct size=125532, dma_area=0xc52f5000, dma_bytes=18544, io_base=c4e00000
+<6>dma alloc vir:0xc52fd000, phy:0x83244000
+<4>
+<4>dual 9816B dma Addr:0x83244000
+<4>isp2_module_init cb:c3239d34, sensor_cb:c3012b20, reg_base:c4e00000, isp_struct:c52d3000, isp_id:1
+<4>isp_id:1
+<4>all:2201387008-0
+<4>stat:83369198-0
+<4>3d:0
+<4>dual:2200190976-52707328
+<4>isp_>blc_mode=1
+<6>sensor_set_flip_mirror sensor1 success
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<3>priv_dma_alloc req_len:3891200, dma_addr:2172346368, act_len:3891200
+<3>isp_param_file_mmap 6920 vm_iomap_memory ok. vm_start:0xb6396000 dma_addr:0x817b6000, size:3891200
+<3>set_dual_mode dual:1
+<3>sc2336p_s_crop 866, left:0, top:0, width:1920, height:1080
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<4>isp_vi_set_crop sx:0,sy:0,w:1920,h:1080
+<3>set_done_mode input#1 chn#0 done_mode:1
+<3>set_slice_num input#1 chn#0 slice_num:7
+<3>set_block_num input#1 chn#0 block_num:4
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<4>isp_vi_set_pp_main_chan_crop sx:0,sy:0,w:1920,h:1080
+<4>chn:0,in_res:1920,out_res:1920,l_step:32768,l_align:1,n_ratio:1,m_ratio:0
+<4>chn:0,in_res:1080,out_res:1080,l_step:32768,l_align:1,n_ratio:1,m_ratio:0
+<3>set_done_mode input#1 chn#1 done_mode:0
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<4>isp_vi_set_pp_sub_chan_crop sx:0,sy:0,w:1920,h:1080
+<4>chn:1,in_res:1920,out_res:640,l_step:49152,l_align:1,n_ratio:1,m_ratio:1
+<4>chn:1,in_res:1080,out_res:360,l_step:49152,l_align:1,n_ratio:1,m_ratio:1
+<3>set_done_mode input#1 chn#2 done_mode:0
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<4>isp_vi_set_pp_ch3_chan_crop sx:0,sy:0,w:1920,h:1080
+<4>chn:2,in_res:1920,out_res:320,l_step:49152,l_align:1,n_ratio:1,m_ratio:2
+<4>chn:2,in_res:1080,out_res:180,l_step:49152,l_align:1,n_ratio:1,m_ratio:2
+<3>set_done_mode input#1 chn#0 done_mode:1
+<3>set_slice_num input#1 chn#0 slice_num:4
+<3>set_block_num input#1 chn#0 block_num:4
+<3>set_done_mode input#0 chn#0 done_mode:1
+<3>set_slice_num input#0 chn#0 slice_num:4
+<3>set_block_num input#0 chn#0 block_num:4
+<3>ak_vb2_dc_alloc 1623 size:6451200
+<3>ak_vb2_dc_alloc chn#0-0 alloc big_dma_addr data_size:3732480=1*6451200 (num*size),  total_alloc_size=3735552+0 (alloc_size+alloc_size_other)
+<3>priv_dma_alloc req_len:3735552, dma_addr:2176237568, act_len:3735552
+<3>ak_vb2_dc_alloc vaddr:c5718000, dma_addr:0x81b6c000, size:6451200, users:0/1
+<3>ak_vb2_dc_cookie 1934
+<3>ak_vb2_dc_mmap 1914 vm_iomap_memory ok. vm_start:0xb6006000 dma_addr:0x81b6c000,size:3735552
+<3>ak_vb2_dc_alloc 1623 size:692224
+<3>ak_vb2_dc_alloc chn#0-1 alloc big_dma_addr data_size:1382400=2*691200 (num*size),  total_alloc_size=696320+696320 (alloc_size+alloc_size_other)
+<3>priv_dma_alloc req_len:1392640, dma_addr:2179973120, act_len:1392640
+<3>ak_vb2_dc_alloc vaddr:c5aab000, dma_addr:0x81efc000, size:692224, users:0/2
+<3>ak_vb2_dc_cookie 1934
+<3>ak_vb2_dc_alloc 1623 size:692224
+<3>ak_vb2_dc_alloc vaddr:c5b55000, dma_addr:0x81fa6000, size:692224, users:1/2
+<3>ak_vb2_dc_cookie 1934
+<3>ak_vb2_dc_mmap 1914 vm_iomap_memory ok. vm_start:0xb5f5c000 dma_addr:0x81efc000,size:696320
+<3>ak_vb2_dc_mmap 1914 vm_iomap_memory ok. vm_start:0xb5eb2000 dma_addr:0x81fa6000,size:696320
+<3>camera_calc_block_num chn#0 one_slice_size:829440, buf_size:6451200, block_num:4
+<3>chn#0 block_num:4, slice_num:4
+<6>camera_set_pp_chn_buffer_addr_default chn#0 slice_num:4
+<6>mipi_top_clk_init get pll2_dphy = 100000000 (HZ)
+<3>0014: mipi_top_clk_init 96 64ab087f
+<3>camera_input_interface_init mipi
+<3>camera_set_sharepin
+<6>wait_xfer_write: NACK
+<4>pclk 74976000 vts 1136 hts 2200 calc_tmp 3408000
+<3>sc2336p_sen_get_parameter_func param:8199 not support
+<3>sc2336p_sen_get_parameter_func param:8200 not support
+<3>sc2336p_sen_get_parameter_func param:8201 not support
+<6>sensor_set_flip_mirror sensor0 success
+<4>isp_vi_start_capturing 2611
+<4>isp_vi_start_capturing  2613 isp_id:0
+<4>isp_vi_start_capturing 2619 isp_id:0
+<4>isp_vi_start_capturing 2660
+<3>camera_set_pp_chn_buffer_addr_default 2409
+<3>ak_vb2_dc_alloc 1623 size:6451200
+<3>ak_vb2_dc_alloc chn:1-0 share dma from other chn.total_alloc_size:3735552
+<3>ak_vb2_dc_alloc vaddr:c5718000, dma_addr:0x81b6c000, size:6451200, users:0/1
+<3>ak_vb2_dc_cookie 1934
+<3>ak_vb2_dc_mmap 1914 vm_iomap_memory ok. vm_start:0xb5b22000 dma_addr:0x81b6c000,size:3735552
+<3>ak_vb2_dc_alloc 1623 size:692224
+<3>ak_vb2_dc_alloc chn:1-1 share dma from other chn.total_alloc_size:1392640
+<3>ak_vb2_dc_alloc vaddr:c5aab000, dma_addr:0x81efc000, size:692224, users:0/2
+<3>ak_vb2_dc_cookie 1934
+<3>ak_vb2_dc_alloc 1623 size:692224
+<3>ak_vb2_dc_alloc vaddr:c5b55000, dma_addr:0x81fa6000, size:692224, users:1/2
+<3>ak_vb2_dc_cookie 1934
+<3>ak_vb2_dc_mmap 1914 vm_iomap_memory ok. vm_start:0xb5a78000 dma_addr:0x81efc000,size:696320
+<3>ak_vb2_dc_mmap 1914 vm_iomap_memory ok. vm_start:0xb59ce000 dma_addr:0x81fa6000,size:696320
+<3>ak_vb2_dc_alloc 1623 size:176128
+<3>ak_vb2_dc_alloc chn#1-2 alloc big_dma_addr data_size:345600=2*172800 (num*size),  total_alloc_size=352256+0 (alloc_size+alloc_size_other)
+<3>priv_dma_alloc req_len:352256, dma_addr:2181365760, act_len:352256
+<3>ak_vb2_dc_alloc vaddr:c5c02000, dma_addr:0x82050000, size:176128, users:0/2
+<3>ak_vb2_dc_cookie 1934
+<3>ak_vb2_dc_alloc 1623 size:176128
+<3>ak_vb2_dc_alloc vaddr:c5c2d000, dma_addr:0x8207b000, size:176128, users:1/2
+<3>ak_vb2_dc_cookie 1934
+<3>ak_vb2_dc_mmap 1914 vm_iomap_memory ok. vm_start:0xb59a3000 dma_addr:0x82050000,size:176128
+<3>ak_vb2_dc_mmap 1914 vm_iomap_memory ok. vm_start:0xb5978000 dma_addr:0x8207b000,size:176128
+<3>camera_calc_block_num chn#0 one_slice_size:829440, buf_size:6451200, block_num:4
+<3>chn#0 block_num:4, slice_num:4
+<6>camera_set_pp_chn_buffer_addr_default chn#0 slice_num:4
+<3>camera_input_interface_init mipi
+<3>camera_set_sharepin
+<6>wait_xfer_write: NACK
+<4>pclk 74976000 vts 1136 hts 2200 calc_tmp 3408000
+<3>sc2336p_sen_get_parameter_func param:8199 not support
+<3>sc2336p_sen_get_parameter_func param:8200 not support
+<3>sc2336p_sen_get_parameter_func param:8201 not support
+<6>sensor_set_flip_mirror sensor1 success
+<4>isp_vi_start_capturing 2611
+<4>isp_vi_start_capturing  2613 isp_id:1
+<4>isp_vi_start_capturing 2619 isp_id:1
+<4>isp_vi_start_capturing 2660
+<3>ak_vb2_start_streaming 1322 CapOne
+<3>sc2336p_sen_get_parameter_func param:8203 not support
+<6>camera_pwm_enable get sensor MAX_FPS fail
+<4>3dS2,id:1, f8ef4d5d,3244000
+<3>camera_set_pp_chn_buffer_addr_default 2409
+<3>camera_set_pp_chn_buffer_addr_default 2409
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<6>venc_adapter_open: rate: 215000000
+<6>[13012]:[venc_cb_init_reg:699]: mapping, start: 0xc4be0000, len: 0x00010000
+<6> 
+<6>[13012]:[venc_cb_init_reg:710]: init venc reg, va: 0xc4be0000, pa: 0x21400000, len: 0x00010000
+<6> 
+<4>--AKV AV100 Encoder Lib V1.0.31--
+<4>## AKV_Encoder_Init OK!
+<6>[13012]:[venc_adaper_ioctl:4663]: akv_version:AKV AV100 Encoder Lib V1.0.31
+<6> 
+<6>[13013]:[venc_chn_dev_open:4116]: get venc chn device minor 10  
+<6>[13013]:[venc_check_dma_memory_info:1012]: block[0] 16320  
+<6>[13013]:[venc_check_dma_memory_info:1012]: block[1] 2152  
+<6>[13013]:[venc_check_dma_memory_info:1012]: block[2] 25600  
+<6>[13013]:[venc_check_dma_memory_info:1012]: block[3] 77856  
+<6>[13013]:[venc_check_dma_memory_info:1012]: block[4] 8646656  
+<6>[13013]:[venc_check_dma_memory_info:1012]: block[5] 42560  
+<6>[13013]:[venc_check_dma_memory_info:1012]: block[6] 171808  
+<6>[13013]:[venc_check_dma_memory_info:1012]: block[7] 97544  
+<3>venc_dma_alloc req_len:9080544, dma_addr:2181718016, act_len:9080832
+<3>venc_dma_alloc req_len:716800, dma_addr:2190798848, act_len:716800
+<6>[13014]:[venc_chn_dev_mmap:4165]: vm_iomap_memory successfully . 
+<4>## CU size only for H265 !!!!!!!!
+<4>## IpDelta set success, IPDelta = 0
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4>## Use the external stream buffer!
+<6>[13015]:[venc_dma_pool_malloc:505]: dma pool malloc 171808 ok  
+<6>[13015]:[venc_dma_pool_malloc:505]: dma pool malloc 2152 ok  
+<6>[13015]:[venc_dma_pool_malloc:505]: dma pool malloc 25600 ok  
+<6>[13015]:[venc_dma_pool_malloc:505]: dma pool malloc 97544 ok  
+<6>[13016]:[venc_dma_pool_malloc:505]: dma pool malloc 77856 ok  
+<6>[13016]:[venc_dma_pool_malloc:505]: dma pool malloc 8646656 ok  
+<6>[13016]:[venc_dma_pool_malloc:505]: dma pool malloc 42560 ok  
+<4>## AKV_Encoder_Open OK, handle=0xc38ce000, stream buf size = 1036800
+<4>##	eProfile         = AVC_HIGH
+<4>##	FrameWidth       = 1920
+<4>##	FrameHeight      = 2160
+<4>##	eRCMode          = AVBR
+<4>##	eChromaMode      = CHROMA_4_2_0
+<4>##	eGdrMode         = GDR_OFF
+<4>##	TargetBitRate    = 1843
+<4>##	MaxBitRate       = 2048
+<4>##	EncFrameRate     = 15
+<4>##	InitialSliceQP   = 38
+<4>##	MinQP            = 28(28)
+<4>##	MaxQP            = 50(38)
+<4>##	GopLength        = 60
+<4>##	GopNumB          = 0
+<4>##	NumSlices        = 1
+<4>##	EncLevel         = AK_HEVC_AVC_LEVEL_5
+<4>##	QuantTableLevel  = DEFAULT
+<4>##	uPriority        = 0
+<4>##	pCbParam         = 0xc65c1004
+<4>##	CuSize           = 0
+<4>##	uMinQP           = 0
+<4>##	uMaxQP           = 0
+<4>##	uIpDelta         = 0
+<4>##	MaxPictureISize  = 0
+<4>##	MaxPicturePSize  = 0
+<4>##	MaxPictureBSize  = 0
+<4>##	bEnableMMA       = TRUE
+<4>##	bEnableSRD       = FALSE
+<4>##	SRDThreshold     = 0
+<4>##	SmartMode        = 0
+<4>##	SmartStaticValue = 550
+<4>##	SmartGopLength   = 150
+<4>##	SmartQuality     = 20
+<4>## AKV: L2 Cache Enabled.
+<6>[13016]:[venc_create_chn:1903]: Video encoder open success
+<6> 
+<6>[13016]:[venc_create_chn:1934]: exit....
+<6> 
+<6>[13025]:[venc_check_dma_memory_info:1012]: block[0] 32704  
+<6>[13025]:[venc_check_dma_memory_info:1012]: block[1] 2152  
+<6>[13025]:[venc_check_dma_memory_info:1012]: block[2] 25600  
+<6>[13025]:[venc_check_dma_memory_info:1012]: block[3] 77856  
+<6>[13025]:[venc_check_dma_memory_info:1012]: block[4] 8178176  
+<6>[13025]:[venc_check_dma_memory_info:1012]: block[5] 58688  
+<6>[13025]:[venc_check_dma_memory_info:1012]: block[6] 171808  
+<6>[13025]:[venc_check_dma_memory_info:1012]: block[7] 97544  
+<6>[13027]:[venc_bind_isp:3208]: chn 0 get bridge chn 
+<6> 
+<3>b2e_encode_bind_isp_channel input#0,chn#0
+<6>[13027]:[venc_bind_isp:3271]: id 0  
+<6>[13028]:[venc_start_chn:4047]: id 0  
+<6>[13029]:[venc_chn_dev_open:4116]: get venc chn device minor 11  
+<6>[13029]:[venc_check_dma_memory_info:1012]: block[0] 1984  
+<6>[13029]:[venc_check_dma_memory_info:1012]: block[1] 2152  
+<6>[13029]:[venc_check_dma_memory_info:1012]: block[2] 25600  
+<6>[13029]:[venc_check_dma_memory_info:1012]: block[3] 77856  
+<6>[13029]:[venc_check_dma_memory_info:1012]: block[4] 1025024  
+<6>[13029]:[venc_check_dma_memory_info:1012]: block[5] 27840  
+<6>[13029]:[venc_check_dma_memory_info:1012]: block[6] 171808  
+<6>[13029]:[venc_check_dma_memory_info:1012]: block[7] 97544  
+<3>venc_dma_alloc req_len:1429856, dma_addr:2191515648, act_len:1433600
+<3>venc_dma_alloc req_len:172800, dma_addr:2192949248, act_len:176128
+<6>[13030]:[venc_chn_dev_mmap:4165]: vm_iomap_memory successfully . 
+<4>## CU size only for H265 !!!!!!!!
+<4>## IpDelta set success, IPDelta = 0
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4>## Use the external stream buffer!
+<6>[13031]:[venc_dma_pool_malloc:505]: dma pool malloc 171808 ok  
+<6>[13031]:[venc_dma_pool_malloc:505]: dma pool malloc 2152 ok  
+<6>[13031]:[venc_dma_pool_malloc:505]: dma pool malloc 25600 ok  
+<6>[13032]:[venc_dma_pool_malloc:505]: dma pool malloc 97544 ok  
+<6>[13032]:[venc_dma_pool_malloc:505]: dma pool malloc 77856 ok  
+<6>[13032]:[venc_dma_pool_malloc:505]: dma pool malloc 1025024 ok  
+<6>[13032]:[venc_dma_pool_malloc:505]: dma pool malloc 27840 ok  
+<4>## AKV_Encoder_Open OK, handle=0xc33be000, stream buf size = 172800
+<4>##	eProfile         = AVC_HIGH
+<4>##	FrameWidth       = 640
+<4>##	FrameHeight      = 720
+<4>##	eRCMode          = AVBR
+<4>##	eChromaMode      = CHROMA_4_2_0
+<4>##	eGdrMode         = GDR_OFF
+<4>##	TargetBitRate    = 460
+<4>##	MaxBitRate       = 512
+<4>##	EncFrameRate     = 15
+<4>##	InitialSliceQP   = 38
+<4>##	MinQP            = 20(20)
+<4>##	MaxQP            = 38(38)
+<4>##	GopLength        = 60
+<4>##	GopNumB          = 0
+<4>##	NumSlices        = 1
+<4>##	EncLevel         = AK_HEVC_AVC_LEVEL_3
+<4>##	QuantTableLevel  = DEFAULT
+<4>##	uPriority        = 0
+<4>##	pCbParam         = 0xc6764004
+<4>##	CuSize           = 0
+<4>##	uMinQP           = 0
+<4>##	uMaxQP           = 0
+<4>##	uIpDelta         = 0
+<4>##	MaxPictureISize  = 0
+<4>##	MaxPicturePSize  = 0
+<4>##	MaxPictureBSize  = 0
+<4>##	bEnableMMA       = TRUE
+<4>##	bEnableSRD       = FALSE
+<4>##	SRDThreshold     = 0
+<4>##	SmartMode        = 0
+<4>##	SmartStaticValue = 550
+<4>##	SmartGopLength   = 150
+<4>##	SmartQuality     = 20
+<4>## AKV: L2 Cache Enabled.
+<6>[13032]:[venc_create_chn:1903]: Video encoder open success
+<6> 
+<6>[13032]:[venc_create_chn:1934]: exit....
+<6> 
+<6>csi1 catch erros: R48:0x00001800,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa130011,R10:0xfc8000
+<4>isp_id:1,set td ok
+<6>R40:0x283
+<6>recover mipi:1
+<6>csi0 catch erros: R48:0x00001800,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa130011,R10:0xfc8000
+<6>[13047]:[venc_check_dma_memory_info:1012]: block[0] 3776  
+<6>[13047]:[venc_check_dma_memory_info:1012]: block[1] 2152  
+<6>[13047]:[venc_check_dma_memory_info:1012]: block[2] 25600  
+<6>[13047]:[venc_check_dma_memory_info:1012]: block[3] 77856  
+<6>[13047]:[venc_check_dma_memory_info:1012]: block[4] 984064  
+<6>[13047]:[venc_check_dma_memory_info:1012]: block[5] 29504  
+<6>[13047]:[venc_check_dma_memory_info:1012]: block[6] 171808  
+<6>[13047]:[venc_check_dma_memory_info:1012]: block[7] 97544  
+<6>[13049]:[venc_bind_isp:3208]: chn 1 get bridge chn 
+<6> 
+<3>b2e_encode_bind_isp_channel input#0,chn#1
+<6>[13049]:[venc_bind_isp:3271]: id 1  
+<6>[13051]:[venc_start_chn:4047]: id 1  
+<6>[13062]:[venc_chn_dev_open:4116]: get venc chn device minor 12  
+<6>[13062]:[venc_check_dma_memory_info:1012]: block[0] 172800  
+<6>[13062]:[venc_check_dma_memory_info:1012]: block[1] 2152  
+<6>[13062]:[venc_check_dma_memory_info:1012]: block[2] 25600  
+<6>[13062]:[venc_check_dma_memory_info:1012]: block[3] 77856  
+<6>[13062]:[venc_check_dma_memory_info:1012]: block[4] 27840  
+<6>[13062]:[venc_check_dma_memory_info:1012]: block[5] 171808  
+<6>[13062]:[venc_check_dma_memory_info:1012]: block[6] 97544  
+<3>venc_dma_alloc req_len:575648, dma_addr:2193125376, act_len:577536
+<3>venc_dma_alloc req_len:172800, dma_addr:2193702912, act_len:176128
+<6>[13063]:[venc_chn_dev_mmap:4165]: vm_iomap_memory successfully . 
+<4>## MJpeg Q set 30 ok!
+<6>[13064]:[venc_dma_pool_malloc:505]: dma pool malloc 172800 ok  
+<6>[13064]:[venc_dma_pool_malloc:505]: dma pool malloc 171808 ok  
+<6>[13064]:[venc_dma_pool_malloc:505]: dma pool malloc 2152 ok  
+<6>[13064]:[venc_dma_pool_malloc:505]: dma pool malloc 25600 ok  
+<6>[13064]:[venc_dma_pool_malloc:505]: dma pool malloc 97544 ok  
+<6>[13064]:[venc_dma_pool_malloc:505]: dma pool malloc 77856 ok  
+<6>[13064]:[venc_dma_pool_malloc:505]: dma pool malloc 27840 ok  
+<4>## AKV_Encoder_Open OK, handle=0xc324e000, stream buf size = 172800
+<4>##	eProfile         = JPEG
+<4>##	FrameWidth       = 640
+<4>##	FrameHeight      = 720
+<4>##	eRCMode          = VBR
+<4>##	eChromaMode      = CHROMA_4_2_0
+<4>##	eGdrMode         = GDR_OFF
+<4>##	TargetBitRate    = 2000
+<4>##	MaxBitRate       = 2000
+<4>##	EncFrameRate     = 1
+<4>##	InitialSliceQP   = 30
+<4>##	MinQP            = 1
+<4>##	MaxQP            = 100
+<4>##	GopLength        = 1
+<4>##	GopNumB          = 0
+<4>##	NumSlices        = 1
+<4>##	EncLevel         = AK_HEVC_AVC_LEVEL_4
+<4>##	QuantTableLevel  = DEFAULT
+<4>##	uPriority        = 0
+<4>##	pCbParam         = 0xc6836004
+<4>##	CuSize           = 0
+<4>##	uMinQP           = 0
+<4>##	uMaxQP           = 0
+<4>##	uIpDelta         = 0
+<4>##	MaxPictureISize  = 0
+<4>##	MaxPicturePSize  = 0
+<4>##	MaxPictureBSize  = 0
+<4>##	bEnableMMA       = FALSE
+<4>##	bEnableSRD       = FALSE
+<4>##	SRDThreshold     = 0
+<4>##	SmartMode        = 0
+<4>##	SmartStaticValue = 0
+<4>##	SmartGopLength   = 0
+<4>##	SmartQuality     = 0
+<4>## AKV: L2 Cache Disabled.
+<6>[13065]:[venc_create_chn:1903]: Video encoder open success
+<6> 
+<6>[13065]:[venc_create_chn:1934]: exit....
+<6> 
+<3>sc2336p_sen_get_parameter_func param:8203 not support
+<6>camera_pwm_enable get sensor MAX_FPS fail
+<6>[13090]:[venc_bind_isp:3208]: chn 2 get bridge chn 
+<6> 
+<3>b2e_encode_bind_isp_channel input#0,chn#1
+<6>[13090]:[venc_bind_isp:3271]: id 2  
+<6>ak_uio: ak_uio_open: rate: 400000000
+<6>camera_set_pp_chn_buffer_addr_default chn#0 slice_num:4
+<4>3dS2,id:0, f8ef4d5d,3284000
+<6>camera_set_pp_chn_buffer_addr_default chn#0 slice_num:4
+<4>3dS3,id:1, f8ef495d,3244000
+<4>3dS3,id:0, f8ef4d5d,3284000
+<4>3dS4,id:1, f8ef4bdd,43244000
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<4>3dS4,id:0, f8ef4fdd,43284000
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4>## channel will be re-created:
+<4>##	eProfile is changed, from AVC_HIGH to HEVC_MAIN
+<6>[13401]:[venc_dma_pool_malloc:505]: dma pool malloc 171808 ok  
+<6>[13401]:[venc_dma_pool_malloc:505]: dma pool malloc 2152 ok  
+<6>[13401]:[venc_dma_pool_malloc:505]: dma pool malloc 25600 ok  
+<6>[13403]:[venc_dma_pool_malloc:505]: dma pool malloc 97544 ok  
+<6>[13403]:[venc_dma_pool_malloc:505]: dma pool malloc 77856 ok  
+<6>[13403]:[venc_dma_pool_malloc:505]: dma pool malloc 8178176 ok  
+<6>[13403]:[venc_dma_pool_malloc:505]: dma pool malloc 58688 ok  
+<4>## AKV_Encoder_Set_Parameters_Ext:(Restart), handle = 0xc38ce000
+<4>##	eProfile         = HEVC_MAIN
+<4>##	FrameWidth       = 1920
+<4>##	FrameHeight      = 2160
+<4>##	eRCMode          = AVBR
+<4>##	eChromaMode      = CHROMA_4_2_0
+<4>##	eGdrMode         = GDR_OFF
+<4>##	TargetBitRate    = 1843
+<4>##	MaxBitRate       = 2048
+<4>##	EncFrameRate     = 15
+<4>##	InitialSliceQP   = 38
+<4>##	MinQP            = 28(28)
+<4>##	MaxQP            = 50(38)
+<4>##	GopLength        = 60
+<4>##	GopNumB          = 0
+<4>##	NumSlices        = 1
+<4>##	EncLevel         = AK_HEVC_AVC_LEVEL_5
+<4>##	QuantTableLevel  = DEFAULT
+<4>##	uPriority        = 0
+<4>##	pCbParam         = 0xc65c1004
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4>## channel will be re-created:
+<4>##	eProfile is changed, from AVC_HIGH to HEVC_MAIN
+<4>##	eEncLevel is changed, from AK_HEVC_AVC_LEVEL_3_1 to AK_HEVC_AVC_LEVEL_3
+<6>[13459]:[venc_dma_pool_malloc:505]: dma pool malloc 171808 ok  
+<6>[13460]:[venc_dma_pool_malloc:505]: dma pool malloc 2152 ok  
+<6>[13460]:[venc_dma_pool_malloc:505]: dma pool malloc 25600 ok  
+<6>[13462]:[venc_dma_pool_malloc:505]: dma pool malloc 97544 ok  
+<6>[13462]:[venc_dma_pool_malloc:505]: dma pool malloc 77856 ok  
+<6>[13462]:[venc_dma_pool_malloc:505]: dma pool malloc 984064 ok  
+<6>[13462]:[venc_dma_pool_malloc:505]: dma pool malloc 29504 ok  
+<4>## AKV_Encoder_Set_Parameters_Ext:(Restart), handle = 0xc33be000
+<4>##	eProfile         = HEVC_MAIN
+<4>##	FrameWidth       = 640
+<4>##	FrameHeight      = 720
+<4>##	eRCMode          = AVBR
+<4>##	eChromaMode      = CHROMA_4_2_0
+<4>##	eGdrMode         = GDR_OFF
+<4>##	TargetBitRate    = 460
+<4>##	MaxBitRate       = 512
+<4>##	EncFrameRate     = 15
+<4>##	InitialSliceQP   = 38
+<4>##	MinQP            = 20(20)
+<4>##	MaxQP            = 38(38)
+<4>##	GopLength        = 60
+<4>##	GopNumB          = 0
+<4>##	NumSlices        = 1
+<4>##	EncLevel         = AK_HEVC_AVC_LEVEL_3
+<4>##	QuantTableLevel  = DEFAULT
+<4>##	uPriority        = 0
+<4>##	pCbParam         = 0xc6764004
+<4>## max nalu size = 68675, type: I, stream 0xc38ce000
+<4>## max nalu size = 13170, type: I, stream 0xc33be000
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4>## MinFrameSize must be greater than or equal to 1/5 of MaxFrameSize, MinFrameSize will be adjusted to 1/5 of MaxFrameSize!!
+<4>## AKV_Encoder_Adjust_IFrameSize OK, handle=0xc38ce000, MinIQP = 28, MaxIQP = 40, MinFrameSize = 80, MaxFrameSize = 400
+<4>## AKV_Encoder_StrictlyLimit_FrameSize OK, handle=0xc38ce000, uMaxSize = 500
+<4>isp_id:1,reload td success
+<4>## MaxIQP must be less than or equal to MaxQP, it will be set to MaxQP!!
+<4>## MinFrameSize must be greater than or equal to 1/5 of MaxFrameSize, MinFrameSize will be adjusted to 1/5 of MaxFrameSize!!
+<4>## AKV_Encoder_Adjust_IFrameSize OK, handle=0xc33be000, MinIQP = 25, MaxIQP = 38, MinFrameSize = 20, MaxFrameSize = 102
+<6>[13637]:[playback_open]: [anyka_ipc@456] runtime 0xc31d8800 
+<6>[13637]:[snd_card_prepare]: DEV 0 -> L2: 1 
+<6>[13637]:[dac_open]: opening... 
+<6>[13637]:[adc2_dac_share_open]: adc2_dac_share_open
+<6> 
+<4>3dS2,id:1, f8ef5ddd,83244000
+<6>[13678]:[analog_sethwparam]: SET_GAIN who 0 gain 4 
+<6>[13678]:[analog_sethwparam]: SET_MUX mixer 0 src 0 
+<6>[13678]:[set_hp_power]: hp power:1 
+<6>[13678]:[adc2_dac_share_open]: adc2_dac_share_open
+<6> 
+<6>[13720]:[set_playback_param]: playback param prds 8 prdbyte 1024 ch 1 bit 16 rate 8000 
+<6>[13720]:[playback_prepare]: hw buffer: 0xc324c000/0x2000 
+<6>[13720]:[playback_prepare]: cache buffer: 0xc696b000/0x80000000 
+<6>[13720]:[dac_set_samplerate]: sddac_clk:8000 
+<6>[13720]:[dac_cal_hsclk]: @dac_cal_hsclk, dachs_clk = 6000000 
+<6>[13720]:[dac_set_highspeed]: set dachs_clk = 6000000 
+<6>[13720]:[dac_set_highspeed]: get dachs_clk:6002758 end 
+<6>[13720]:[playback_prepare]: rate 8000 actual_rate 8000 
+<6>[13720]:[analog_sethwparam]: SPEAKER_CTRL 0 
+<4>3dS3,id:1, f8ef5ddd,3244000
+<6>[13771]:[playback_resume:616]: start again 
+<6>[13771]:[playback_start_dac:324]: dstsrc 0 
+<6>[13771]:[analog_sethwparam]: SET_MUX mixer 0 src 0 
+<6>[13771]:[ak_set_channel_source]: MIXER_OUT already @0 
+<6>[13792]:[analog_sethwparam]: SET_MUX mixer 0 src 4 
+<6>[13792]:[set_hp_power]: hp power:1 
+<6>[13792]:[adc2_dac_share_open]: adc2_dac_share_open
+<6> 
+<4>3dS4,id:1, f8ef5fdd,43244000
+<6>[13830]:[set_playback_source:727]: playback source:0 -> 4 
+<6>[13830]:[set_playback_gain:775]: playback HP gain:3 
+<6>[13830]:[analog_sethwparam]: SET_GAIN who 0 gain 3 
+<6>[13832]:[set_playback_gain:775]: playback HP gain:4 
+<6>[13832]:[analog_sethwparam]: SET_GAIN who 0 gain 4 
+<6>[13836]:[capture_open]: [anyka_ipc@456] runtime 0xc31d8c00 
+<6>[13836]:[snd_card_prepare]: DEV 1 -> L2: 3 
+<6>[13836]:[adc_open]: opening: ADC2 0x0 Analog 0xdb84405 clkctrl 0x14e409 
+<6>[13836]:[adc2_dac_share_open]: adc2_dac_share_open
+<6> 
+<6>[13871]:[analog_sethwparam]: SET_GAIN who 1 gain 3 
+<6>[13871]:[analog_sethwparam]: SET_GAIN who 2 gain 3 
+<6>[13871]:[analog_sethwparam]: SET_MUX mixer 1 src 2 
+<6>[13871]:[capture_open]: successfully 
+<6>[13872]:[analog_sethwparam]: SET_GAIN who 2 gain 2 
+<6>[13888]:[adc_set_samplerate]: sdadc_clk:8000 
+<6>[13888]:[adc_set_highspeed]: adchs_clk:58026666 
+<6>[13951]:[set_capture_param]: CH 1 PERD 8 BYTE 512 Total 0x0 bit 16 actual_rate 8000 
+<6>[13951]:[capture_prepare]: hw buffer: 0xc3bff000/0x1000 
+<6>[13951]:[capture_prepare]: successfully 
+<6>[13952]:[capture_resume]: resume... 
+<6>[13952]:[capture_start]: starting 
+<6>[13952]:[analog_sethwparam]: SET_MUX mixer 1 src 2 
+<6>[13952]:[snd_card_resume]: L2 status 0x0 
+<6>[13989]:[loopback_open]: [549] trying... 
+<6>[13989]:[loopback_prepare]: hw buffer 0xc697e000 size 0x2000 
+<6>[13989]:[loopback_prepare]: app cache 0xc6981000 size 0x800 
+<6>[13989]:[loopback_prepare]: CH 1 PERD 8 BYTE 1024 Total 0x2000 bit 16 
+<6>[13998]:[capture_read]: notify_threshold 0x0 -> 0x200 
+<6>[14011]:[copy_to_loopback]: actual_rate 0 -> 8000 
+<6>sensor_set_flip_mirror sensor0 success
+<6>sensor_set_flip_mirror sensor1 success
+<3>sc2336p_cropcap bounds.width:1920, bounds.height:1080
+<6>[BRG] slice_index_debug:<3,0>
+<4>ak_isp_set_user_params_do 3092, set main osd mem attr
+<4>ak_isp_set_user_params_do 3106 chn:0, paddr:82d4a000 size:41472 
+<4>ak_isp_set_user_params_do 3092, set main osd mem attr
+<4>ak_isp_set_user_params_do 3106 chn:2, paddr:82d5b000 size:41472 
+<4>ak_isp_set_user_params_do 3146 paddr:82d67000 size:4608 
+<4>ak_isp_set_user_params_do 3146 paddr:82d6a000 size:4608 
+<4>ak_isp_set_user_params_do 3092, set main osd mem attr
+<4>ak_isp_set_user_params_do 3106 chn:1, paddr:82d72000 size:41472 
+<4>ak_isp_set_user_params_do 3146 paddr:82d7e000 size:4608 
+<4>## max nalu size = 233054, type: I, stream 0xc38ce000
+<3>MAINCHN1 iomap c2d6c000 82d6c000 size:20736
+<3>MAINCHN0 iomap c2d44000 82d44000 size:20736
+<3>MAINCHN2 iomap c2d55000 82d55000 size:20736
+<3>SUBCHN0 iomap c2d66000 82d66000 size:2304
+<3>SUBCHN1 iomap c2d7d000 82d7d000 size:2304
+<3>SUBCHN2 iomap c2d69000 82d69000 size:2304
+<4>ak_isp_set_user_params_do 3092, set main osd mem attr
+<4>ak_isp_set_user_params_do 3106 chn:1, paddr:82d6f000 size:20736 
+<4>ak_isp_set_user_params_do 3113, release old memory
+<3>MAINCHN1 iounmap c2d6c000 82d6c000 size:20736
+<3>MAINCHN1 iomap c2d6c000 82d6c000 size:10368
+<4>ak_isp_set_user_params_do 3146 paddr:82d76000 size:2304 
+<3>SUBCHN1 iounmap c2d7d000 82d7d000 size:2304
+<3>SUBCHN1 iomap c2d75000 82d75000 size:1152
+<4>isp_>blc_mode=1isp_>blc_mode=1
+<6>Reset MAC0 controller and PHY!
+<6>[16287]:[handle_adc_buffer_full_locked]: app 0x8400 -> 0x8600/hw 0x9200 
+<4>motor_turn hz=966, dest_steps:3510, ramean_steps:3510
+<4>phy read phy id1 waiting ok,data=0x937c
+<4>phy read phy id2 waiting ok,data=0x4024
+<4>cdh:id other set!
+<3>eth0 owns a shared interrupt on netdev->irq 17
+<4>motor_turn hz=966, dest_steps:0, ramean_steps:0
+<4>motor_turn hz=966, dest_steps:5115, ramean_steps:5115
+<3>setting up the cable unplug timer0 for mac0
+<3>[ak_mac_change_mtu][3934] change mtu size from 1500 to 1400
+<4>aic_bluetooth_mod_init 
+<4>RELEASE DATE:2023_0506_1634 
+<4>AICWFDBG(LOGINFO)	aicwf_usb_probe vid:0xA69C pid:0x8D80 icl:0x0 isc:0x0 ipr:0x0 
+<4>AICWFDBG(LOGINFO)	aicloadfw_chipmatch USE AIC8800D80
+<4>Aic high speed USB device detected
+<4>chip_id=7
+<4>aic_load_firmware: use customer define fw_path
+<4>aic_load_firmware :firmware path = usr/bin/aic8800d80/fw_patch_table_8800d80_u02.bin  
+<4>file md5:5346ed73469ade0740a1afac9dae9691
+<4>### Upload fw_patch_table_8800d80_u02.bin fw_patch_table, size=1048
+<4>addr_adid 0x201940, addr_patch 0x1e0000
+<4>aic_load_firmware: use customer define fw_path
+<4>aic_load_firmware :firmware path = usr/bin/aic8800d80/fw_adid_8800d80_u02.bin  
+<4>file md5:f546881a81b960d89a672578eb45a809
+<4>### Upload fw_adid_8800d80_u02.bin firmware, @ = 201940  size=1708
+<4>fw download complete
+<4>
+<4>aic_load_firmware: use customer define fw_path
+<4>aic_load_firmware :firmware path = usr/bin/aic8800d80/fw_patch_8800d80_u02.bin  
+<4>file md5:ee869350c9aec47b59fbfaecb59de8d1
+<4>### Upload fw_patch_8800d80_u02.bin firmware, @ = 1e0000  size=32108
+<4>fw download complete
+<4>
+<4>patch version - Mar 15 2024 19:20:55 - git 199040c
+<4>aic_load_firmware: use customer define fw_path
+<4>aic_load_firmware :firmware path = usr/bin/aic8800d80/fmacfw_8800d80_u02.bin  
+<4>file md5:a921705ca00606feae9ae7d915a0bcfc
+<4>### Upload fmacfw_8800d80_u02.bin firmware, @ = 120000  size=337416
+<4>fw download complete
+<4>
+<4>AICWFDBG(LOGERROR)	Read FW mem: 00120198
+<4>AICWFDBG(LOGERROR)	120198=1721f8
+<4>AICWFDBG(LOGERROR)	1201a0=176000
+<6>usbcore: registered new interface driver aic_load_fw
+<6>####disconnect happen @ 4294939139
+<4>app_cmp
+<6>usb 1-1: USB disconnect, device number 2
+<4>aicwf_usb_disconnect enter 
+<4>aicwf_bus_deinit
+<6>####connent happen @ 4294939157
+<6>[18751]:[handle_adc_buffer_full_locked]: app 0x11e00 -> 0x12000/hw 0x12c00 
+<6>csi0 catch erros: R48:0x00000020,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>R40:0x383
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000840,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>R40:0x383
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000020,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>R40:0x183
+<6>R40:0x383
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000840,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>R40:0x183
+<6>R40:0x383
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000840,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>R40:0x383
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000020,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>R40:0x383
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000840,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>R40:0x383
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000020,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>R40:0x183
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000840,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>recover mipi:0
+<6>csi0 catch erros: R48:0x00000060,R4c:0x00000830,R58:0x00000000,R5C:0x00000000
+<6>isp R00:0xa110011,R10:0x424000
+<4>isp_id:0,set td ok
+<6>recover mipi:0
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<4>isp_id:0,set td ok
+<6>[18783]:[handle_adc_buffer_full_locked]: app 0x12000 -> 0x12200/hw 0x12e00 
+<6>[18815]:[handle_adc_buffer_full_locked]: app 0x12200 -> 0x12400/hw 0x13000 
+<6>[18847]:[handle_adc_buffer_full_locked]: app 0x12400 -> 0x12600/hw 0x13200 
+<6>[18879]:[handle_adc_buffer_full_locked]: app 0x12600 -> 0x12800/hw 0x13400 
+<6>[18911]:[handle_adc_buffer_full_locked]: app 0x12800 -> 0x12a00/hw 0x13600 
+<6>[18943]:[handle_adc_buffer_full_locked]: app 0x12a00 -> 0x12c00/hw 0x13800 
+<6>[18975]:[handle_adc_buffer_full_locked]: app 0x12c00 -> 0x12e00/hw 0x13a00 
+<6>[19007]:[handle_adc_buffer_full_locked]: app 0x12e00 -> 0x13000/hw 0x13c00 
+<6>[19039]:[handle_adc_buffer_full_locked]: app 0x13000 -> 0x13200/hw 0x13e00 
+<4>q_sz/max:  0 /  8 - next tkn: 481
+<4>q_sz/max:  0 /  8 - next tkn: 481
+<4>usb bustx thread will to stop
+<4>usb bustx thread stop
+<4>exit aicwf_bus_deinit
+<4>usb busrx thread will to stop
+<4>usb busrx thread stop
+<4>AICWFDBG(LOGINFO)	rwnx v6.4.3.0 - 1a4b0054d2M (master)
+<4>AICWFDBG(LOGINFO)	RELEASE DATE:2024_0627_2202 
+<4>AICWFDBG(LOGINFO)	NK_VERSION:20240627_V1.12.0.76 
+<6>usbcore: registered new interface driver aic8800_fdrv
+<6>usb 1-1: new high-speed USB device number 3 using ak-hshcd
+<6>usb 1-1: New USB device found, idVendor=a69c, idProduct=8d81
+<6>usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+<6>usb 1-1: Product: AIC 8800D80
+<6>usb 1-1: Manufacturer: AICSemi
+<6>usb 1-1: SerialNumber: 20220103
+<4>AICWFDBG(LOGINFO)	aicwf_usb_probe vid:0xA69C pid:0x8D81 icl:0x0 isc:0x0 ipr:0x0 
+<4>aic_load_fw: probe of 1-1:1.0 failed with error -1
+<4>AICWFDBG(LOGINFO)	aicwf_usb_probe vid:0xA69C pid:0x8D81 icl:0x0 isc:0x0 ipr:0x0 
+<4>aic_load_fw: probe of 1-1:1.1 failed with error -1
+<4>AICWFDBG(LOGINFO)	aicwf_usb_probe vid:0xA69C pid:0x8D81 icl:0x0 isc:0x0 ipr:0x0 
+<4>aic_load_fw: probe of 1-1:1.2 failed with error -1
+<4>AICWFDBG(LOGINFO)	aicwf_usb_chipmatch USE AIC8800D81
+<4>AICWFDBG(LOGINFO)	aicwf_parse_usb endpoints = 3
+<4>AICWFDBG(LOGINFO)	Aic high speed USB device detected
+<4>AICWFDBG(LOGINFO)	aicwf_usb_alloc_rx_urb AICWF_USB_RX_URBS:64 
+<4>AICWFDBG(LOGINFO)	aicwf_usb_alloc_tx_urb AICWF_USB_TX_URBS:96 
+<4>AICWFDBG(LOGINFO)	usb_busrx_thread the policy of current thread is:0
+<4>AICWFDBG(LOGINFO)	usb_busrx_thread the rt_priority of current thread is:0
+<4>AICWFDBG(LOGINFO)	usb_busrx_thread the current pid is:630
+<4>AICWFDBG(LOGINFO)	aicwf_bus_init waiting for rx/tx thread init finish 
+<4>AICWFDBG(LOGINFO)	usb_bustx_thread the policy of current thread is:0
+<4>AICWFDBG(LOGINFO)	usb_bustx_thread the rt_priority of current thread is:0
+<4>AICWFDBG(LOGINFO)	usb_bustx_thread the current pid is:631
+<4>AICWFDBG(LOGINFO)	rwnx_platform_init rwnx_cfg80211_init enter 
+<4>AICWFDBG(LOGINFO)	rwnx_cfg80211_init sizeof(struct rwnx_hw):9396 
+<4>AICWFDBG(LOGINFO)	aicwf_prealloc_txq_alloc size is diff will to be kzalloc 
+<4>AICWFDBG(LOGINFO)	aicwf_prealloc_txq_alloc txq kzalloc successful 
+<4>AICWFDBG(LOGINFO)	userconfig file path:aic_userconfig_8800d80_nvr_ipc.txt 
+<4>AICWFDBG(LOGINFO)	### Load file aic_userconfig_8800d80_nvr_ipc.txt
+<4>AICWFDBG(LOGINFO)	rwnx_load_firmware :firmware path = usr/bin/aic8800d80/aic_userconfig_8800d80_nvr_ipc.txt  
+<4>AICWFDBG(LOGINFO)	file md5:8a3e00e8c8e1335806a8d22c27436736
+<4>AICWFDBG(LOGINFO)	### Load file done: aic_userconfig_8800d80_nvr_ipc.txt, size=2454
+<4>AICWFDBG(LOGINFO)	rwnx_plat_userconfig_parsing: AIC USERCONFIG 2022/0803/1707
+<4>AICWFDBG(LOGINFO)	rwnx_plat_userconfig_parsing: txpwr_lvl
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=enable value=1
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_1m_2g4 value=23
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_2m_2g4 value=23
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_5m5_2g4 value=23
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_11m_2g4 value=23
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_6m_2g4 value=23
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_9m_2g4 value=23
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_12m_2g4 value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_18m_2g4 value=20
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_24m_2g4 value=19
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_36m_2g4 value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_48m_2g4 value=19
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11b_11ag_54m_2g4 value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs0_2g4 value=23
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs1_2g4 value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs2_2g4 value=21
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs3_2g4 value=20
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs4_2g4 value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs5_2g4 value=19
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs6_2g4 value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs7_2g4 value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs8_2g4 value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs9_2g4 value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs0_2g4 value=23
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs1_2g4 value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs2_2g4 value=21
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs3_2g4 value=20
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs4_2g4 value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs5_2g4 value=19
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs6_2g4 value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs7_2g4 value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs8_2g4 value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs9_2g4 value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs10_2g4 value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs11_2g4 value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11a_6m_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11a_9m_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11a_12m_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11a_18m_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11a_24m_5g value=21
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11a_36m_5g value=20
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11a_48m_5g value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11a_54m_5g value=17
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs0_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs1_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs2_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs3_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs4_5g value=21
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs5_5g value=19
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs6_5g value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs7_5g value=17
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs8_5g value=15
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11n_11ac_mcs9_5g value=15
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs0_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs1_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs2_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs3_5g value=22
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs4_5g value=21
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs5_5g value=20
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs6_5g value=18
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs7_5g value=17
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs8_5g value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs9_5g value=16
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs10_5g value=15
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=lvl_11ax_mcs11_5g value=15
+<4>AICWFDBG(LOGINFO)	rwnx_plat_userconfig_parsing: txpwr_loss
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=loss_enable value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=loss_value value=2
+<4>AICWFDBG(LOGINFO)	rwnx_plat_userconfig_parsing: txpwr_ofst
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_enable value=1
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_11b_chan_1_4 value=-1
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_11b_chan_5_9 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_11b_chan_10_13 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_ofdm_highrate_chan_1_4 value=-1
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_ofdm_highrate_chan_5_9 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_ofdm_highrate_chan_10_13 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_ofdm_lowrate_chan_1_4 value=-1
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_ofdm_lowrate_chan_5_9 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_2g4_ofdm_lowrate_chan_10_13 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_lowrate_chan_42 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_lowrate_chan_58 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_lowrate_chan_106 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_lowrate_chan_122 value=-3
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_lowrate_chan_138 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_lowrate_chan_155 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_highrate_chan_42 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_highrate_chan_58 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_highrate_chan_106 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_highrate_chan_122 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_highrate_chan_138 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_highrate_chan_155 value=-1
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_midrate_chan_42 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_midrate_chan_58 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_midrate_chan_106 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_midrate_chan_122 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_midrate_chan_138 value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=ofst_5g_ofdm_midrate_chan_155 value=-1
+<4>AICWFDBG(LOGINFO)	rwnx_plat_userconfig_parsing: xtal cap
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=xtal_enable value=0
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=xtal_cap value=24
+<4>AICWFDBG(LOGINFO)	rwnx_plat_nvram_set_value:command=xtal_cap_fine value=31
+<4>AICWFDBG(LOGINFO)	userconfig download complete
+<4>
+<4>motor_turn hz=395, dest_steps:1180, ramean_steps:1180
+<4>AICWFDBG(LOGINFO)	is 5g support = 1, vendor_info = 0x00
+<4>AICWFDBG(LOGINFO)	Firmware Version: mi May 29 2024 16:57:24 - gca5f423m
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:enable:1
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_1m_2g4:23
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_2m_2g4:23
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_5m5_2g4:23
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_11m_2g4:23
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_6m_2g4:23
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_9m_2g4:23
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_12m_2g4:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_18m_2g4:20
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_24m_2g4:19
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_36m_2g4:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_48m_2g4:19
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11b_11ag_54m_2g4:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs0_2g4:23
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs1_2g4:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs2_2g4:21
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs3_2g4:20
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs4_2g4:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs5_2g4:19
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs6_2g4:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs7_2g4:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs8_2g4:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs9_2g4:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs0_2g4:23
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs1_2g4:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs2_2g4:21
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs3_2g4:20
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs4_2g4:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs5_2g4:19
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs6_2g4:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs7_2g4:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs8_2g4:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs9_2g4:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs10_2g4:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs11_2g4:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_1m_5g:-128
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_2m_5g:-128
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_5m5_5g:-128
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_11m_5g:-128
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_6m_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_9m_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_12m_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_18m_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_24m_5g:21
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_36m_5g:20
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_48m_5g:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11a_54m_5g:17
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs0_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs1_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs2_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs3_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs4_5g:21
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs5_5g:19
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs6_5g:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs7_5g:17
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs8_5g:15
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11n_11ac_mcs9_5g:15
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs0_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs1_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs2_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs3_5g:22
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs4_5g:21
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs5_5g:20
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs6_5g:18
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs7_5g:17
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs8_5g:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs9_5g:16
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs10_5g:15
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_lvl_v3_in_fdrv:lvl_11ax_mcs11_5g:15
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:enable:1
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_1m_2g4:23
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_2m_2g4:23
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_5m5_2g4:23
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_11m_2g4:23
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_6m_2g4:23
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_9m_2g4:23
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_12m_2g4:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_18m_2g4:20
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_24m_2g4:19
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_36m_2g4:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_48m_2g4:19
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11b_11ag_54m_2g4:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs0_2g4:23
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs1_2g4:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs2_2g4:21
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs3_2g4:20
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs4_2g4:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs5_2g4:19
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs6_2g4:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs7_2g4:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs8_2g4:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs9_2g4:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs0_2g4:23
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs1_2g4:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs2_2g4:21
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs3_2g4:20
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs4_2g4:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs5_2g4:19
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs6_2g4:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs7_2g4:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs8_2g4:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs9_2g4:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs10_2g4:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs11_2g4:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_1m_5g:-128
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_2m_5g:-128
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_5m5_5g:-128
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_11m_5g:-128
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_6m_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_9m_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_12m_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_18m_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_24m_5g:21
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_36m_5g:20
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_48m_5g:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11a_54m_5g:17
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs0_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs1_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs2_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs3_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs4_5g:21
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs5_5g:19
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs6_5g:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs7_5g:17
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs8_5g:15
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11n_11ac_mcs9_5g:15
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs0_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs1_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs2_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs3_5g:22
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs4_5g:21
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs5_5g:20
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs6_5g:18
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs7_5g:17
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs8_5g:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs9_5g:16
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs10_5g:15
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_lvl_v3_req:lvl_11ax_mcs11_5g:15
+<4>AICWFDBG(LOGINFO)	get_userconfig_txpwr_ofst2x_in_fdrv:enable      :1
+<4>AICWFDBG(LOGINFO)	pwrofst2x 2.4g: [0]:11b, [1]:ofdm_highrate, [2]:ofdm_lowrate
+<4>  chan=	1-4	5-9	10-13AICWFDBG(LOGINFO)	
+<4>  [0] =AICWFDBG(LOGINFO)		-1AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)	
+<4>  [1] =AICWFDBG(LOGINFO)		-1AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)	
+<4>  [2] =AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)	
+<4>pwrofst2x 5g: [0]:ofdm_lowrate, [1]:ofdm_highrate, [2]:ofdm_midrate
+<4>  chan=	36-50	51-64	98-114	115-130	131-146	147-166AICWFDBG(LOGINFO)	
+<4>  [0] =AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		-3AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)	
+<4>  [1] =AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		-1AICWFDBG(LOGINFO)	
+<4>  [2] =AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		-1AICWFDBG(LOGINFO)	
+<4>AICWFDBG(LOGINFO)	rwnx_send_txpwr_ofst2x_req:enable:1
+<4>AICWFDBG(LOGINFO)	pwrofst2x 2.4g: [0]:11b, [1]:ofdm_highrate, [2]:ofdm_lowrate
+<4>  chan=	1-4	5-9	10-13AICWFDBG(LOGINFO)	
+<4>  [0] =AICWFDBG(LOGINFO)		-1AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)	
+<4>  [1] =AICWFDBG(LOGINFO)		-1AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)	
+<4>  [2] =AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)	
+<4>pwrofst2x 5g: [0]:ofdm_lowrate, [1]:ofdm_highrate, [2]:ofdm_midrate
+<4>  chan=	36-50	51-64	98-114	115-130	131-146	147-166AICWFDBG(LOGINFO)	
+<4>  [0] =AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		-3AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)	
+<4>  [1] =AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		-1AICWFDBG(LOGINFO)	
+<4>  [2] =AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		0AICWFDBG(LOGINFO)		-1AICWFDBG(LOGINFO)	
+<4>AICWFDBG(LOGINFO)	get_userconfig_xtal_cap:enable       :0
+<4>AICWFDBG(LOGINFO)	get_userconfig_xtal_cap:xtal_cap     :24
+<4>AICWFDBG(LOGINFO)	get_userconfig_xtal_cap:xtal_cap_fine:31
+<4>motor_turn hz=395, dest_steps:0, ramean_steps:0
+<4>motor_turn hz=395, dest_steps:1695, ramean_steps:1695
+<4>AICWFDBG(LOGINFO)	get macaddr:a4,fa
+<4>AICWFDBG(LOGINFO)	HT supp 1, VHT supp 1, HE supp 1
+<4>rwnx_reg_notifier Enter
+<4>AICWFDBG(LOGINFO)	getRegdomainFromRwnxDB set ccode:00 
+<4>AICWFDBG(LOGINFO)	rwnx_get_countrycode_channels support channel:1 2 3 4 5 6 7 8 9 10 11 12 13 14 36 40 44 48 52 56 60 64 100 104 108 112 116 120 124 128 132 136 140 144 149 153 157 161 165 
+<3>ieee80211 phy0: 
+<3>*******************************************************
+<3>** CAUTION: USING PERMISSIVE CUSTOM REGULATORY RULES **
+<3>*******************************************************
+<4>AICWFDBG(LOGINFO)	rwnx_interface_add: wlan%d, 2, 10
+<4>AICWFDBG(LOGINFO)	interface add:a4 86 db 56 22 fa
+<4>AICWFDBG(LOGINFO)	aicwf_set_wireless_ext EnterAICWFDBG(LOGINFO)	rwnx_interface_add: wlan%d, 2, 10
+<4>AICWFDBG(LOGINFO)	interface add:a6 86 db 56 22 fa
+<4>AICWFDBG(LOGINFO)	aicwf_set_wireless_ext EnterAICWFDBG(LOGINFO)	New interface create wlan1
+<4>AICWFDBG(LOGINFO)	rwnx_platform_init rwnx_cfg80211_init exit 
+<4>isp_>blc_mode=1isp_>blc_mode=1isp_>blc_mode=1isp_>blc_mode=1
+<6>bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+<4>motor_turn hz=56, dest_steps:2693, ramean_steps:2693
+<4>motor_turn hz=113, dest_steps:146, ramean_steps:146
+<4>isp_id:0,set td ok
+<6>camera_set_pp_chn_buffer_addr_default chn#0 slice_num:4
+<6>[BRG] slice_index_debug:<7,0>
+<6>camera_set_pp_chn_buffer_addr_default chn#0 slice_num:4
+<4>## max nalu size = 13466, type: P, stream 0xc33be000
+<4>isp_id:0,reload td success
+<4>3dS2,id:0, f8ef5ddd,3284000
+<4>3dS3,id:0, f8ef5ddd,3284000
+<4>3dS4,id:0, f8ef5fdd,43284000
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4>## AKV_Encoder_Set_Parameters_Ext:(Only Setting), handle = 0xc38ce000
+<4>##	eProfile         = HEVC_MAIN
+<4>##	FrameWidth       = 1920
+<4>##	FrameHeight      = 2160
+<4>##	eRCMode          = AVBR
+<4>##	eChromaMode      = CHROMA_4_2_0
+<4>##	eGdrMode         = GDR_OFF
+<4>##	TargetBitRate    = 1843
+<4>##	MaxBitRate       = 2048
+<4>##	EncFrameRate     = 15
+<4>##	InitialSliceQP   = 38
+<4>##	MinQP            = 28(28)
+<4>##	MaxQP            = 50(40)
+<4>##	GopLength        = 60
+<4>##	GopNumB          = 0
+<4>##	NumSlices        = 1
+<4>##	EncLevel         = AK_HEVC_AVC_LEVEL_5
+<4>##	QuantTableLevel  = DEFAULT
+<4>##	uPriority        = 0
+<4>##	pCbParam         = 0xc65c1004
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4> ## Smart_GOPlen set 150; Smart_Quality set 20 
+<4>## AKV_Encoder_Set_Parameters_Ext:(Only Setting), handle = 0xc38ce000
+<4>##	eProfile         = HEVC_MAIN
+<4>##	FrameWidth       = 1920
+<4>##	FrameHeight      = 2160
+<4>##	eRCMode          = AVBR
+<4>##	eChromaMode      = CHROMA_4_2_0
+<4>##	eGdrMode         = GDR_OFF
+<4>##	TargetBitRate    = 1843
+<4>##	MaxBitRate       = 2048
+<4>##	EncFrameRate     = 15
+<4>##	InitialSliceQP   = 38
+<4>##	MinQP            = 28(28)
+<4>##	MaxQP            = 50(40)
+<4>##	GopLength        = 60
+<4>##	GopNumB          = 0
+<4>##	NumSlices        = 1
+<4>##	EncLevel         = AK_HEVC_AVC_LEVEL_5
+<4>##	QuantTableLevel  = DEFAULT
+<4>##	uPriority        = 0
+<4>##	pCbParam         = 0xc65c1004
+<4>## max nalu size = 30983, type: I, stream 0xc33be000
+<4>## max nalu size = 31298, type: I, stream 0xc33be000
+<4>## max nalu size = 33958, type: I, stream 0xc33be000
+<4>## max nalu size = 38938, type: I, stream 0xc33be000
+<4>## max nalu size = 39766, type: I, stream 0xc33be000
+<4>## max nalu size = 46203, type: I, stream 0xc33be000
+<4>## max nalu size = 52016, type: I, stream 0xc33be000
+<4>## max nalu size = 52183, type: I, stream 0xc33be000
+<4>## max nalu size = 243939, type: I, stream 0xc38ce000
+<4>## max nalu size = 244533, type: I, stream 0xc38ce000

@@ -1,0 +1,13 @@
+; Stock Anyka Wi-Fi provisioning file, read by the app (not an autorun).
+; The real _ak39_factory.ini is .gitignored because it holds a plaintext
+; passphrase. Copy this template to _ak39_factory.ini and fill ssid/passphrase
+; with the values from secrets.conf (WIFI_SSID / WIFI_PASS).
+[wifi_station]
+ssid=YOUR_SSID
+passphrase=YOUR_PASSPHRASE
+ip=
+netmask=
+gateway=
+
+[aging_test]
+aging_value=0

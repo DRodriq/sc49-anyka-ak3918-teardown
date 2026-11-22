@@ -1,0 +1,82 @@
+#!/bin/sh
+
+# udhcpc script edited by Tim Riker <Tim@Rikers.org>
+
+[ -z "$1" ] && echo "Error: should be called from udhcpc" && exit 1
+RESOLV_CONF="/etc/resolv.conf"
+DHCP_FLAG_CONF="/tmp/dhcp_flag_${interface}.conf"
+rm -f $DHCP_FLAG_CONF
+[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+[ -n "$subnet" ] && NETMASK="netmask $subnet"
+
+# Get default gateway
+if [ -n "$router" ]; then
+    default_gateway="${router%% *}"
+else
+    echo "Warning: No router information available."
+fi
+
+case "$1" in
+	deconfig)
+		echo "Use default IP in dhcp script!"
+		;;
+
+	renew|bound)
+		/sbin/ifconfig $interface 0.0.0.0
+		/sbin/ifconfig $interface $ip $BROADCAST $NETMASK
+		echo "ifconfig "$interface $ip $BROADCAST $NETMASK
+
+		if [ -n "$router" ] ; then
+			echo "deleting routers"
+			while route del default gw 0.0.0.0 dev $interface ; do
+					:
+			done
+
+			metric=0
+			for i in $router ; do
+					route add default gw $i dev $interface metric $((metric++))
+			done
+		fi
+		touch $DHCP_FLAG_CONF
+		echo "udhcpc success"
+		echo -n > $RESOLV_CONF
+		[ -n "$domain" ] && echo search $domain >> $RESOLV_CONF
+
+        dns_google=0
+        dns_total=0
+
+        for i in $dns; do
+			echo adding dns-all $i
+			if [ "$i" != "114.114.114.114" ]; then
+					if [[ "$i" == "8.8.8.8" ]]; then
+							dns_google=$((dns_google + 1))
+					fi
+					dns_total=$((dns_total + 1))
+			fi
+        done
+        # Write default gateway and 8.8.8.8 logic
+        if [[ "$dns_google" == 1 && "$dns_total" == 1 ]] || [[ "$dns_total" == 0 ]]; then
+			# When there is only one DNS and it is 8.8.8.8, or when the DNS list is empty
+			echo "nameserver $default_gateway" >> $RESOLV_CONF
+			echo "nameserver 8.8.8.8" >> $RESOLV_CONF
+        elif [[ "$dns_google" == 0 ]]; then
+			# DNS list does not have 8.8.8.8, but there are other DNS
+			for i in $dns; do
+					if [ "$i" != "114.114.114.114" ]; then
+							echo "nameserver $i" >> $RESOLV_CONF
+					fi
+			done
+			echo "nameserver 8.8.8.8" >> $RESOLV_CONF
+        else
+			# The DNS list includes 8.8.8.8 and other DNS
+			for i in $dns; do
+					if [ "$i" != "114.114.114.114" ]; then
+							echo "nameserver $i" >> $RESOLV_CONF
+					fi
+			done
+        fi
+        ;;
+esac
+cat /etc/resolv.conf
+
+exit 0

@@ -1,0 +1,1155 @@
+[0;37mTIMETICK->[APIS_Timer/src//Timetick.c]:216 task list is empty[m
+[0;37mTIMETICK->[APIS_Timer/src//Timetick.c]:117 TIMETICK pid=458 tid=b6e1b4d0 begin[m
+libakae_aisk version is: V1.2.19
+[32m [INFO] [NK_Check_UbootCustom:84]:spMatchCode:0x26997390.
+ [0m[32m [INFO] [NK_Check_UbootCustom:85]:check md5 success.
+ [0mthread stack_size = 102400B, 100k
+[31m[70-01-01 00:00:10][0m[NK_CONFIG_SetParam:1974]set cmd[10547201] OK
+
+thread stack_size = 102400B, 100k
+[1;33m[APIS_MediaBuffer/src//media_buf.c: 507][0m media buf init success
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c: 384][0m NEW MB:ch0_0.264 2.00MB(2097192)@0x0xb6ba9008 max_user:8 entrysize:40
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c: 384][0m NEW MB:ch0_1.264 0.78MB(819240)@0x0xb6ae0008 max_user:6 entrysize:40
+ak_vi_get_version libplat_vi V3.4.17
+[1;33m[      VI][2025-08-19 07:54:05 028] [ak_vi_open:450] register device, device id:[0]
+[m[      VI][2025-08-19 07:54:05 028] new device
+[      VI][2025-08-19 07:54:05 029] [vi_register_device:333] new dev=0x1d71d58
+ispsdk_lib version:libplat_isp_sdk V8.0.01 
+open isp dev: /dev/isp-param-0
+--- AK_ISP_sdk_init g_isp_fd[0]=12 ---
+[1;33m[      VI][2025-08-19 07:54:05 031] [vi_dev_open:224] vi device open DEV0!
+[m[1;33m[      VI][2025-08-19 07:54:05 031] [vi_dev_open:237] open sensor dev: /dev/v4l-subdev0
+[m[1;33m[      VI][2025-08-19 07:54:05 032] [vi_dev_open:247] --- vi_dev_open g_sensor_fd[0]=13 ---
+[m[1;33m[      VI][2025-08-19 07:54:05 032] [vi_dev_open_td_chn:162] vi third chn device open CHN16!
+[m[      VI][2025-08-19 07:54:05 033] register vi device ok, dev_count=1
+[    VPSS][2025-08-19 07:54:05 034] [isp_open:107] dev:0 already opened!
+[1;33m[    VPSS][2025-08-19 07:54:05 065] [isp.conf]version: 1.002, sensor id: 0x23360f, style id: 0
+[m[    VPSS][2025-08-19 07:54:05 066] isp subfile 0, modify time: 2024-1-31 10:44:43
+[    VPSS][2025-08-19 07:54:05 066] ÐÞ¸ÄÊÖ¶¯°×Æ½ºâ£¬ÐÞ¸´Æô¶¯»òÇÐ»»Ä£Ê½
+Í¼ÏñÆ«ÂÌÎÊÌâ
+20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:05 066] isp subfile 1, modify time: 2024-1-31 10:01:04
+[    VPSS][2025-08-19 07:54:05 067] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:05 067] isp subfile 2, modify time: 2024-1-31 10:01:36
+[    VPSS][2025-08-19 07:54:05 067] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+
+[    VPSS][2025-08-19 07:54:05 067] [check_file:445] check isp cfg: /usr/local/0x23360f.conf OK
+[    VPSS][2025-08-19 07:54:05 071] [isp_set_attr:1999] isp_set_attr module_id:0 
+[    VPSS][2025-08-19 07:54:05 071] [isp_set_attr:1999] isp_set_attr module_id:1 
+[    VPSS][2025-08-19 07:54:05 072] [isp_set_attr:1999] isp_set_attr module_id:2 
+[    VPSS][2025-08-19 07:54:05 072] [isp_set_attr:1999] isp_set_attr module_id:3 
+[    VPSS][2025-08-19 07:54:05 073] [isp_set_attr:1999] isp_set_attr module_id:4 
+[    VPSS][2025-08-19 07:54:05 074] [isp_set_attr:1999] isp_set_attr module_id:5 
+[    VPSS][2025-08-19 07:54:05 074] [isp_set_attr:1999] isp_set_attr module_id:6 
+[    VPSS][2025-08-19 07:54:05 075] [isp_set_attr:1999] isp_set_attr module_id:7 
+[    VPSS][2025-08-19 07:54:05 075] [isp_set_attr:1999] isp_set_attr module_id:8 
+[    VPSS][2025-08-19 07:54:05 076] [isp_set_attr:1999] isp_set_attr module_id:9 
+[    VPSS][2025-08-19 07:54:05 077] [isp_set_attr:1999] isp_set_attr module_id:10 
+[    VPSS][2025-08-19 07:54:05 078] [isp_set_attr:1999] isp_set_attr module_id:11 
+[    VPSS][2025-08-19 07:54:05 079] [isp_set_attr:1999] isp_set_attr module_id:12 
+[    VPSS][2025-08-19 07:54:05 080] [isp_set_attr:1999] isp_set_attr module_id:13 
+[    VPSS][2025-08-19 07:54:05 081] [isp_set_attr:1999] isp_set_attr module_id:14 
+[    VPSS][2025-08-19 07:54:05 081] [isp_set_attr:1999] isp_set_attr module_id:15 
+[    VPSS][2025-08-19 07:54:05 082] [isp_set_attr:1999] isp_set_attr module_id:16 
+[    VPSS][2025-08-19 07:54:05 082] [isp_set_attr:1999] isp_set_attr module_id:17 
+[    VPSS][2025-08-19 07:54:05 083] [isp_set_attr:1999] isp_set_attr module_id:18 
+[    VPSS][2025-08-19 07:54:05 083] [isp_set_attr:1999] isp_set_attr module_id:19 
+[    VPSS][2025-08-19 07:54:05 084] [isp_set_attr:1999] isp_set_attr module_id:20 
+[    VPSS][2025-08-19 07:54:05 085] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:05 085] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:05 085] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:05 086] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:05 086] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:05 086] [isp_set_attr:1999] isp_set_attr module_id:21 
+[    VPSS][2025-08-19 07:54:05 087] [isp_set_attr:1999] isp_set_attr module_id:22 
+[    VPSS][2025-08-19 07:54:05 087] [isp_set_attr:1999] isp_set_attr module_id:23 
+[    VPSS][2025-08-19 07:54:05 088] [isp_module_init:1575] before load_sensor_conf 
+[    VPSS][2025-08-19 07:54:05 088] [isp_module_init:1577] after load_sensor_conf 
+[      VI][2025-08-19 07:54:05 090] vi_dev_get_sensor_crop 150, ret:0, w:1920, h:1080
+[      VI][2025-08-19 07:54:05 091] vi_dev_get_sensor_crop 150, ret:0, w:1920, h:1080
+[      VI][2025-08-19 07:54:05 092] [vi_dev_set_interface_mode:475] Set dev [0] mode [5]
+[      VI][2025-08-19 07:54:05 092] [vi_dev_set_frame_rate:510] Set dev [0] frame_rate [25]
+[      VI][2025-08-19 07:54:05 092] init CROP succeedded! reset to CROP[1920, 1080]
+[      VI][2025-08-19 07:54:05 094] [ak_vi_set_chn_attr_ex:1698] success register vi channel[0]
+[      VI][2025-08-19 07:54:05 095] Set chn mode [1]
+[      VI][2025-08-19 07:54:05 095] Set chn slice num [7]
+[      VI][2025-08-19 07:54:05 095] Set chn block num [4]
+[      VI][2025-08-19 07:54:05 095] [vi_set_channel_attr:1056] set vi channel[0] mode:[1], slice_num[7] frame_depth[3]
+[      VI][2025-08-19 07:54:05 096] init CROP succeedded! reset to CROP[1920, 1080]
+[      VI][2025-08-19 07:54:05 096] [vi_set_channel_attr:1069] set vi channel[0] crop: left[0] top[0] w[1920] h[1080]
+[      VI][2025-08-19 07:54:05 097] [vi_dev_set_chn_res:885] chn id is[0], fd is:[14]
+[      VI][2025-08-19 07:54:05 097] [vi_dev_set_chn_res:928] vi_dev_set_chn_res w:1920, h:1080
+[      VI][2025-08-19 07:54:05 097] [vi_set_channel_attr:1083] set vi channel[0] res w[1920] h[1080]
+[      VI][2025-08-19 07:54:05 098] [vi_dev_set_chn_buf_size:550] Set Chn [0] buf size [1843200]
+[      VI][2025-08-19 07:54:05 098] [vi_set_channel_attr:1095] set vi channel[0] buf size[1843200]
+[      VI][2025-08-19 07:54:05 102] [ak_vi_set_chn_attr_ex:1698] success register vi channel[1]
+[      VI][2025-08-19 07:54:05 102] Set chn mode [0]
+[      VI][2025-08-19 07:54:05 102] [vi_set_channel_attr:1056] set vi channel[1] mode:[0], slice_num[0] frame_depth[2]
+[      VI][2025-08-19 07:54:05 103] init CROP succeedded! reset to CROP[1920, 1080]
+[      VI][2025-08-19 07:54:05 104] [vi_set_channel_attr:1069] set vi channel[1] crop: left[0] top[0] w[1920] h[1080]
+[      VI][2025-08-19 07:54:05 105] [vi_dev_set_chn_res:885] chn id is[1], fd is:[15]
+[      VI][2025-08-19 07:54:05 105] [vi_dev_set_chn_res:928] vi_dev_set_chn_res w:640, h:360
+[      VI][2025-08-19 07:54:05 105] [vi_set_channel_attr:1083] set vi channel[1] res w[640] h[360]
+[      VI][2025-08-19 07:54:05 105] [vi_dev_set_chn_buf_size:550] Set Chn [1] buf size [345600]
+[      VI][2025-08-19 07:54:05 106] [vi_set_channel_attr:1095] set vi channel[1] buf size[345600]
+ak_vi_get_version libplat_vi V3.4.17
+[1;33m[      VI][2025-08-19 07:54:05 109] [ak_vi_open:450] register device, device id:[1]
+[m[      VI][2025-08-19 07:54:05 110] new device
+[      VI][2025-08-19 07:54:05 110] [vi_register_device:333] new dev=0x1d72030
+ispsdk_lib version:libplat_isp_sdk V8.0.01 
+open isp dev: /dev/isp-param-1
+--- AK_ISP_sdk_init g_isp_fd[1]=17 ---
+[1;33m[      VI][2025-08-19 07:54:05 112] [vi_dev_open:224] vi device open DEV1!
+[m[1;33m[      VI][2025-08-19 07:54:05 112] [vi_dev_open:237] open sensor dev: /dev/v4l-subdev1
+[m[1;33m[      VI][2025-08-19 07:54:05 113] [vi_dev_open:247] --- vi_dev_open g_sensor_fd[1]=18 ---
+[m[1;33m[      VI][2025-08-19 07:54:05 113] [vi_dev_open_td_chn:162] vi third chn device open CHN17!
+[m[      VI][2025-08-19 07:54:05 114] register vi device ok, dev_count=2
+[    VPSS][2025-08-19 07:54:05 115] [isp_open:107] dev:1 already opened!
+[1;33m[    VPSS][2025-08-19 07:54:05 146] [isp.conf]version: 1.002, sensor id: 0x23360f, style id: 0
+[m[    VPSS][2025-08-19 07:54:05 146] isp subfile 0, modify time: 2024-1-31 10:45:49
+[    VPSS][2025-08-19 07:54:05 147] 20240131ÐÞ¸ÄÊÖ¶¯°×Æ½ºâ£¬ÐÞ¸´Æô¶¯ÇÐ»»
+Í¼ÏñÆ«ÂÌÎÊÌâ
+20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:05 147] isp subfile 1, modify time: 2024-1-31 10:02:47
+[    VPSS][2025-08-19 07:54:05 147] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:05 147] isp subfile 2, modify time: 2024-1-31 10:02:39
+[    VPSS][2025-08-19 07:54:05 147] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+
+[    VPSS][2025-08-19 07:54:05 148] [check_file:445] check isp cfg: /usr/local/0x23360f_1.conf OK
+[    VPSS][2025-08-19 07:54:05 152] [isp_set_attr:1999] isp_set_attr module_id:0 
+[    VPSS][2025-08-19 07:54:05 152] [isp_set_attr:1999] isp_set_attr module_id:1 
+[    VPSS][2025-08-19 07:54:05 153] [isp_set_attr:1999] isp_set_attr module_id:2 
+[    VPSS][2025-08-19 07:54:05 153] [isp_set_attr:1999] isp_set_attr module_id:3 
+[    VPSS][2025-08-19 07:54:05 154] [isp_set_attr:1999] isp_set_attr module_id:4 
+[    VPSS][2025-08-19 07:54:05 155] [isp_set_attr:1999] isp_set_attr module_id:5 
+[    VPSS][2025-08-19 07:54:05 155] [isp_set_attr:1999] isp_set_attr module_id:6 
+[    VPSS][2025-08-19 07:54:05 156] [isp_set_attr:1999] isp_set_attr module_id:7 
+[    VPSS][2025-08-19 07:54:05 156] [isp_set_attr:1999] isp_set_attr module_id:8 
+[    VPSS][2025-08-19 07:54:05 157] [isp_set_attr:1999] isp_set_attr module_id:9 
+[    VPSS][2025-08-19 07:54:05 157] [isp_set_attr:1999] isp_set_attr module_id:10 
+[    VPSS][2025-08-19 07:54:05 159] [isp_set_attr:1999] isp_set_attr module_id:11 
+[    VPSS][2025-08-19 07:54:05 160] [isp_set_attr:1999] isp_set_attr module_id:12 
+[    VPSS][2025-08-19 07:54:05 161] [isp_set_attr:1999] isp_set_attr module_id:13 
+[    VPSS][2025-08-19 07:54:05 161] [isp_set_attr:1999] isp_set_attr module_id:14 
+[    VPSS][2025-08-19 07:54:05 162] [isp_set_attr:1999] isp_set_attr module_id:15 
+[    VPSS][2025-08-19 07:54:05 162] [isp_set_attr:1999] isp_set_attr module_id:16 
+[    VPSS][2025-08-19 07:54:05 163] [isp_set_attr:1999] isp_set_attr module_id:17 
+[    VPSS][2025-08-19 07:54:05 163] [isp_set_attr:1999] isp_set_attr module_id:18 
+[    VPSS][2025-08-19 07:54:05 164] [isp_set_attr:1999] isp_set_attr module_id:19 
+[    VPSS][2025-08-19 07:54:05 164] [isp_set_attr:1999] isp_set_attr module_id:20 
+[    VPSS][2025-08-19 07:54:05 165] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:05 165] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:05 166] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:05 166] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:05 166] [set_fps:244] set dev:1 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:05 167] [isp_set_attr:1999] isp_set_attr module_id:21 
+[    VPSS][2025-08-19 07:54:05 167] [isp_set_attr:1999] isp_set_attr module_id:22 
+[    VPSS][2025-08-19 07:54:05 168] [isp_set_attr:1999] isp_set_attr module_id:23 
+[    VPSS][2025-08-19 07:54:05 168] [isp_module_init:1575] before load_sensor_conf 
+[    VPSS][2025-08-19 07:54:05 169] [isp_module_init:1577] after load_sensor_conf 
+[      VI][2025-08-19 07:54:05 170] vi_dev_get_sensor_crop 150, ret:0, w:1920, h:1080
+[      VI][2025-08-19 07:54:05 171] vi_dev_get_sensor_crop 150, ret:0, w:1920, h:1080
+[      VI][2025-08-19 07:54:05 172] [vi_dev_set_interface_mode:475] Set dev [1] mode [5]
+[      VI][2025-08-19 07:54:05 173] [vi_dev_set_frame_rate:510] Set dev [1] frame_rate [25]
+[      VI][2025-08-19 07:54:05 173] init CROP succeedded! reset to CROP[1920, 1080]
+[      VI][2025-08-19 07:54:05 177] [ak_vi_set_chn_attr_ex:1698] success register vi channel[2]
+[      VI][2025-08-19 07:54:05 177] Set chn mode [1]
+[      VI][2025-08-19 07:54:05 178] Set chn slice num [7]
+[      VI][2025-08-19 07:54:05 178] Set chn block num [4]
+[      VI][2025-08-19 07:54:05 178] [vi_set_channel_attr:1056] set vi channel[2] mode:[1], slice_num[7] frame_depth[3]
+[      VI][2025-08-19 07:54:05 178] init CROP succeedded! reset to CROP[1920, 1080]
+[      VI][2025-08-19 07:54:05 179] [vi_set_channel_attr:1069] set vi channel[2] crop: left[0] top[0] w[1920] h[1080]
+[      VI][2025-08-19 07:54:05 179] [vi_dev_set_chn_res:885] chn id is[2], fd is:[19]
+[      VI][2025-08-19 07:54:05 179] [vi_dev_set_chn_res:928] vi_dev_set_chn_res w:1920, h:1080
+[      VI][2025-08-19 07:54:05 179] [vi_set_channel_attr:1083] set vi channel[2] res w[1920] h[1080]
+[      VI][2025-08-19 07:54:05 180] [vi_dev_set_chn_buf_size:550] Set Chn [2] buf size [1843200]
+[      VI][2025-08-19 07:54:05 180] [vi_set_channel_attr:1095] set vi channel[2] buf size[1843200]
+[      VI][2025-08-19 07:54:05 186] [ak_vi_set_chn_attr_ex:1698] success register vi channel[3]
+[      VI][2025-08-19 07:54:05 186] Set chn mode [0]
+[      VI][2025-08-19 07:54:05 187] [vi_set_channel_attr:1056] set vi channel[3] mode:[0], slice_num[0] frame_depth[2]
+[      VI][2025-08-19 07:54:05 187] init CROP succeedded! reset to CROP[1920, 1080]
+[      VI][2025-08-19 07:54:05 187] [vi_set_channel_attr:1069] set vi channel[3] crop: left[0] top[0] w[1920] h[1080]
+[      VI][2025-08-19 07:54:05 187] [vi_dev_set_chn_res:885] chn id is[3], fd is:[20]
+[      VI][2025-08-19 07:54:05 188] [vi_dev_set_chn_res:928] vi_dev_set_chn_res w:640, h:360
+[      VI][2025-08-19 07:54:05 188] [vi_set_channel_attr:1083] set vi channel[3] res w[640] h[360]
+[      VI][2025-08-19 07:54:05 188] [vi_dev_set_chn_buf_size:550] Set Chn [3] buf size [345600]
+[      VI][2025-08-19 07:54:05 188] [vi_set_channel_attr:1095] set vi channel[3] buf size[345600]
+[      VI][2025-08-19 07:54:05 195] [ak_vi_set_chn_attr_ex:1698] success register vi channel[17]
+[      VI][2025-08-19 07:54:05 196] Set chn mode [0]
+[      VI][2025-08-19 07:54:05 196] [vi_set_channel_attr:1056] set vi channel[17] mode:[0], slice_num[0] frame_depth[2]
+[      VI][2025-08-19 07:54:05 196] init CROP succeedded! reset to CROP[1920, 1080]
+[      VI][2025-08-19 07:54:05 196] [vi_set_channel_attr:1069] set vi channel[17] crop: left[0] top[0] w[1920] h[1080]
+[      VI][2025-08-19 07:54:05 197] [vi_dev_set_chn_res:885] chn id is[17], fd is:[21]
+[      VI][2025-08-19 07:54:05 197] [vi_dev_set_chn_res:928] vi_dev_set_chn_res w:320, h:180
+[      VI][2025-08-19 07:54:05 197] [vi_set_channel_attr:1083] set vi channel[17] res w[320] h[180]
+[      VI][2025-08-19 07:54:05 197] [vi_dev_set_chn_buf_size:550] Set Chn [17] buf size [172800]
+[      VI][2025-08-19 07:54:05 198] [vi_set_channel_attr:1095] set vi channel[17] buf size[172800]
+[      VI][2025-08-19 07:54:05 205] [ak_vi_create_stitch_chn:3662] success register vi channel[24]
+[      VI][2025-08-19 07:54:05 206] [vi_dev_set_chn_stitch_mode:592] Set Chn [2] stitch mode [1], index[0]
+[      VI][2025-08-19 07:54:05 206] Set chn mode [1]
+[      VI][2025-08-19 07:54:05 206] Set chn slice num [8]
+[      VI][2025-08-19 07:54:05 206] Set chn block num [4]
+[      VI][2025-08-19 07:54:05 207] [ak_vi_create_stitch_chn:3807] In stitch mode reset vi channel[2] mode:[1], slice_num[8] block_num[4]!
+[      VI][2025-08-19 07:54:05 207] [vi_dev_set_chn_buf_size:550] Set Chn [2] buf size [3732480]
+[      VI][2025-08-19 07:54:05 207] [ak_vi_create_stitch_chn:3821] In stitch mode, set vi channel[2] buf size[3732480]
+[      VI][2025-08-19 07:54:05 209] [vi_dev_set_chn_stitch_mode:592] Set Chn [0] stitch mode [1], index[1]
+[      VI][2025-08-19 07:54:05 210] Set chn mode [1]
+[      VI][2025-08-19 07:54:05 210] Set chn slice num [8]
+[      VI][2025-08-19 07:54:05 210] Set chn block num [4]
+[      VI][2025-08-19 07:54:05 210] [ak_vi_create_stitch_chn:3807] In stitch mode reset vi channel[0] mode:[1], slice_num[8] block_num[4]!
+[      VI][2025-08-19 07:54:05 211] [vi_dev_set_chn_buf_size:550] Set Chn [0] buf size [3732480]
+[      VI][2025-08-19 07:54:05 211] [ak_vi_create_stitch_chn:3821] In stitch mode, set vi channel[0] buf size[3732480]
+[      VI][2025-08-19 07:54:05 259] [ak_vi_create_stitch_chn:3662] success register vi channel[25]
+[      VI][2025-08-19 07:54:05 259] [vi_dev_set_chn_stitch_mode:592] Set Chn [3] stitch mode [1], index[0]
+[      VI][2025-08-19 07:54:05 260] [vi_dev_set_chn_stitch_mode:592] Set Chn [1] stitch mode [1], index[1]
+[1;33m[      VI][2025-08-19 07:54:05 262] [vi_set_capture_on:1807] vi channel [0] is started!
+[m[1;33m[      VI][2025-08-19 07:54:05 263] [vi_set_capture_on:1807] vi channel [1] is started!
+[m[      VI][2025-08-19 07:54:05 264] [set_v4l2_qbuf:1624] i:0, userptr:0xb5fe4000, length:3735552
+[      VI][2025-08-19 07:54:05 565] [ak_vi_enable_chn:1986] set channel [0] capture on
+[      VI][2025-08-19 07:54:05 566] [set_v4l2_qbuf:1624] i:0, userptr:0xb5f3a000, length:696320
+[      VI][2025-08-19 07:54:05 566] [set_v4l2_qbuf:1624] i:1, userptr:0xb5e90000, length:696320
+[      VI][2025-08-19 07:54:05 566] [ak_vi_enable_chn:1986] set channel [1] capture on
+[35;1m[25-08-19 07:54:05][0m[anyka_vi_Activate:487]ak_vi_enable_chn 0
+
+[35;1m[25-08-19 07:54:05][0m[anyka_vi_Activate:488]ak_vi_enable_chn 1
+
+[1;33m[      VI][2025-08-19 07:54:05 567] [vi_set_capture_on:1807] vi channel [2] is started!
+[m[1;33m[      VI][2025-08-19 07:54:05 568] [vi_set_capture_on:1807] vi channel [3] is started!
+[m[1;33m[      VI][2025-08-19 07:54:05 569] [vi_set_capture_on:1807] vi channel [17] is started!
+[m[      VI][2025-08-19 07:54:05 570] [set_v4l2_qbuf:1624] i:0, userptr:0xb5b00000, length:3735552
+[      VI][2025-08-19 07:54:05 825] [ak_vi_enable_chn:1986] set channel [2] capture on
+[      VI][2025-08-19 07:54:05 826] [set_v4l2_qbuf:1624] i:0, userptr:0xb5a56000, length:696320
+[      VI][2025-08-19 07:54:05 826] [set_v4l2_qbuf:1624] i:1, userptr:0xb59ac000, length:696320
+[      VI][2025-08-19 07:54:05 826] [ak_vi_enable_chn:1986] set channel [3] capture on
+[35;1m[25-08-19 07:54:05][0m[anyka_vi_Activate:487]ak_vi_enable_chn 2
+
+[35;1m[25-08-19 07:54:05][0m[anyka_vi_Activate:488]ak_vi_enable_chn 3
+
+[      VI][2025-08-19 07:54:05 827] [ak_vi_enable_chn:1986] set channel [17] capture on
+########MRD Lib V1.0.09########
+[      VI][2025-08-19 07:54:05 829] vi_dev_get_sensor_crop 150, ret:0, w:1920, h:1080
+[      MD][2025-08-19 07:54:05 831] [md_thread:403] thread id : 540
+[1;33m[    VENC][2025-08-19 07:54:05 836] [ak_venc_open_ex:2701] open count = 0
+[m[1;33m[    VENC][2025-08-19 07:54:05 838] [ak_venc_open_ex:2865] Video encoder external dma pool size [716800]
+[m[1;33m[    VENC][2025-08-19 07:54:05 838] [ak_venc_open_ex:2882] Alloc external dma memory [716800] bytes vaddr 0xb5875000 .
+[m[1;33m[    VENC][2025-08-19 07:54:05 840] [ak_venc_open_ex:2908] Video encoder open success,ret[0]
+[m[1;33m[    VENC][2025-08-19 07:54:05 853] [ak_venc_open_ex:2701] open count = 1
+[m[1;33m[    VENC][2025-08-19 07:54:05 854] [ak_venc_open_ex:2865] Video encoder external dma pool size [172800]
+[m[1;33m[    VENC][2025-08-19 07:54:05 856] [ak_venc_open_ex:2882] Alloc external dma memory [172800] bytes vaddr 0xb584a000 .
+[m[1;33m[    VENC][2025-08-19 07:54:05 858] [ak_venc_open_ex:2908] Video encoder open success,ret[0]
+[mthread stack_size = 102400B, 100k
+APIS_THR_SetPriority -1249602352 90!
+[1;33m[    VENC][2025-08-19 07:54:05 885] [ak_venc_open_ex:2701] open count = 2
+[m[1;33m[    VENC][2025-08-19 07:54:05 887] [ak_venc_open_ex:2865] Video encoder external dma pool size [172800]
+[m[1;33m[    VENC][2025-08-19 07:54:05 887] [ak_venc_open_ex:2882] Alloc external dma memory [172800] bytes vaddr 0xb5806000 .
+[m[1;33m[    VENC][2025-08-19 07:54:05 889] [ak_venc_open_ex:2908] Video encoder open success,ret[0]
+[m[     SVP][2025-08-19 07:54:05 918] [cnn_cb_init_reg:118] mapping, start: 0x21300000, len: 0x00001000
+[1;33m[     DRV][2025-08-19 07:54:05 919] Found uio0 mapping for 0x21300000
+[m[     SVP][2025-08-19 07:54:05 919] [cnn_cb_init_reg:138] init cnn reg, va: 0xb6fd2000, pa: 0x21300000,             len: 0x00001000
+[1;33m[     SVP][2025-08-19 07:54:05 920] [ak_svp_init:410] /dev/npu device open fail
+[m[ AKV_CNN][2025-08-19 07:54:05 920] ########  libakv_cnn  ########
+########MRD Lib V1.0.09########
+[      VI][2025-08-19 07:54:06 107] vi_dev_get_sensor_crop 150, ret:0, w:1920, h:1080
+[      MD][2025-08-19 07:54:06 109] [ak_md_set_sensitivity:665] sensitivity:100 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+[      MD][2025-08-19 07:54:06 114] [ak_md_enable:1030] enable:1
+########OBJ_FILTER Lib V1.0.06########
+size of OBJECT_FILTER=32424
+[1;33m[      VI][2025-08-19 07:54:06 115] [ak_vi_set_box_color_table:3333] color_table_yuv[0] = 4283192575!
+[m[1;33m[      VI][2025-08-19 07:54:06 116] [ak_vi_set_box_color_table:3333] color_table_yuv[1] = 4287965973!
+[m[1;33m[      VI][2025-08-19 07:54:06 116] [ak_vi_set_box_color_table:3333] color_table_yuv[2] = 4280156011!
+[mthread stack_size = 102400B, 100k
+[      MD][2025-08-19 07:54:06 117] [md_thread:403] thread id : 543
+[35;1m[25-08-19 07:54:06][0m[AK_VENC_SetParam:578]TODO Not Set DigitalZoom in MD
+thread stack_size = 102400B, 100k
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2420][0m ch0_0.264 delta=12184(max=4000) type= <<KEY>>  @12
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2450][0m ch0_0.264 LossTime=1755561246262350 Counter=0(last=0) @12
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2420][0m ch0_1.264 delta=12184(max=4000) type= <<KEY>>  @12
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2450][0m ch0_1.264 LossTime=1755561246263782 Counter=0(last=0) @12
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_0.264 Update delta=62(max=4000) type=P @12
+[      MD][2025-08-19 07:54:06 326] [ak_md_set_sensitivity:665] sensitivity:80 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+[      MD][2025-08-19 07:54:06 333] [ak_md_enable:1030] enable:1
+thread stack_size = 102400B, 100k
+thread stack_size = 32768B, 32k
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_0.264 Update delta=71(max=4000) type=P @12
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_1.264 Update delta=145(max=4000) type=P @12
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_0.264 Update delta=76(max=4000) type=P @12
+[      AO][2025-08-19 07:54:06 474] [ak_ao_open:654] ao version: libplat_ao V1.13.01
+[     VQE][2025-08-19 07:54:06 621] [ak_vqe_inner_open:2554] ak_vqe_inner_open entry...ai_vqe = (nil), ao_vqe = 0x1d8ce3c
+[    ECHO][2025-08-19 07:54:06 629] ## --AudioFilter Version V1.16.06, Echo--
+[    ECHO][2025-08-19 07:54:06 630] ## jitterBuf: 0x1d81bc8
+[    ECHO][2025-08-19 07:54:06 638] ## _SD_Echo_Open far_path (0x1d8cfc0)
+[    ECHO][2025-08-19 07:54:06 653] ## Echo: load far_NR (disable)
+[    ECHO][2025-08-19 07:54:06 655] ## Echo: load far_Volume
+[    ECHO][2025-08-19 07:54:06 655] ## ASLC OPEN OK ena:1, lookAheadLen:48
+[1;33m[     VQE][2025-08-19 07:54:06 667] [ak_vqe_inner_open:2652] ak_vqe_inner_open exit...
+[m[      AO][2025-08-19 07:54:06 668] [play_pcm_thread:309] thread id: 549
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_0.264 Update delta=81(max=4000) type=P @12
+-----dac set source
+[1;33m[      AO][2025-08-19 07:54:06 712] [ak_ao_open:686] leaved...
+[m[      AO][2025-08-19 07:54:06 713] [ak_ao_set_gain:813] set gain 5
+[    ECHO][2025-08-19 07:54:06 714] ## Echo: set far_Volume param
+[      AO][2025-08-19 07:54:06 717] [ak_ao_set_aslc_attr:1249] leave...
+[      AI][2025-08-19 07:54:06 718] [ak_ai_open:886] ai version: libplat_ai V1.14.01
+[      AI][2025-08-19 07:54:06 754] [ak_ai_set_gain:1295] set gain 3
+adc get gain: 3
+set DEV volume 2
+[1;33m[      AI][2025-08-19 07:54:06 755] [ak_ai_set_eq_attr:1932] ak_ai_set_vqe_attr success
+[m[      AI][2025-08-19 07:54:06 755] [ak_ai_set_frame_length:1234] frame_length = 640
+[    AENC][2025-08-19 07:54:06 757] [ak_aenc_open:1132] aenc version: libmpi_aenc V1.2.05
+[ SD_AENC][2025-08-19 07:54:06 760] ## -- AudioCodec Version V1.22.00, type: 17, g711 enc --
+[ SD_AENC][2025-08-19 07:54:06 761] ## _SD_Encode_Open OK (0x1d99da0)
+[0;35m[      AI][2025-08-19 07:54:06 762] [ak_ai_set_frame_length:1218] set frame length is the same, length =640
+[mpthread_setschedparam 90!
+[35;1m[25-08-19 07:54:06][0m[audio_playFile:40]Failed to fopen[/usr/share/mp3/Mute.aac] err [No such file or directory]
+
+[0;35m[     VQE][2025-08-19 07:54:06 834] [ak_vqe_inner_get_adc:3610] user->echo_near_handle is NULL 
+[m[ SD_AENC][2025-08-19 07:54:06 834] ## ERROR: _SD_Echo_GetResult: (hEcho) is not true
+[0;35m[     VQE][2025-08-19 07:54:06 835] [ak_vqe_inner_get_adc:3620] vqe get result error 
+[m[1;31m[      AI][2025-08-19 07:54:06 835] [get_pcm_from_vqe:516] osal_vqe_get_adc failed
+[m[      AI][2025-08-19 07:54:06 836] [capture_pcm_thread:578] thread id: 554
+[     VQE][2025-08-19 07:54:06 839] [ak_vqe_inner_open:2554] ak_vqe_inner_open entry...ai_vqe = 0x1d91edc, ao_vqe = (nil)
+[    ECHO][2025-08-19 07:54:06 841] ## --AudioFilter Version V1.16.06, Echo--
+[    ECHO][2025-08-19 07:54:06 841] ## jitterBuf: 0x1d9a380
+[    ECHO][2025-08-19 07:54:06 842] ## _SD_Echo_Open near_path (0x1d9a2b0)
+[    ECHO][2025-08-19 07:54:06 848] ## Echo: load NR (enable)
+[    ECHO][2025-08-19 07:54:06 849] ## Echo: set AGC param (enable)
+[    ECHO][2025-08-19 07:54:06 849] ## Echo: load near_EQ
+[    ECHO][2025-08-19 07:54:06 850] ## Echo: load near_Volume
+[    ECHO][2025-08-19 07:54:06 850] ## ASLC OPEN OK ena:1, lookAheadLen:48
+[     VQE][2025-08-19 07:54:06 850] [set_ai_vqe:2369] aec need to open
+ [    ECHO][2025-08-19 07:54:06 869] ## Echo: load AEC (enable)
+osal_loopback_open success
+[     VQE][2025-08-19 07:54:06 872] [loopback_start:1655] aec enable, osal_loopback_open ok
+ [1;33m[     VQE][2025-08-19 07:54:06 873] [loopback_start:1664] create capture pcm thread OK
+[m[1;33m[     VQE][2025-08-19 07:54:06 888] [ak_vqe_inner_open:2652] ak_vqe_inner_open exit...
+[m[     VQE][2025-08-19 07:54:06 889] [ak_vqe_inner_set_ai_jitterbuf_upperBound:3958] osal_vqe_get_dac entry...
+[    ECHO][2025-08-19 07:54:06 889] ## Echo: set near_JitterBuf param
+[     VQE][2025-08-19 07:54:06 890] [ak_vqe_inner_set_ai_jitterbuf_upperBound:3979] exit...
+[     VQE][2025-08-19 07:54:06 891] [loopback_thread:1541] thread id: 555
+[    ECHO][2025-08-19 07:54:06 893] ## sync at ts 12785
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_0.264 Update delta=217(max=4000) type=P @13
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_1.264 Update delta=217(max=4000) type=P @13
+[    ECHO][2025-08-19 07:54:07 256] ## sync at ts 13009
+[      VI][2025-08-19 07:54:07 307] vi_dev_get_sensor_crop 150, ret:0, w:1920, h:1080
+[1;33m[    VPSS][2025-08-19 07:54:07 308] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:07 308] [set_fps:244] set dev:0 fps:14 ok
+[m[1;33m[    VPSS][2025-08-19 07:54:07 309] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:07 310] [set_fps:244] set dev:1 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:07 311] [isp_set_force_anti_flicker_flag:3218] force_flag=0
+[1;33m[    VPSS][2025-08-19 07:54:07 311] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:07 312] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:07 313] [isp_set_force_anti_flicker_flag:3218] force_flag=0
+[1;33m[    VPSS][2025-08-19 07:54:07 315] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:07 316] [set_fps:244] set dev:1 fps:14 ok
+[m[35;1m[25-08-19 07:54:07][0m[Softircut_Init:196]EN_APIS_VISP_IMAGE_SENSORTYPE Error!
+[1;33m[     OSD][2025-08-19 07:54:07 356] [request_osd_mem:464] size:20736
+[m[     OSD][2025-08-19 07:54:07 357] [request_osd_mem:487] INFO:video_ch2, osd_rect:0, p_osd_buffer:0xb561a000, p_osd_phy:0x82d44000 size: 20736, width:864, height:48
+[1;33m[     OSD][2025-08-19 07:54:07 358] [request_osd_dma_mem:373] size:41472
+[m[     OSD][2025-08-19 07:54:07 359] [request_osd_dma_mem:431] INFO:video_ch2, osd_rect:0, dma_vaddr: 0xb560f000, phyaddr: 0x82d4a000 size: 41472 w: 864 h: 48
+[1;33m[     OSD][2025-08-19 07:54:07 363] [request_osd_mem:464] size:20736
+[m[     OSD][2025-08-19 07:54:07 364] [request_osd_mem:487] INFO:video_ch2, osd_rect:2, p_osd_buffer:0xb5609000, p_osd_phy:0x82d55000 size: 20736, width:864, height:48
+[1;33m[     OSD][2025-08-19 07:54:07 364] [request_osd_dma_mem:373] size:41472
+[m[     OSD][2025-08-19 07:54:07 365] [request_osd_dma_mem:431] INFO:video_ch2, osd_rect:2, dma_vaddr: 0xb55fe000, phyaddr: 0x82d5b000 size: 41472 w: 864 h: 48
+[1;33m[     OSD][2025-08-19 07:54:07 384] [request_osd_mem:464] size:2304
+[m[     OSD][2025-08-19 07:54:07 385] [request_osd_mem:487] INFO:video_ch3, osd_rect:0, p_osd_buffer:0xb6fc9000, p_osd_phy:0x82d66000 size: 2304, width:288, height:16
+[1;33m[     OSD][2025-08-19 07:54:07 385] [request_osd_dma_mem:373] size:4608
+[m[     OSD][2025-08-19 07:54:07 386] [request_osd_dma_mem:431] INFO:video_ch3, osd_rect:0, dma_vaddr: 0xb6fc7000, phyaddr: 0x82d67000 size: 4608 w: 288 h: 16
+[1;33m[     OSD][2025-08-19 07:54:07 399] [request_osd_mem:464] size:2304
+[m[     OSD][2025-08-19 07:54:07 400] [request_osd_mem:487] INFO:video_ch3, osd_rect:2, p_osd_buffer:0xb55fd000, p_osd_phy:0x82d69000 size: 2304, width:288, height:16
+[1;33m[     OSD][2025-08-19 07:54:07 400] [request_osd_dma_mem:373] size:4608
+[m[     OSD][2025-08-19 07:54:07 401] [request_osd_dma_mem:431] INFO:video_ch3, osd_rect:2, dma_vaddr: 0xb55fb000, phyaddr: 0x82d6a000 size: 4608 w: 288 h: 16
+thread stack_size = 102400B, 100k
+[1;33m[     OSD][2025-08-19 07:54:07 418] [request_osd_mem:464] size:20736
+[m[     OSD][2025-08-19 07:54:07 419] [request_osd_mem:487] INFO:video_ch2, osd_rect:1, p_osd_buffer:0xb55dc000, p_osd_phy:0x82d6c000 size: 20736, width:864, height:48
+[1;33m[     OSD][2025-08-19 07:54:07 419] [request_osd_dma_mem:373] size:41472
+[m[     OSD][2025-08-19 07:54:07 420] [request_osd_dma_mem:431] INFO:video_ch2, osd_rect:1, dma_vaddr: 0xb55d1000, phyaddr: 0x82d72000 size: 41472 w: 864 h: 48
+[1;33m[APIS_MediaBuffer/src//media_buf.c: 673][0m id=0, i-frame interval=27
+[     OSD][2025-08-19 07:54:07 461] [get_font_data_from_file:106] fp:0x1dae9e8 byte:32
+[1;33m[     OSD][2025-08-19 07:54:07 468] [request_osd_mem:464] size:2304
+[m[     OSD][2025-08-19 07:54:07 480] [request_osd_mem:487] INFO:video_ch3, osd_rect:1, p_osd_buffer:0xb55d0000, p_osd_phy:0x82d7d000 size: 2304, width:288, height:16
+[1;33m[     OSD][2025-08-19 07:54:07 480] [request_osd_dma_mem:373] size:4608
+[m[     OSD][2025-08-19 07:54:07 481] [request_osd_dma_mem:431] INFO:video_ch3, osd_rect:1, dma_vaddr: 0xb55ce000, phyaddr: 0x82d7e000 size: 4608 w: 288 h: 16
+[1;33m[     OSD][2025-08-19 07:54:07 557] [request_osd_mem:464] size:10368
+[m[     OSD][2025-08-19 07:54:07 558] [request_osd_mem:487] INFO:video_ch2, osd_rect:1, p_osd_buffer:0xb55df000, p_osd_phy:0x82d6c000 size: 10368, width:432, height:48
+[1;33m[     OSD][2025-08-19 07:54:07 559] [request_osd_dma_mem:373] size:20736
+[m[     OSD][2025-08-19 07:54:07 563] [request_osd_dma_mem:431] INFO:video_ch2, osd_rect:1, dma_vaddr: 0xb55d9000, phyaddr: 0x82d6f000 size: 20736 w: 432 h: 48
+[     OSD][2025-08-19 07:54:07 692] [ak_osd_LoadBitmap:602] success init
+[1;33m[     OSD][2025-08-19 07:54:07 729] [request_osd_mem:464] size:1152
+[m[     OSD][2025-08-19 07:54:07 742] [request_osd_mem:487] INFO:video_ch3, osd_rect:1, p_osd_buffer:0xb55d8000, p_osd_phy:0x82d75000 size: 1152, width:144, height:16
+[1;33m[     OSD][2025-08-19 07:54:07 742] [request_osd_dma_mem:373] size:2304
+[m[     OSD][2025-08-19 07:54:07 743] [request_osd_dma_mem:431] INFO:video_ch3, osd_rect:1, dma_vaddr: 0xb55d7000, phyaddr: 0x82d76000 size: 2304 w: 144 h: 16
+thread stack_size = 102400B, 100k
+[    VPSS][2025-08-19 07:54:07 778] [isp_switch:282] switching isp mode -> day
+thread stack_size = 102400B, 100k
+thread stack_size = 102400B, 100k
+thread stack_size = 102400B, 100k
+[1;33m[    VPSS][2025-08-19 07:54:07 804] [isp.conf]version: 1.002, sensor id: 0x23360f, style id: 0
+[m[    VPSS][2025-08-19 07:54:07 804] isp subfile 0, modify time: 2024-1-31 10:44:43
+[    VPSS][2025-08-19 07:54:07 804] ÐÞ¸ÄÊÖ¶¯°×Æ½ºâ£¬ÐÞ¸´Æô¶¯»òÇÐ»»Ä£Ê½
+Í¼ÏñÆ«ÂÌÎÊÌâ
+20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:07 805] isp subfile 1, modify time: 2024-1-31 10:01:04
+[    VPSS][2025-08-19 07:54:07 805] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:07 805] isp subfile 2, modify time: 2024-1-31 10:01:36
+[    VPSS][2025-08-19 07:54:07 805] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+
+[    VPSS][2025-08-19 07:54:07 809] [check_file:445] check isp cfg: /usr/local/0x23360f.conf OK
+[    VPSS][2025-08-19 07:54:07 815] [isp_set_attr:1999] isp_set_attr module_id:0 
+[    VPSS][2025-08-19 07:54:07 820] [isp_set_attr:1999] isp_set_attr module_id:1 
+[    VPSS][2025-08-19 07:54:07 822] [isp_set_attr:1999] isp_set_attr module_id:2 
+[    VPSS][2025-08-19 07:54:07 823] [isp_set_attr:1999] isp_set_attr module_id:3 
+thread stack_size = 102400B, 100k
+[    VPSS][2025-08-19 07:54:07 828] [isp_set_attr:1999] isp_set_attr module_id:4 
+[    VPSS][2025-08-19 07:54:07 829] [isp_set_attr:1999] isp_set_attr module_id:5 
+[    VPSS][2025-08-19 07:54:07 829] [isp_set_attr:1999] isp_set_attr module_id:6 
+[    VPSS][2025-08-19 07:54:07 830] [isp_set_attr:1999] isp_set_attr module_id:7 
+[    VPSS][2025-08-19 07:54:07 830] [isp_set_attr:1999] isp_set_attr module_id:8 
+[    VPSS][2025-08-19 07:54:07 831] [isp_set_attr:1999] isp_set_attr module_id:9 
+[    VPSS][2025-08-19 07:54:07 832] [isp_set_attr:1999] isp_set_attr module_id:10 
+[    VPSS][2025-08-19 07:54:07 833] [isp_set_attr:1999] isp_set_attr module_id:11 
+[    VPSS][2025-08-19 07:54:07 837] [isp_set_attr:1999] isp_set_attr module_id:12 
+[    VPSS][2025-08-19 07:54:07 837] [isp_set_attr:1999] isp_set_attr module_id:13 
+[    VPSS][2025-08-19 07:54:07 838] [isp_set_attr:1999] isp_set_attr module_id:14 
+dev_path= /dev/mmcblk0p1 
+fs_path= /mnt/tf 
+dev_node= /dev/mmcblk0 
+[    VPSS][2025-08-19 07:54:07 840] [isp_set_attr:1999] isp_set_attr module_id:16 
+[    VPSS][2025-08-19 07:54:07 842] [isp_set_attr:1999] isp_set_attr module_id:17 
+[    VPSS][2025-08-19 07:54:07 843] [isp_set_attr:1999] isp_set_attr module_id:18 
+[31m[25-08-19 07:54:07][0m[       1.496s] JFSDK-FSYS: [_load_system_table:1625] Name(JFSFAT) szPath(/dev/mmcblk0)
+[31m[25-08-19 07:54:07][0m[       1.497s] JFSDK-FSYS: [_load_system_table:1706] JFSDK Version(0x1000001)
+[    VPSS][2025-08-19 07:54:07 849] [isp_set_attr:1999] isp_set_attr module_id:19 
+[    VPSS][2025-08-19 07:54:07 855] [isp_set_attr:1999] isp_set_attr module_id:20 
+[    VPSS][2025-08-19 07:54:07 864] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:07 864] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:07 865] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:07 865] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:07 866] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:07 867] [isp_set_attr:1999] isp_set_attr module_id:22 
+[    VPSS][2025-08-19 07:54:07 881] [isp_set_attr:1999] isp_set_attr module_id:23 
+[    VPSS][2025-08-19 07:54:07 884] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c: 730][0m Media Pool(ch0_0.264) user changed(+1/8)
+[NK_XAPI_AddReader] nViChn=0 nStreamChn:0,stream_str=ch0_0.264 
+===2 video_pid = 258, audio_pid=257, privaudio=259
+[    VPSS][2025-08-19 07:54:07 902] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:07 903] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:07 903] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:07 904] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:07 907] [isp_switch:282] switching isp mode -> day
+thread stack_size = 102400B, 100k
+AK_PTZ_SetSpeed:506 set speed 1
+thread stack_size = 102400B, 100k
+[1;33m[    VPSS][2025-08-19 07:54:07 937] [isp.conf]version: 1.002, sensor id: 0x23360f, style id: 0
+[m[    VPSS][2025-08-19 07:54:07 960] isp subfile 0, modify time: 2024-1-31 10:45:49
+[    VPSS][2025-08-19 07:54:07 962] 20240131ÐÞ¸ÄÊÖ¶¯°×Æ½ºâ£¬ÐÞ¸´Æô¶¯ÇÐ»»
+Í¼ÏñÆ«ÂÌÎÊÌâ
+20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:07 962] isp subfile 1, modify time: 2024-1-31 10:02:47
+[    VPSS][2025-08-19 07:54:07 962] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:07 962] isp subfile 2, modify time: 2024-1-31 10:02:39
+[    VPSS][2025-08-19 07:54:07 962] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+
+[    VPSS][2025-08-19 07:54:07 963] [check_file:445] check isp cfg: /usr/local/0x23360f_1.conf OK
+[    VPSS][2025-08-19 07:54:07 975] [isp_set_attr:1999] isp_set_attr module_id:0 
+[    VPSS][2025-08-19 07:54:07 976] [isp_set_attr:1999] isp_set_attr module_id:1 
+[    VPSS][2025-08-19 07:54:07 977] [isp_set_attr:1999] isp_set_attr module_id:2 
+[    VPSS][2025-08-19 07:54:07 978] [isp_set_attr:1999] isp_set_attr module_id:3 
+[    VPSS][2025-08-19 07:54:07 979] [isp_set_attr:1999] isp_set_attr module_id:4 
+[    VPSS][2025-08-19 07:54:07 980] [isp_set_attr:1999] isp_set_attr module_id:5 
+[    VPSS][2025-08-19 07:54:08 980] [isp_set_attr:1999] isp_set_attr module_id:6 
+[    VPSS][2025-08-19 07:54:08 025] [isp_set_attr:1999] isp_set_attr module_id:7 
+[    VPSS][2025-08-19 07:54:08 026] [isp_set_attr:1999] isp_set_attr module_id:8 
+[    VPSS][2025-08-19 07:54:08 027] [isp_set_attr:1999] isp_set_attr module_id:9 
+[    VPSS][2025-08-19 07:54:08 029] [isp_set_attr:1999] isp_set_attr module_id:10 
+[    VPSS][2025-08-19 07:54:08 030] [isp_set_attr:1999] isp_set_attr module_id:11 
+thread stack_size = 102400B, 100k
+[    VPSS][2025-08-19 07:54:08 084] [isp_set_attr:1999] isp_set_attr module_id:12 
+[    VPSS][2025-08-19 07:54:08 085] [isp_set_attr:1999] isp_set_attr module_id:13 
+[    VPSS][2025-08-19 07:54:08 085] [isp_set_attr:1999] isp_set_attr module_id:14 
+[    VPSS][2025-08-19 07:54:08 086] [isp_set_attr:1999] isp_set_attr module_id:16 
+[    VPSS][2025-08-19 07:54:08 087] [isp_set_attr:1999] isp_set_attr module_id:17 
+[    VPSS][2025-08-19 07:54:08 099] [isp_set_attr:1999] isp_set_attr module_id:18 
+[    VPSS][2025-08-19 07:54:08 100] [isp_set_attr:1999] isp_set_attr module_id:19 
+[    VPSS][2025-08-19 07:54:08 101] [isp_set_attr:1999] isp_set_attr module_id:20 
+[    VPSS][2025-08-19 07:54:08 102] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:08 103] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:08 103] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:08 103] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:08 103] [set_fps:244] set dev:1 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:08 104] [isp_set_attr:1999] isp_set_attr module_id:22 
+[    VPSS][2025-08-19 07:54:08 105] [isp_set_attr:1999] isp_set_attr module_id:23 
+[    VPSS][2025-08-19 07:54:08 116] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:08 117] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:08 117] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:08 118] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:08 119] [set_fps:244] set dev:1 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:08 122] [isp_set_force_anti_flicker_flag:3218] force_flag=0
+[1;33m[    VPSS][2025-08-19 07:54:08 127] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:08 128] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:08 133] [isp_set_force_anti_flicker_flag:3218] force_flag=0
+[1;33m[    VPSS][2025-08-19 07:54:08 145] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:08 151] [set_fps:244] set dev:1 fps:14 ok
+[m[31m[25-08-19 07:54:08][0m[       1.816s] [NK_USER_Init:148]NK_USER_Init----------ok!
+
+[0;37mTIMETICK->[APIS_Timer/src//Timetick.c]:184 task list is empty[m
+thread stack_size = 102400B, 100k
+
+
+    +-----------------------------------------------------------------+
+    |                   SDK Version  |  2.4.3.51                      |
+    |                      SDK Date  |  2024.7.3                      |
+    +-----------------------------------------------------------------+
+    |                       Reference Libraries                       |
+    +-----------------------------------------------------------------+
+    |               NkUtils Version  |  54                            |
+    |              NkCipher Version  |  5                             |
+    |            NkEmbedded Version  |  69                            |
+    +-----------------------------------------------------------------+
+
+[35;1m[25-08-19 07:54:08][0m[       2.173s] N1: Discoverer Join Multcast Failed.
+thread stack_size = 102400B, 100k
+[35;1m[25-08-19 07:54:08][0m[       2.301s] [SERVER_Init:61][dlopen]/usr/lib/libXSDK_Hls.so Dynamic lib error! File not found
+
+[net_setipaddr] pstrIpaddr=192.168.1.88 
+[net_setmask] pstrIpmask=255.255.0.0 
+[32m[25-08-19 07:54:08][0m[       2.640s] [NET_SetEthernet:176]mac=9C:A3:A9:BF:A8:14 
+
+[32m[25-08-19 07:54:08][0m[       2.640s] [NET_SetEthernet:177]strIpaddr=192.168.1.88 
+
+[32m[25-08-19 07:54:08][0m[       2.640s] [NET_SetEthernet:178]strgw=255.255.0.0 
+
+[32m[25-08-19 07:54:08][0m[       2.641s] [NET_SetEthernet:179]strmask=192.168.1.1 
+
+thread stack_size = 102400B, 100k
+[37m[25-08-19 07:54:09][0m[       2.655s] [_network_device_init:3182]Waiting 0 Checking Usb Device...
+APIS_THR_SetPriority -1226984240 90!
+thread stack_size = 102400B, 100k
+thread stack_size = 102400B, 100k
+thread stack_size = 102400B, 100k
+thread stack_size = 102400B, 100k
+thread stack_size = 1048576B, 1024k
+[32m[25-08-19 07:54:09][0m[       2.813s] [main:139]anyka ipc service ------------------------OK!
+
+[35;1m[25-08-19 07:54:09][0m[       2.814s] [main:140]Firmware Version is V4.9.82 AND buildtime is 2024-10-18-17:48:30
+
+[32m[25-08-19 07:54:09][0m[       3.064s] [IsWifi:3108]Find Wifi Device:8d80
+[32m[25-08-19 07:54:09][0m[       3.072s] [AUTH_Check_Uboot_Custom:133]m_spMatchCode:0x26997390
+[32m[25-08-19 07:54:09][0m[       3.073s] [NET_WIFI_SetParam:3607]EN_WIRELESS_TYPE_MODE_SWITCH
+[32m[25-08-19 07:54:09][0m[       3.074s] [WIFI_MODE_Check_CtlStart:2203]Backup Essid:NVRa486db457113 Psk:44799179.
+[32m[25-08-19 07:54:09][0m[       3.074s] [NET_WIFI_SetParam:3629]EN_WIRELESS_TYPE_WIRELESS_MATCH
+[32m[25-08-19 07:54:09][0m[       3.074s] [_network_device_init:3196]EN_SYS_STATUS_NETWORK_TYPE_WIFI
+[32m [INFO] [_match_proc:222]:nPairType:2.
+ [0m[32m [WIFISELF_System]:insmod /usr/modules/aic_load_fw.ko aic_fw_path=usr/bin/aic8800d80 
+ [0m[32m[25-08-19 07:54:10][0m[       3.736s] [_WATCHER_Ctl_GateWay:1006]DEL eth0 route ipGatway:192.168.1.1 ,netString 192.168.1.1
+[37m[25-08-19 07:54:10][0m[       4.144s] JFSDK-REC-FILE: [_AddRecIndex: 802] 0]Id 1538747696 Chn0 T 1
+[37m[25-08-19 07:54:10][0m[       4.144s] JFSDK-REC-FILE: [_AddRecIndex: 804] 0]ReP(0:2172152)ReT(1755561271:1755561279 Tm:8)
+[37m[25-08-19 07:54:10][0m[       4.144s] JFSDK-REC-FILE: [_AddRecIndex: 802] 1]Id 1538747697 Chn0 T 2
+[37m[25-08-19 07:54:10][0m[       4.144s] JFSDK-REC-FILE: [_AddRecIndex: 804] 1]ReP(2172152:18391476)ReT(1755561279:1755561355 Tm:76)
+[37m[25-08-19 07:54:10][0m[       4.144s] JFSDK-REC-FILE: [_AddRecIndex: 802] 2]Id 1538747698 Chn0 T 1
+[37m[25-08-19 07:54:10][0m[       4.144s] JFSDK-REC-FILE: [_AddRecIndex: 804] 2]ReP(18391476:25264756)ReT(1755561355:1755561387 Tm:32)
+[37m[25-08-19 07:54:10][0m[       4.145s] JFSDK-REC-FILE: [_AddRecIndex: 802] 3]Id 1538747699 Chn0 T 1
+[37m[25-08-19 07:54:10][0m[       4.145s] JFSDK-REC-FILE: [_AddRecIndex: 804] 3]ReP(25264756:32555584)ReT(1755561247:1755561287 Tm:40)
+[37m[25-08-19 07:54:10][0m[       4.145s] JFSDK-REC-FILE: [_AddRecIndex: 802] 4]Id 1538747700 Chn0 T 2
+[37m[25-08-19 07:54:10][0m[       4.145s] JFSDK-REC-FILE: [_AddRecIndex: 804] 4]ReP(32555584:42415996)ReT(1755561287:1755561333 Tm:46)
+[37m[25-08-19 07:54:10][0m[       4.146s] JFSDK-REC-FILE: [_AddRecIndex: 802] 5]Id 1538747701 Chn0 T 1
+[37m[25-08-19 07:54:10][0m[       4.146s] JFSDK-REC-FILE: [_AddRecIndex: 804] 5]ReP(42415996:60092132)ReT(1755561334:1755561415 Tm:81)
+[37m[25-08-19 07:54:10][0m[       4.146s] JFSDK-REC-FILE: [_AddRecIndex: 802] 6]Id 1538747702 Chn0 T 1
+[37m[25-08-19 07:54:10][0m[       4.146s] JFSDK-REC-FILE: [_AddRecIndex: 804] 6]ReP(60092132:66445592)ReT(1755561247:1755561284 Tm:37)
+[32m[25-08-19 07:54:10][0m[       4.146s] JFSDK-REC-FILE: [_AddRecIndex: 833] nRecId change (nRecId:1538747702 pFrameInfo:1538747703).
+[32m[25-08-19 07:54:10][0m[       4.146s] JFSDK-REC-FILE: [_UpdateRecIndex: 684] file (nStartPos:66445592 nFileIdx:0).
+[1;33m[APIS_MediaBuffer/src//media_buf.c: 673][0m id=1, i-frame interval=149
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_0.264 Update delta=530(max=4000) type=P @17
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_1.264 Update delta=530(max=4000) type=P @17
+[32m [WIFISELF_System]:insmod /usr/modules/aic8800_fdrv.ko module_comb_d80_dc=1 nvr_ipc_config=1 
+ [0m[    ECHO][2025-08-19 07:54:11 409] ## sync at ts 17329
+[32m[25-08-19 07:54:12][0m[       6.241s] N1: Discoverer Assign to Ether WiFi IP 172.20.14.231.
+[33m[25-08-19 07:54:12][0m[       6.241s] "SockUDP_addMulticast:1269" Expect Cond ( "0 == setsockopt(Privated->sock, IPPROTO_IP, 32, &AddrIn, si
+[35;1m[25-08-19 07:54:12][0m[       6.241s] N1: Discoverer Join Multcast Failed.
+[37m[25-08-19 07:54:12][0m[       6.261s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[32m[25-08-19 07:54:12][0m[       6.326s] JFSDK-REC-FILE: [_RebuileReadFrame: 947] Rebuild frame to the next file.
+[32m[25-08-19 07:54:12][0m[       6.328s] JFSDK-REC-FILE: [NK_JFSDK_REC_WRITER_HandleEnqueue:2611] writer handle(0x1daea38) enqueue.
+[32m[25-08-19 07:54:12][0m[       6.328s] JFSDK-REC: [chn_open_recfile: 186] chn(0x1daf888 @0) recfile(0x49bf68,0x1daea38 @0).
+[32m[25-08-19 07:54:12][0m[       6.328s] JFSDK-REC: [NK_JFSDK_REC_HandleEnqueue: 866] rec handle(0x1daeae0) enqueue.
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c: 730][0m Media Pool(ch0_0.264) user changed(+2/8)
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:1292][0m ch0_0.264] R[1] overwrite found RP@205532 pts1=1755561252631477 TimeDeta(0,5182)MS KeyList(205532,0) MinorKey:4294967295, type:1!
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:1292][0m ch0_0.264] R[0] overwrite found RP@205532 pts1=1755561252631477 TimeDeta(0,5182)MS KeyList(205532,0) MinorKey:4294967295, type:1!
+[37m[25-08-19 07:54:12][0m[       6.329s] [RECORD_GetMedia:635]isKey 1 encTs 13289000 size 283624
+[32m[25-08-19 07:54:12][0m[       6.329s] JFSDK-REC: [NK_JFSDK_REC_Start: 428] handle(0x1daeae0 @0) recid(1538747704) type(1) started.
+[37m[25-08-19 07:54:12][0m[       6.330s] JFSDK-REC-FILE: [_AddRecIndex: 802] 0]Id 1538747696 Chn0 T 1
+[37m[25-08-19 07:54:12][0m[       6.330s] JFSDK-REC-FILE: [_AddRecIndex: 804] 0]ReP(0:2172152)ReT(1755561271:1755561279 Tm:8)
+[37m[25-08-19 07:54:12][0m[       6.330s] JFSDK-REC-FILE: [_AddRecIndex: 802] 1]Id 1538747697 Chn0 T 2
+[37m[25-08-19 07:54:12][0m[       6.330s] JFSDK-REC-FILE: [_AddRecIndex: 804] 1]ReP(2172152:18391476)ReT(1755561279:1755561355 Tm:76)
+[37m[25-08-19 07:54:12][0m[       6.330s] JFSDK-REC-FILE: [_AddRecIndex: 802] 2]Id 1538747698 Chn0 T 1
+[37m[25-08-19 07:54:12][0m[       6.330s] JFSDK-REC-FILE: [_AddRecIndex: 804] 2]ReP(18391476:25264756)ReT(1755561355:1755561387 Tm:32)
+[37m[25-08-19 07:54:12][0m[       6.330s] JFSDK-REC-FILE: [_AddRecIndex: 802] 3]Id 1538747699 Chn0 T 1
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 804] 3]ReP(25264756:32555584)ReT(1755561247:1755561287 Tm:40)
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 802] 4]Id 1538747700 Chn0 T 2
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 804] 4]ReP(32555584:42415996)ReT(1755561287:1755561333 Tm:46)
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 802] 5]Id 1538747701 Chn0 T 1
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 804] 5]ReP(42415996:60092132)ReT(1755561334:1755561415 Tm:81)
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 802] 6]Id 1538747702 Chn0 T 1
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 804] 6]ReP(60092132:66445592)ReT(1755561247:1755561284 Tm:37)
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 802] 7]Id 1538747703 Chn0 T 2
+[37m[25-08-19 07:54:12][0m[       6.331s] JFSDK-REC-FILE: [_AddRecIndex: 804] 7]ReP(66445592:74775120)ReT(1755561284:1755561323 Tm:39)
+[32m[25-08-19 07:54:12][0m[       6.332s] JFSDK-REC-FILE: [_AddRecIndex: 833] nRecId change (nRecId:1538747703 pFrameInfo:1538747704).
+[32m[25-08-19 07:54:12][0m[       6.332s] JFSDK-REC-FILE: [_UpdateRecIndex: 684] file (nStartPos:74775120 nFileIdx:0).
+[32m[25-08-19 07:54:13][0m[       6.958s] [NETWORK_WIFI_Module_DevUP:2895]Now wlan0 up success
+
+[32m [INFO] [NETWORK_WIFI_Module_Init:3451]:Find Wifi Device:.
+ [0m[31m [INFO] [NETWORK_WIFI_Module_Init:3468]: WifiChip: AIC8800D40L_USB_ **** WifiVersion: AIC8800D40L_USB_20240627_V1.12.0.76
+ [0m[32m [INFO] [NETWORK_WIFI_Module_Init:3471]:WIFI_Adapter_Monitor_Thread_Start.
+ [0mthread stack_size = 102400B, 100k
+[32m[25-08-19 07:54:13][0m[       6.969s] [NETWORK_WIFI_Adapter_Monitor_Thread_Start:2558]NK_WIFI_AIC8800D80_Init Success!
+
+[32m [WIFISELF_System]:insmod /usr/modules/llc.ko;insmod /usr/modules/stp.ko;insmod /usr/modules/bridge.ko 
+ [0m[32m [WIFISELF_System]:echo 2 > /proc/sys/net/ipv4/conf/all/arp_announce;echo 1 > /proc/sys/net/ipv4/conf/all/arp_ignore 
+ [0m[32m [WIFISELF_System]:echo 1 > /proc/sys/net/ipv4/conf/eth0/arp_ignore;echo 1 > /proc/sys/net/ipv4/conf/wlan0/arp_ignore;echo 1 > /proc/sys/net/ipv4/conf/wlan1/arp_ignore 
+ [0m[32m[25-08-19 07:54:13][0m[       7.539s] [_setup_proc:1755]AUTOLINK:Start Sta.
+[32m[25-08-19 07:54:13][0m[       7.540s] [WIFI_SetStaMode:448]Mode:1
+[32m[25-08-19 07:54:13][0m[       7.540s] [WIFI_SetStaMode:449]Sta Essid:NVRa486db457113 passphrase:44799179
+
+[32m[25-08-19 07:54:13][0m[       7.540s] [WIFI_SetStaMode:450]IpAddr:172.20.14.231 Mask:255.255.255.0 Gateway:172.20.14.1 Dhcp:0
+
+[32m[25-08-19 07:54:13][0m[       7.540s] [WIFI_SetStaMode:490]Set Root:NVRa486db457113 44799179
+[32m[25-08-19 07:54:13][0m[       7.560s] [NETWORK_WIFI_Module_DevUP:2895]Now wlan0 up success
+
+[32m [STA_System]:ifconfig wlan0 172.20.14.231 netmask 255.255.255.0 up
+ [0m[32m [STA_System]:wpa_supplicant -Dnl80211 -iwlan0 -C/tmp/wpa_supplicant -c/tmp/wpa_supplicant.conf -SNVRa486db457113_231 -B &
+ [0m[31m[25-08-19 07:54:13][0m[       7.600s] [NK_CONFIG_SetParam:1974]set cmd[10547209] OK
+
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c: 730][0m Media Pool(ch0_0.264) user changed(+3/8)
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:1292][0m ch0_0.264] R[2] overwrite found RP@205532 pts1=1755561254171839 TimeDeta(0,6722)MS KeyList(205532,0) MinorKey:4294967295, type:1!
+[32m[25-08-19 07:54:14][0m[       7.824s] [AK_VISP_SetParam:882]ak visp set emType=0x30b 
+[    VPSS][2025-08-19 07:54:14 175] [isp_switch:282] switching isp mode -> day
+[1;33m[    VPSS][2025-08-19 07:54:14 180] [isp.conf]version: 1.002, sensor id: 0x23360f, style id: 0
+[m[    VPSS][2025-08-19 07:54:14 181] isp subfile 0, modify time: 2024-1-31 10:44:43
+[    VPSS][2025-08-19 07:54:14 181] ÐÞ¸ÄÊÖ¶¯°×Æ½ºâ£¬ÐÞ¸´Æô¶¯»òÇÐ»»Ä£Ê½
+Í¼ÏñÆ«ÂÌÎÊÌâ
+20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:14 181] isp subfile 1, modify time: 2024-1-31 10:01:04
+[    VPSS][2025-08-19 07:54:14 182] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:14 182] isp subfile 2, modify time: 2024-1-31 10:01:36
+[    VPSS][2025-08-19 07:54:14 182] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+
+[    VPSS][2025-08-19 07:54:14 182] [check_file:445] check isp cfg: /usr/local/0x23360f.conf OK
+[    VPSS][2025-08-19 07:54:14 186] [isp_set_attr:1999] isp_set_attr module_id:0 
+[    VPSS][2025-08-19 07:54:14 187] [isp_set_attr:1999] isp_set_attr module_id:1 
+[    VPSS][2025-08-19 07:54:14 187] [isp_set_attr:1999] isp_set_attr module_id:2 
+[    VPSS][2025-08-19 07:54:14 188] [isp_set_attr:1999] isp_set_attr module_id:3 
+[    VPSS][2025-08-19 07:54:14 197] [isp_set_attr:1999] isp_set_attr module_id:4 
+[    VPSS][2025-08-19 07:54:14 198] [isp_set_attr:1999] isp_set_attr module_id:5 
+[    VPSS][2025-08-19 07:54:14 198] [isp_set_attr:1999] isp_set_attr module_id:6 
+[    VPSS][2025-08-19 07:54:14 199] [isp_set_attr:1999] isp_set_attr module_id:7 
+[    VPSS][2025-08-19 07:54:14 199] [isp_set_attr:1999] isp_set_attr module_id:8 
+[    VPSS][2025-08-19 07:54:14 200] [isp_set_attr:1999] isp_set_attr module_id:9 
+[    VPSS][2025-08-19 07:54:14 200] [isp_set_attr:1999] isp_set_attr module_id:10 
+[    VPSS][2025-08-19 07:54:14 205] [isp_set_attr:1999] isp_set_attr module_id:11 
+[    VPSS][2025-08-19 07:54:14 207] [isp_set_attr:1999] isp_set_attr module_id:12 
+[    VPSS][2025-08-19 07:54:14 207] [isp_set_attr:1999] isp_set_attr module_id:13 
+[    VPSS][2025-08-19 07:54:14 208] [isp_set_attr:1999] isp_set_attr module_id:14 
+[    VPSS][2025-08-19 07:54:14 208] [isp_set_attr:1999] isp_set_attr module_id:16 
+[    VPSS][2025-08-19 07:54:14 209] [isp_set_attr:1999] isp_set_attr module_id:17 
+[    VPSS][2025-08-19 07:54:14 209] [isp_set_attr:1999] isp_set_attr module_id:18 
+[    VPSS][2025-08-19 07:54:14 210] [isp_set_attr:1999] isp_set_attr module_id:19 
+[    VPSS][2025-08-19 07:54:14 210] [isp_set_attr:1999] isp_set_attr module_id:20 
+[    VPSS][2025-08-19 07:54:14 211] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:14 216] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:14 216] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:14 216] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 216] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:14 217] [isp_set_attr:1999] isp_set_attr module_id:22 
+[    VPSS][2025-08-19 07:54:14 218] [isp_set_attr:1999] isp_set_attr module_id:23 
+[    VPSS][2025-08-19 07:54:14 220] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:14 224] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:14 225] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:14 228] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 228] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:14 230] [isp_switch:282] switching isp mode -> day
+[1;33m[    VPSS][2025-08-19 07:54:14 238] [isp.conf]version: 1.002, sensor id: 0x23360f, style id: 0
+[m[    VPSS][2025-08-19 07:54:14 239] isp subfile 0, modify time: 2024-1-31 10:45:49
+[    VPSS][2025-08-19 07:54:14 239] 20240131ÐÞ¸ÄÊÖ¶¯°×Æ½ºâ£¬ÐÞ¸´Æô¶¯ÇÐ»»
+Í¼ÏñÆ«ÂÌÎÊÌâ
+20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:14 239] isp subfile 1, modify time: 2024-1-31 10:02:47
+[    VPSS][2025-08-19 07:54:14 240] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:14 240] isp subfile 2, modify time: 2024-1-31 10:02:39
+[    VPSS][2025-08-19 07:54:14 240] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+
+[    VPSS][2025-08-19 07:54:14 240] [check_file:445] check isp cfg: /usr/local/0x23360f_1.conf OK
+[    VPSS][2025-08-19 07:54:14 251] [isp_set_attr:1999] isp_set_attr module_id:0 
+[    VPSS][2025-08-19 07:54:14 255] [isp_set_attr:1999] isp_set_attr module_id:1 
+[    VPSS][2025-08-19 07:54:14 256] [isp_set_attr:1999] isp_set_attr module_id:2 
+[    VPSS][2025-08-19 07:54:14 257] [isp_set_attr:1999] isp_set_attr module_id:3 
+[    VPSS][2025-08-19 07:54:14 262] [isp_set_attr:1999] isp_set_attr module_id:4 
+[    VPSS][2025-08-19 07:54:14 263] [isp_set_attr:1999] isp_set_attr module_id:5 
+[    VPSS][2025-08-19 07:54:14 264] [isp_set_attr:1999] isp_set_attr module_id:6 
+[    VPSS][2025-08-19 07:54:14 264] [isp_set_attr:1999] isp_set_attr module_id:7 
+[    VPSS][2025-08-19 07:54:14 265] [isp_set_attr:1999] isp_set_attr module_id:8 
+[    VPSS][2025-08-19 07:54:14 265] [isp_set_attr:1999] isp_set_attr module_id:9 
+[    VPSS][2025-08-19 07:54:14 266] [isp_set_attr:1999] isp_set_attr module_id:10 
+[    VPSS][2025-08-19 07:54:14 267] [isp_set_attr:1999] isp_set_attr module_id:11 
+[    VPSS][2025-08-19 07:54:14 268] [isp_set_attr:1999] isp_set_attr module_id:12 
+[    VPSS][2025-08-19 07:54:14 269] [isp_set_attr:1999] isp_set_attr module_id:13 
+[    VPSS][2025-08-19 07:54:14 269] [isp_set_attr:1999] isp_set_attr module_id:14 
+[    VPSS][2025-08-19 07:54:14 270] [isp_set_attr:1999] isp_set_attr module_id:16 
+[    VPSS][2025-08-19 07:54:14 270] [isp_set_attr:1999] isp_set_attr module_id:17 
+[    VPSS][2025-08-19 07:54:14 271] [isp_set_attr:1999] isp_set_attr module_id:18 
+[    VPSS][2025-08-19 07:54:14 271] [isp_set_attr:1999] isp_set_attr module_id:19 
+[    VPSS][2025-08-19 07:54:14 276] [isp_set_attr:1999] isp_set_attr module_id:20 
+[    VPSS][2025-08-19 07:54:14 276] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:14 277] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:14 277] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:14 277] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 278] [set_fps:244] set dev:1 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:14 278] [isp_set_attr:1999] isp_set_attr module_id:22 
+[    VPSS][2025-08-19 07:54:14 279] [isp_set_attr:1999] isp_set_attr module_id:23 
+[    VPSS][2025-08-19 07:54:14 281] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:14 282] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:14 286] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:14 286] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 286] [set_fps:244] set dev:1 fps:14 ok
+[m[32m[25-08-19 07:54:14][0m[       7.937s] [AK_VISP_SetParam:991]EN_APIS_VISP_IMAGE_TURNCOLOR bEnable=0 
+
+[32m[25-08-19 07:54:14][0m[       7.937s] [AK_VISP_SetParam:882]ak visp set emType=0x30a 
+[    VPSS][2025-08-19 07:54:14 288] [isp_set_force_anti_flicker_flag:3218] force_flag=0
+[1;33m[    VPSS][2025-08-19 07:54:14 289] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 295] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:14 296] [isp_set_force_anti_flicker_flag:3218] force_flag=0
+[1;33m[    VPSS][2025-08-19 07:54:14 296] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 297] [set_fps:244] set dev:1 fps:14 ok
+[m[32m[25-08-19 07:54:14][0m[       7.947s] [PLAM_VISP_SetParam:670]set visp AntiFlicker
+[32m[25-08-19 07:54:14][0m[       7.947s] [PLAM_VISP_SetParam:673]visp colorcon
+[32m[25-08-19 07:54:14][0m[       7.947s] [Function_SetIrcut:170]set gpio 1 
+
+[32m[25-08-19 07:54:14][0m[       7.948s] [anyka_visp_SoftIrcut_GetThres:690]nD2N:8150 nN2D:1150 B2G:0.840000 L:1350
+
+[32m[25-08-19 07:54:14][0m[       7.948s] [AK_VISP_SetParam:882]ak visp set emType=0x30b 
+[    VPSS][2025-08-19 07:54:14 299] [isp_switch:282] switching isp mode -> day
+[1;33m[    VPSS][2025-08-19 07:54:14 307] [isp.conf]version: 1.002, sensor id: 0x23360f, style id: 0
+[m[    VPSS][2025-08-19 07:54:14 308] isp subfile 0, modify time: 2024-1-31 10:44:43
+[    VPSS][2025-08-19 07:54:14 308] ÐÞ¸ÄÊÖ¶¯°×Æ½ºâ£¬ÐÞ¸´Æô¶¯»òÇÐ»»Ä£Ê½
+Í¼ÏñÆ«ÂÌÎÊÌâ
+20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:14 308] isp subfile 1, modify time: 2024-1-31 10:01:04
+[    VPSS][2025-08-19 07:54:14 308] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:14 309] isp subfile 2, modify time: 2024-1-31 10:01:36
+[    VPSS][2025-08-19 07:54:14 309] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+
+[    VPSS][2025-08-19 07:54:14 309] [check_file:445] check isp cfg: /usr/local/0x23360f.conf OK
+[    VPSS][2025-08-19 07:54:14 317] [isp_set_attr:1999] isp_set_attr module_id:0 
+[    VPSS][2025-08-19 07:54:14 319] [isp_set_attr:1999] isp_set_attr module_id:1 
+[    VPSS][2025-08-19 07:54:14 320] [isp_set_attr:1999] isp_set_attr module_id:2 
+[    VPSS][2025-08-19 07:54:14 320] [isp_set_attr:1999] isp_set_attr module_id:3 
+[    VPSS][2025-08-19 07:54:14 321] [isp_set_attr:1999] isp_set_attr module_id:4 
+[    VPSS][2025-08-19 07:54:14 327] [isp_set_attr:1999] isp_set_attr module_id:5 
+[    VPSS][2025-08-19 07:54:14 327] [isp_set_attr:1999] isp_set_attr module_id:6 
+[    VPSS][2025-08-19 07:54:14 328] [isp_set_attr:1999] isp_set_attr module_id:7 
+[    VPSS][2025-08-19 07:54:14 328] [isp_set_attr:1999] isp_set_attr module_id:8 
+[    VPSS][2025-08-19 07:54:14 329] [isp_set_attr:1999] isp_set_attr module_id:9 
+[    VPSS][2025-08-19 07:54:14 330] [isp_set_attr:1999] isp_set_attr module_id:10 
+[    VPSS][2025-08-19 07:54:14 331] [isp_set_attr:1999] isp_set_attr module_id:11 
+[    VPSS][2025-08-19 07:54:14 332] [isp_set_attr:1999] isp_set_attr module_id:12 
+[    VPSS][2025-08-19 07:54:14 336] [isp_set_attr:1999] isp_set_attr module_id:13 
+[    VPSS][2025-08-19 07:54:14 337] [isp_set_attr:1999] isp_set_attr module_id:14 
+[    VPSS][2025-08-19 07:54:14 337] [isp_set_attr:1999] isp_set_attr module_id:16 
+[    VPSS][2025-08-19 07:54:14 338] [isp_set_attr:1999] isp_set_attr module_id:17 
+[    VPSS][2025-08-19 07:54:14 338] [isp_set_attr:1999] isp_set_attr module_id:18 
+[    VPSS][2025-08-19 07:54:14 339] [isp_set_attr:1999] isp_set_attr module_id:19 
+[    VPSS][2025-08-19 07:54:14 340] [isp_set_attr:1999] isp_set_attr module_id:20 
+[    VPSS][2025-08-19 07:54:14 340] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:14 341] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:14 341] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:14 341] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 342] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:14 342] [isp_set_attr:1999] isp_set_attr module_id:22 
+[    VPSS][2025-08-19 07:54:14 346] [isp_set_attr:1999] isp_set_attr module_id:23 
+[    VPSS][2025-08-19 07:54:14 355] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:14 356] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:14 356] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:14 356] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 356] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:14 358] [isp_switch:282] switching isp mode -> day
+[1;33m[    VPSS][2025-08-19 07:54:14 362] [isp.conf]version: 1.002, sensor id: 0x23360f, style id: 0
+[m[    VPSS][2025-08-19 07:54:14 368] isp subfile 0, modify time: 2024-1-31 10:45:49
+[    VPSS][2025-08-19 07:54:14 368] 20240131ÐÞ¸ÄÊÖ¶¯°×Æ½ºâ£¬ÐÞ¸´Æô¶¯ÇÐ»»
+Í¼ÏñÆ«ÂÌÎÊÌâ
+20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:14 368] isp subfile 1, modify time: 2024-1-31 10:02:47
+[    VPSS][2025-08-19 07:54:14 368] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+[    VPSS][2025-08-19 07:54:14 368] isp subfile 2, modify time: 2024-1-31 10:02:39
+[    VPSS][2025-08-19 07:54:14 369] 20231011
+ÕûÌå¶Ô±È2008½ÏºÃ°æ±¾
+
+
+[    VPSS][2025-08-19 07:54:14 369] [check_file:445] check isp cfg: /usr/local/0x23360f_1.conf OK
+[    VPSS][2025-08-19 07:54:14 377] [isp_set_attr:1999] isp_set_attr module_id:0 
+[    VPSS][2025-08-19 07:54:14 377] [isp_set_attr:1999] isp_set_attr module_id:1 
+[    VPSS][2025-08-19 07:54:14 378] [isp_set_attr:1999] isp_set_attr module_id:2 
+[    VPSS][2025-08-19 07:54:14 378] [isp_set_attr:1999] isp_set_attr module_id:3 
+[    VPSS][2025-08-19 07:54:14 379] [isp_set_attr:1999] isp_set_attr module_id:4 
+[    VPSS][2025-08-19 07:54:14 380] [isp_set_attr:1999] isp_set_attr module_id:5 
+[    VPSS][2025-08-19 07:54:14 380] [isp_set_attr:1999] isp_set_attr module_id:6 
+[    VPSS][2025-08-19 07:54:14 384] [isp_set_attr:1999] isp_set_attr module_id:7 
+[    VPSS][2025-08-19 07:54:14 385] [isp_set_attr:1999] isp_set_attr module_id:8 
+[    VPSS][2025-08-19 07:54:14 389] [isp_set_attr:1999] isp_set_attr module_id:9 
+[    VPSS][2025-08-19 07:54:14 389] [isp_set_attr:1999] isp_set_attr module_id:10 
+[    VPSS][2025-08-19 07:54:14 390] [isp_set_attr:1999] isp_set_attr module_id:11 
+[    VPSS][2025-08-19 07:54:14 392] [isp_set_attr:1999] isp_set_attr module_id:12 
+[    VPSS][2025-08-19 07:54:14 392] [isp_set_attr:1999] isp_set_attr module_id:13 
+[    VPSS][2025-08-19 07:54:14 511] [isp_set_attr:1999] isp_set_attr module_id:14 
+[    VPSS][2025-08-19 07:54:14 511] [isp_set_attr:1999] isp_set_attr module_id:16 
+[    VPSS][2025-08-19 07:54:14 512] [isp_set_attr:1999] isp_set_attr module_id:17 
+[    VPSS][2025-08-19 07:54:14 512] [isp_set_attr:1999] isp_set_attr module_id:18 
+[    VPSS][2025-08-19 07:54:14 513] [isp_set_attr:1999] isp_set_attr module_id:19 
+[    VPSS][2025-08-19 07:54:14 516] [isp_set_attr:1999] isp_set_attr module_id:20 
+[    VPSS][2025-08-19 07:54:14 516] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:14 517] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:14 517] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:14 517] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 518] [set_fps:244] set dev:1 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:14 518] [isp_set_attr:1999] isp_set_attr module_id:22 
+[    VPSS][2025-08-19 07:54:14 519] [isp_set_attr:1999] isp_set_attr module_id:23 
+[    VPSS][2025-08-19 07:54:14 521] [check_fps_para:426] hight light:
+	frame_rate=14 max_exp_time=2380 low_light_gain=48
+[    VPSS][2025-08-19 07:54:14 522] [check_fps_para:431] low light:
+	frame_rate=14 max_exp_time=2380 light_gain=28
+[    VPSS][2025-08-19 07:54:14 522] [init_fps_info:569] hight light fps: 14
+[1;33m[    VPSS][2025-08-19 07:54:14 522] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 523] [set_fps:244] set dev:1 fps:14 ok
+[m[32m[25-08-19 07:54:14][0m[       8.175s] [AK_VISP_SetParam:991]EN_APIS_VISP_IMAGE_TURNCOLOR bEnable=0 
+
+[32m[25-08-19 07:54:14][0m[       8.175s] [AK_VISP_SetParam:882]ak visp set emType=0x30a 
+[    VPSS][2025-08-19 07:54:14 526] [isp_set_force_anti_flicker_flag:3218] force_flag=0
+[1;33m[    VPSS][2025-08-19 07:54:14 526] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 527] [set_fps:244] set dev:0 fps:14 ok
+[m[    VPSS][2025-08-19 07:54:14 528] [isp_set_force_anti_flicker_flag:3218] force_flag=0
+[1;33m[    VPSS][2025-08-19 07:54:14 528] [isp_set_sensor_fps:2614] set sensor fps: 14
+[m[1;33m[    VPSS][2025-08-19 07:54:14 528] [set_fps:244] set dev:1 fps:14 ok
+[mSuccessfully initialized wpa_supplicant
+rfkill: Cannot open RFKILL control device
+ifconf_ioctl: No such device
+ifconf_ioctl: No such process
+[32m[25-08-19 07:54:14][0m[       8.179s] [PLAM_VISP_SetParam:670]set visp AntiFlicker
+[32m[25-08-19 07:54:14][0m[       8.179s] [PLAM_VISP_SetParam:673]visp colorcon
+[32m[25-08-19 07:54:14][0m[       8.179s] [AK_VISP_SetParam:882]ak visp set emType=0x313 
+[32m [INFO] [_data_proc:440]:Exit _data_proc.
+ [0m[32m[25-08-19 07:54:15][0m[       9.183s] [DELETE_AllRoutesByName:936]Del eth0 route:255.255.0.0 192.168.0.0
+
+[32m[25-08-19 07:54:15][0m[       9.183s] [WATCHER_Route:1236]STA:Add Wifi route ipGatway:172.20.14.1
+
+[32m[25-08-19 07:54:16][0m[      10.346s] N1: Discoverer Assign to Ether WiFi IP 172.20.14.231.
+[37m[25-08-19 07:54:16][0m[      10.346s] N1: Discoverer Startup.
+[37m[25-08-19 07:54:16][0m[      10.346s] N1: Discoverer Startup.
+[37m[25-08-19 07:54:16][0m[      10.373s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[1;33m[APIS_MediaBuffer/src//media_buf.c: 673][0m id=0, i-frame interval=333
+[37m[25-08-19 07:54:20][0m[      14.431s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[32m[25-08-19 07:54:21][0m[      15.016s] [ak3918av100_venc_Setfps:50]Setfps Ch0-0 -- 1
+
+[32m[25-08-19 07:54:21][0m[      15.018s] [ak3918av100_venc_Setfps:50]Setfps Ch0-1 -- 1
+
+[32m[25-08-19 07:54:21][0m[      15.019s] [ak3918av100_venc_SetSmartQuality:237]smart_mode:0 nQuality:20
+
+[1;33m[APIS_MediaBuffer/src//media_buf.c: 673][0m id=1, i-frame interval=350
+[37m[25-08-19 07:54:24][0m[      18.503s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[37m[25-08-19 07:54:28][0m[      22.572s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:54:29][0m[      22.826s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:10
+[37m[25-08-19 07:54:32][0m[      26.641s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_0.264 MaxDelta=530 LossTime=0Ms Counter=0(last=0) @42
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_1.264 MaxDelta=530 LossTime=0Ms Counter=0(last=0) @42
+[      MD][2025-08-19 07:54:36 330] [ak_md_set_day_night_mode:790] day_night_mode:1 
+[32m[25-08-19 07:54:36][0m[      29.980s] [anyka_vmotdet_SetSensitivity:86]set md nSensitivity:80
+
+[      MD][2025-08-19 07:54:36 331] [ak_md_set_sensitivity:665] sensitivity:80 
+[37m[25-08-19 07:54:37][0m[      30.714s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[32m[25-08-19 07:54:39][0m[      33.260s] [_action_proc:738]###BAD NET###
+[33m[25-08-19 07:54:40][0m[      33.738s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[33m[25-08-19 07:54:40][0m[      33.760s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:20
+[32m[25-08-19 07:54:41][0m[      34.741s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:54:41][0m[      34.784s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_0.264 Clear delta maxRange=30000 @47, 
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_1.264 Clear delta maxRange=30000 @47, 
+[33m[25-08-19 07:54:42][0m[      35.746s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:54:43][0m[      36.752s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:54:44][0m[      37.760s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:54:44][0m[      38.118s] JFSDK-REC: [NK_JFSDK_REC_Stop: 449] handle(0x1daeae0 @0) stopped.
+[32m[25-08-19 07:54:44][0m[      38.119s] JFSDK-REC: [NK_JFSDK_REC_Start: 428] handle(0x1daeae0 @0) recid(1538747705) type(2) started.
+[37m[25-08-19 07:54:44][0m[      38.120s] JFSDK-REC-FILE: [_AddRecIndex: 802] 0]Id 1538747696 Chn0 T 1
+[37m[25-08-19 07:54:44][0m[      38.120s] JFSDK-REC-FILE: [_AddRecIndex: 804] 0]ReP(0:2172152)ReT(1755561271:1755561279 Tm:8)
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 802] 1]Id 1538747697 Chn0 T 2
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 804] 1]ReP(2172152:18391476)ReT(1755561279:1755561355 Tm:76)
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 802] 2]Id 1538747698 Chn0 T 1
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 804] 2]ReP(18391476:25264756)ReT(1755561355:1755561387 Tm:32)
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 802] 3]Id 1538747699 Chn0 T 1
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 804] 3]ReP(25264756:32555584)ReT(1755561247:1755561287 Tm:40)
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 802] 4]Id 1538747700 Chn0 T 2
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 804] 4]ReP(32555584:42415996)ReT(1755561287:1755561333 Tm:46)
+[37m[25-08-19 07:54:44][0m[      38.121s] JFSDK-REC-FILE: [_AddRecIndex: 802] 5]Id 1538747701 Chn0 T 1
+[37m[25-08-19 07:54:44][0m[      38.122s] JFSDK-REC-FILE: [_AddRecIndex: 804] 5]ReP(42415996:60092132)ReT(1755561334:1755561415 Tm:81)
+[37m[25-08-19 07:54:44][0m[      38.122s] JFSDK-REC-FILE: [_AddRecIndex: 802] 6]Id 1538747702 Chn0 T 1
+[37m[25-08-19 07:54:44][0m[      38.122s] JFSDK-REC-FILE: [_AddRecIndex: 804] 6]ReP(60092132:66445592)ReT(1755561247:1755561284 Tm:37)
+[37m[25-08-19 07:54:44][0m[      38.122s] JFSDK-REC-FILE: [_AddRecIndex: 802] 7]Id 1538747703 Chn0 T 2
+[37m[25-08-19 07:54:44][0m[      38.122s] JFSDK-REC-FILE: [_AddRecIndex: 804] 7]ReP(66445592:74775120)ReT(1755561284:1755561323 Tm:39)
+[37m[25-08-19 07:54:44][0m[      38.122s] JFSDK-REC-FILE: [_AddRecIndex: 802] 8]Id 1538747704 Chn0 T 1
+[37m[25-08-19 07:54:44][0m[      38.122s] JFSDK-REC-FILE: [_AddRecIndex: 804] 8]ReP(74775120:81055448)ReT(1755561247:1755561284 Tm:37)
+[32m[25-08-19 07:54:44][0m[      38.123s] JFSDK-REC-FILE: [_AddRecIndex: 833] nRecId change (nRecId:1538747704 pFrameInfo:1538747705).
+[32m[25-08-19 07:54:44][0m[      38.123s] JFSDK-REC-FILE: [_UpdateRecIndex: 684] file (nStartPos:81055448 nFileIdx:0).
+[32m[25-08-19 07:54:45][0m[      38.771s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:54:45][0m[      38.861s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:54:46][0m[      39.772s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:54:47][0m[      40.781s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:54:48][0m[      41.787s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:54:49][0m[      42.789s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:54:49][0m[      42.939s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:54:50][0m[      43.801s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[33m[25-08-19 07:54:51][0m[      44.715s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:30
+[32m[25-08-19 07:54:51][0m[      44.809s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:54:52][0m[      45.811s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:54:53][0m[      46.815s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:54:53][0m[      47.001s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:54:54][0m[      47.821s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:54:55][0m[      48.828s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:54:56][0m[      49.832s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:54:57][0m[      50.837s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:54:57][0m[      51.079s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:54:58][0m[      51.839s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:54:59][0m[      52.843s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[32m[25-08-19 07:54:59][0m[      53.429s] [_action_proc:738]###BAD NET###
+[33m[25-08-19 07:55:00][0m[      53.850s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:01][0m[      54.860s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:01][0m[      55.133s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:02][0m[      55.849s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:40
+[33m[25-08-19 07:55:02][0m[      55.866s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:03][0m[      56.871s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:04][0m[      57.876s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:05][0m[      58.882s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:05][0m[      59.205s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:06][0m[      59.889s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_0.264 MaxDelta=530 LossTime=0Ms Counter=0(last=0) @72
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_1.264 MaxDelta=530 LossTime=0Ms Counter=0(last=0) @72
+[32m[25-08-19 07:55:07][0m[      60.897s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:08][0m[      61.907s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:09][0m[      62.918s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:09][0m[      63.279s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:10][0m[      63.928s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:11][0m[      64.935s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_1.264 Clear delta maxRange=30000 @77, 
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_0.264 Clear delta maxRange=30000 @77, 
+[33m[25-08-19 07:55:12][0m[      65.941s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[33m[25-08-19 07:55:13][0m[      66.735s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:50
+[32m[25-08-19 07:55:13][0m[      66.945s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:13][0m[      67.349s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:14][0m[      67.950s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:15][0m[      68.955s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:16][0m[      69.961s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:17][0m[      70.962s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:17][0m[      71.426s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:18][0m[      71.974s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:19][0m[      72.983s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[32m[25-08-19 07:55:19][0m[      73.649s] [_action_proc:738]###BAD NET###
+[33m[25-08-19 07:55:20][0m[      73.990s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:21][0m[      75.000s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:21][0m[      75.493s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:22][0m[      76.005s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:23][0m[      77.011s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:24][0m[      77.663s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:60
+[33m[25-08-19 07:55:24][0m[      78.014s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:25][0m[      79.017s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:25][0m[      79.562s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:26][0m[      80.030s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:27][0m[      81.035s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:28][0m[      82.043s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2412][0m ch0_1.264 Update delta=81(max=4000) type=P @94
+[32m[25-08-19 07:55:29][0m[      83.051s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:29][0m[      83.635s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:30][0m[      84.057s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:30][0m[      84.310s] JFSDK-REC: [NK_JFSDK_REC_Stop: 449] handle(0x1daeae0 @0) stopped.
+[32m[25-08-19 07:55:30][0m[      84.310s] JFSDK-REC: [NK_JFSDK_REC_Start: 428] handle(0x1daeae0 @0) recid(1538747706) type(1) started.
+[37m[25-08-19 07:55:30][0m[      84.311s] JFSDK-REC-FILE: [_AddRecIndex: 802] 0]Id 1538747696 Chn0 T 1
+[37m[25-08-19 07:55:30][0m[      84.311s] JFSDK-REC-FILE: [_AddRecIndex: 804] 0]ReP(0:2172152)ReT(1755561271:1755561279 Tm:8)
+[37m[25-08-19 07:55:30][0m[      84.311s] JFSDK-REC-FILE: [_AddRecIndex: 802] 1]Id 1538747697 Chn0 T 2
+[37m[25-08-19 07:55:30][0m[      84.311s] JFSDK-REC-FILE: [_AddRecIndex: 804] 1]ReP(2172152:18391476)ReT(1755561279:1755561355 Tm:76)
+[37m[25-08-19 07:55:30][0m[      84.311s] JFSDK-REC-FILE: [_AddRecIndex: 802] 2]Id 1538747698 Chn0 T 1
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 804] 2]ReP(18391476:25264756)ReT(1755561355:1755561387 Tm:32)
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 802] 3]Id 1538747699 Chn0 T 1
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 804] 3]ReP(25264756:32555584)ReT(1755561247:1755561287 Tm:40)
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 802] 4]Id 1538747700 Chn0 T 2
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 804] 4]ReP(32555584:42415996)ReT(1755561287:1755561333 Tm:46)
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 802] 5]Id 1538747701 Chn0 T 1
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 804] 5]ReP(42415996:60092132)ReT(1755561334:1755561415 Tm:81)
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 802] 6]Id 1538747702 Chn0 T 1
+[37m[25-08-19 07:55:30][0m[      84.312s] JFSDK-REC-FILE: [_AddRecIndex: 804] 6]ReP(60092132:66445592)ReT(1755561247:1755561284 Tm:37)
+[37m[25-08-19 07:55:30][0m[      84.313s] JFSDK-REC-FILE: [_AddRecIndex: 802] 7]Id 1538747703 Chn0 T 2
+[37m[25-08-19 07:55:30][0m[      84.313s] JFSDK-REC-FILE: [_AddRecIndex: 804] 7]ReP(66445592:74775120)ReT(1755561284:1755561323 Tm:39)
+[37m[25-08-19 07:55:30][0m[      84.313s] JFSDK-REC-FILE: [_AddRecIndex: 802] 8]Id 1538747704 Chn0 T 1
+[37m[25-08-19 07:55:30][0m[      84.313s] JFSDK-REC-FILE: [_AddRecIndex: 804] 8]ReP(74775120:81055448)ReT(1755561247:1755561284 Tm:37)
+[37m[25-08-19 07:55:30][0m[      84.313s] JFSDK-REC-FILE: [_AddRecIndex: 802] 9]Id 1538747705 Chn0 T 2
+[37m[25-08-19 07:55:30][0m[      84.313s] JFSDK-REC-FILE: [_AddRecIndex: 804] 9]ReP(81055448:90973012)ReT(1755561284:1755561330 Tm:46)
+[32m[25-08-19 07:55:30][0m[      84.313s] JFSDK-REC-FILE: [_AddRecIndex: 833] nRecId change (nRecId:1538747705 pFrameInfo:1538747706).
+[32m[25-08-19 07:55:30][0m[      84.313s] JFSDK-REC-FILE: [_UpdateRecIndex: 684] file (nStartPos:90973012 nFileIdx:0).
+[32m[25-08-19 07:55:31][0m[      85.063s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:32][0m[      86.064s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:33][0m[      87.069s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:34][0m[      87.711s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:34][0m[      88.073s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[33m[25-08-19 07:55:35][0m[      88.824s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:70
+[32m[25-08-19 07:55:35][0m[      89.084s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_0.264 MaxDelta=79 LossTime=0Ms Counter=0(last=0) @102
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_1.264 MaxDelta=81 LossTime=0Ms Counter=0(last=0) @102
+[33m[25-08-19 07:55:36][0m[      90.093s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:37][0m[      91.103s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:38][0m[      91.792s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:38][0m[      92.113s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:39][0m[      93.115s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[32m[25-08-19 07:55:40][0m[      93.861s] [_action_proc:738]###BAD NET###
+[33m[25-08-19 07:55:40][0m[      94.122s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_0.264 Clear delta maxRange=30000 @107, 
+[32m[25-08-19 07:55:41][0m[      95.131s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:42][0m[      95.863s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:42][0m[      96.134s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:43][0m[      97.144s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:44][0m[      98.152s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:45][0m[      99.157s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:46][0m[      99.774s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:80
+[37m[25-08-19 07:55:46][0m[      99.933s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:46][0m[     100.165s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:47][0m[     101.167s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:48][0m[     102.178s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:49][0m[     103.185s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:50][0m[     104.005s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:50][0m[     104.197s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:51][0m[     105.200s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:51][0m[     105.487s] JFSDK-REC-FILE: [_AddRecIndex: 783] Update private (iFileSize = 95772672)
+[33m[25-08-19 07:55:52][0m[     106.207s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:53][0m[     107.212s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:54][0m[     108.082s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:54][0m[     108.215s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[32m[25-08-19 07:55:55][0m[     109.221s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:56][0m[     110.225s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[33m[25-08-19 07:55:57][0m[     110.693s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:90
+[32m[25-08-19 07:55:57][0m[     111.227s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[37m[25-08-19 07:55:58][0m[     112.143s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[33m[25-08-19 07:55:58][0m[     112.234s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_1.264 Clear delta maxRange=30000 @124, 
+[32m[25-08-19 07:55:59][0m[     113.241s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[32m[25-08-19 07:56:00][0m[     114.027s] [_action_proc:738]###BAD NET###
+[33m[25-08-19 07:56:00]
