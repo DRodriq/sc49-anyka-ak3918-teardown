@@ -19,8 +19,9 @@ dump, a no-solder root method, and an explanation of the NVR lock.
 | Root without soldering (`debug.ini` on the SD card) | ✅ |
 | NVR lock understood; camera runs on an ordinary Wi-Fi AP, no cloud | ✅ |
 | CONFIG partition dumped and mapped | ✅ |
-| **Standard video feed (RTSP / ONVIF)** | ❌ open — the firmware ships no RTSP server |
-| PTZ GPIO map and standalone motor control | ❌ open |
+| Local video feed (RTSP / WebRTC via go2rtc `eseecloud` bridge) | ✅ — no native server on the firmware; the N1 port-80 stream is bridged |
+| PTZ / image / day-night control via the stock app's HTTP API | ✅ [`docs/control.md`](docs/control.md) |
+| Native on-device RTSP server; standalone (app-independent) motor control | ❌ open — app-native HTTP control used instead |
 | OpenIPC on this board | ❌ no AV100 image available yet |
 
 ## Device
@@ -43,6 +44,7 @@ dump, a no-solder root method, and an explanation of the NVR lock.
 | [`docs/access.md`](docs/access.md) | The `debug.ini` SD-card root method; why the serial console is not a way in |
 | [`docs/firmware-nk.md`](docs/firmware-nk.md) | The NK/XSDK firmware family: plugin servers, CONFIG partition, NVR pairing |
 | [`docs/standalone.md`](docs/standalone.md) | Running the camera on your own Wi-Fi without the NVR |
+| [`docs/control.md`](docs/control.md) | Driving the de-clouded camera over its own HTTP API: live feed (go2rtc), PTZ, image, day/night; the `sc49ctl` CLI; resume notes |
 | [`docs/benchlog.md`](docs/benchlog.md) | Dated bench notes, including superseded conclusions |
 
 ## Repository layout
@@ -54,6 +56,7 @@ dump/boot_capture/  kernel and app logs written by the camera, root shadow hash
 sd/minimal/         verified SD payload: root telnet, nothing else changed
 sd/standalone/      verified SD payload: join your own Wi-Fi
 sd/experimental/    unverified material written for other firmware; see its README
+sc49ctl.sh          CLI for the HTTP control plane (PTZ / image / day-night / snapshot)
 ```
 
 The raw 8 MB flash images are not committed. Device-specific identifiers in
@@ -66,7 +69,7 @@ Where this sits among existing Anyka camera projects:
 
 | Project | SoC | Vendor app | Way in | Local video |
 |---|---|---|---|---|
-| **this repo** | AK3918AV100 | Juan NK / XSDK | `debug.ini` + `anyka_ipc_nostrip` on SD | not yet |
+| **this repo** | AK3918AV100 | Juan NK / XSDK | `debug.ini` + `anyka_ipc_nostrip` on SD | RTSP via go2rtc (N1/eseecloud bridge); PTZ + day/night over the app's HTTP API |
 | [jonathan-gtd/anyka-ak3918ev300l-decloud](https://github.com/jonathan-gtd/anyka-ak3918ev300l-decloud) | AK3918EV300L | InstaView `gv_ipc` | SPI programmer + serial | RTSP H.265, ONVIF, PTZ (replaces the userspace) |
 | [HeartyGFX/LSC-Anyka-RTSP-Hack](https://github.com/HeartyGFX/LSC-Anyka-RTSP-Hack) | AK3918EV330 | Tuya HT | guino's `hack.sh` on SD | RTSP via `/tmp/_ak39_factory.ini` |
 | [guino/LSCOutdoor1080P](https://github.com/guino/LSCOutdoor1080P) | AK3918 (LSC) | Tuya HT | `hack.sh` on SD | RTSP via binary patch |
@@ -86,16 +89,20 @@ What carries over and what does not:
 
 ## Open work
 
-In priority order:
+Feed, PTZ, image, and day/night control are solved through the stock app over
+HTTP — see [`docs/control.md`](docs/control.md). What remains:
 
-1. **A standard video feed.** Three candidate routes are laid out in
-   [`docs/standalone.md`](docs/standalone.md); porting jonathan-gtd's SDK
-   `rtsp` server build to this board is the first to try.
-2. **PTZ**: map the stepper coils to SoC GPIOs and drive `/dev/motor0` /
-   `/dev/motor1` without the vendor app.
-3. **N1**: document the port-80 protocol the kit NVR speaks.
-4. **OpenIPC**: a hardware issue for the AK3918AV100-C referencing
-   [`docs/hardware.md`](docs/hardware.md).
+1. **White flood (`AlarmWhiteLight`)**: reachable only over the binary N1
+   protocol, not HTTP (`ledpwm` reports no channels; it reads as a motion
+   flash). Reverse the N1 command frames — go2rtc's `eseecloud` source is the
+   reference — if steady-lamp control is wanted.
+2. **Day/night write**: the exact `PUT /NetSDK/Image/irCutFilter` JSON schema
+   the handler accepts (GET works; `gpio69` is the hardware fallback).
+3. **IR illuminator pin**: confirm in a dark scene
+   ([`docs/control.md`](docs/control.md) §3).
+4. **Native on-device RTSP / OpenIPC**: a server on the camera itself (the SDK
+   `rtsp` build hit a venc blob-version wall, [`docs/hardware.md`](docs/hardware.md))
+   and an installable OpenIPC AV100 image.
 
 Reports from other AV100 or NK-firmware cameras are welcome as issues,
 especially whether `debug.ini` works on them.
