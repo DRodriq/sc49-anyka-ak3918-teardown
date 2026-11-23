@@ -1,0 +1,17 @@
+#!/bin/sh
+# SC49 standalone payload. Runs as root in place of the vendor app (see
+# docs/access.md), rewrites the Wi-Fi config so the camera joins an ordinary
+# AP instead of hunting for its kit NVR, then hands over to the real app.
+# Originals are backed up to the card on first run. See docs/standalone.md.
+TF=/mnt/tf
+CFG=/etc/jffs2/config
+telnetd -l /bin/sh -p 23 &
+[ -f "$TF/orig_network.json" ]        || cp "$CFG/network.json"        "$TF/orig_network.json"
+[ -f "$TF/orig_network_backup.json" ] || cp "$CFG/network_backup.json" "$TF/orig_network_backup.json"
+[ -f "$TF/orig_sysmisc.json" ]        || cp "$CFG/sysmisc.json"        "$TF/orig_sysmisc.json"
+# mount --bind over jffs2 does not take: write the files directly.
+cp "$TF/network.standalone.json" "$CFG/network.json"
+cp "$TF/network.standalone.json" "$CFG/network_backup.json"
+[ -f "$TF/sysmisc.standalone.json" ] && cp "$TF/sysmisc.standalone.json" "$CFG/sysmisc.json"
+sync
+exec "$TF/anyka_ipc.real" "$@"

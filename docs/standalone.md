@@ -21,7 +21,7 @@ The whole lock lives in **`network.json`** (jffs2 `/etc/jffs2/config/network.jso
   (NVR) vs `=0` (single-IPC). Config picks it; see `bin/aic8800d80/`.
 
 So **standalone = `enWiFiMode:1` + a normal SSID + `bEnableDHCP:true`**. See
-`dump/carve/config/network.standalone.template.json` (fill in `YOUR_WIFI_SSID` /
+[`sd/standalone/network.standalone.template.json`](../sd/standalone/network.standalone.template.json) (fill in `YOUR_WIFI_SSID` /
 `YOUR_WIFI_PASS`).
 
 ## How to apply it (SD-card `debug.ini` route, reversible)
@@ -33,23 +33,12 @@ Two gotchas learned the hard way:
 2. The app falls back to **`network_backup.json`** — you must overwrite **both**
    `network.json` and `network_backup.json` (and `sysmisc.json` `enWifiMode:1`).
 
-An `anyka_ipc_nostrip` that does this (originals backed up to the card first):
-
-```sh
-#!/bin/sh
-TF=/mnt/tf
-telnetd -l /bin/sh -p 23 &
-[ -f "$TF/orig_network.json" ] || cp /etc/jffs2/config/network.json "$TF/orig_network.json"
-cp "$TF/network.standalone.json" /etc/jffs2/config/network.json
-cp "$TF/network.standalone.json" /etc/jffs2/config/network_backup.json
-cp "$TF/sysmisc.standalone.json" /etc/jffs2/config/sysmisc.json
-sync
-exec /mnt/tf/anyka_ipc.real "$@"
-```
-
-Drop that + `debug.ini` + `anyka_ipc.real` + your filled-in `network.standalone.json`
-on the card, boot: it joins your AP over DHCP, telnet on `:23`. To revert, restore the
-`orig_*` files (or just reflash CONFIG).
+The payload that does this is [`sd/standalone/`](../sd/standalone): its
+`anyka_ipc_nostrip` backs the originals up to the card, writes the new files, starts
+telnet and then execs the real app. Put it on the card with `debug.ini`,
+`anyka_ipc.real` and your filled-in `network.standalone.json`, and boot: the camera
+joins your AP over DHCP with telnet on `:23`. To revert, copy the `orig_*` files back
+(or reflash CONFIG).
 
 ## The catch: there is NO standard video feed out of the box
 
@@ -58,16 +47,26 @@ Confirmed on the device: `/usr/lib` contains only `libiconv`/`libnl`/`libwolfssl
 `xsdk.json` lists an RTSP server on 554 and ONVIF on 8888 with `bServerEnable:true`, and
 `oem.json` has `bRtspEnable:true`, but the XSDK framework's `dlopen` of each lib fails
 ("File not found") — only the statically-built **N1 server (port 80, proprietary NVR
-protocol)** comes up. The H.265 encoder runs (SC3332 sensor, 2304×1296 main + 640×360
-sub), frames just aren't exposed over anything standard.
+protocol)** comes up. The encoder runs (two SC2336P sensors; `video.json` sets a
+1920×2160 main and a 640×720 sub stream), frames just aren't exposed over anything
+standard. Why, and the full plugin table: [`firmware-nk.md`](firmware-nk.md).
 
-To get a usable feed you must **add a server**, two options:
+To get a usable feed you must **add a server**. Three candidate routes, none done yet:
 
-1. **Drop in an ABI-compatible `libXSDK_Rtsp.so`** from a sibling Anyka AK3918 firmware
-   into `/usr/lib` (SD overlay). If the XSDK version matches, the stock app serves RTSP
-   on 554 with no other change. Cheapest if the ABI matches.
-2. **`onvif_simple_server`** (roleoroleo) cross-compiled for AK3918 (armv5te/uClibc),
-   reading the encoder — the OpenIPC/Thingino-style path.
+1. **Port the EV300L userspace approach.**
+   [jonathan-gtd/anyka-ak3918ev300l-decloud](https://github.com/jonathan-gtd/anyka-ak3918ev300l-decloud)
+   builds the public Anyka SDK `rtsp` sample against the vendor media stack on a board
+   with the same kernel and near-identical library versions (table in
+   [`hardware.md`](hardware.md)). The catch here: this firmware has no media `.so`
+   files to link against — they are static inside `anyka_ipc` — so the libraries have
+   to come from an SDK or a sibling firmware.
+2. **Drop in an ABI-compatible `libXSDK_Rtsp.so`** from a sibling Juan/NK firmware
+   into `/usr/lib` (SD bind mount). If the XSDK version matches, the stock app serves
+   RTSP on 554 with no other change.
+3. **Speak N1.** Reverse the port-80 protocol the NVR uses and bridge it to RTSP
+   off-camera. No camera-side change needed.
 
-Status: standalone-on-LAN + root telnet + offline = **done**; standard feed = **open**
-(pending one of the two above).
+ONVIF (for example roleoroleo's `onvif_simple_server`) only becomes useful once one of
+these provides a stream to advertise.
+
+Status: standalone-on-LAN + root telnet + offline = **done**; standard feed = **open**.

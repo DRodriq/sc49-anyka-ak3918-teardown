@@ -14,7 +14,7 @@
 			"bEnable": true,
 			"bEnableDHCP": false,
 			"strEthName": "eth0",
-			"macAddr": "9C:A3:A9:BF:A8:14",
+			"macAddr": "9C:A3:A9:XX:XX:XX",
 			"mtu": 1400,
 			"ipAddress": {
 				"bEnableV4": true,
@@ -95,7 +95,7 @@
 				"bEnable": true,
 				"bEnableDHCP": true,
 				"strEthName": "wlan0",
-				"macAddr": "A4:86:DB:56:22:FA",
+				"macAddr": "A4:86:DB:XX:XX:XX",
 				"mtu": 0,
 				"ipAddress": {
 					"bEnableV4": true,

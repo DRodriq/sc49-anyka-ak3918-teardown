@@ -632,7 +632,7 @@ thread stack_size = 102400B, 100k
 [    ECHO][2025-08-19 07:54:09 092] ## sync at ts 16112
 [net_setipaddr] pstrIpaddr=192.168.1.88 
 [net_setmask] pstrIpmask=255.255.0.0 
-[32m[25-08-19 07:54:09][0m[       2.818s] [NET_SetEthernet:176]mac=9C:A3:A9:BF:A8:14 
+[32m[25-08-19 07:54:09][0m[       2.818s] [NET_SetEthernet:176]mac=9C:A3:A9:XX:XX:XX 
 
 [32m[25-08-19 07:54:09][0m[       2.819s] [NET_SetEthernet:177]strIpaddr=192.168.1.88 
 
@@ -655,7 +655,7 @@ thread stack_size = 1048576B, 1024k
 [32m[25-08-19 07:54:09][0m[       3.445s] [IsWifi:3108]Find Wifi Device:8d80
 [32m[25-08-19 07:54:09][0m[       3.449s] [AUTH_Check_Uboot_Custom:133]m_spMatchCode:0x26997390
 [32m[25-08-19 07:54:09][0m[       3.647s] [NET_WIFI_SetParam:3607]EN_WIRELESS_TYPE_MODE_SWITCH
-[32m[25-08-19 07:54:09][0m[       3.648s] [WIFI_MODE_Check_CtlStart:2203]Backup Essid:NVRa486db457113 Psk:44799179.
+[32m[25-08-19 07:54:09][0m[       3.648s] [WIFI_MODE_Check_CtlStart:2203]Backup Essid:NVRxxxxxxxxxxxx Psk:XXXXXXXX.
 [32m[25-08-19 07:54:09][0m[       3.648s] [NET_WIFI_SetParam:3629]EN_WIRELESS_TYPE_WIRELESS_MATCH
 [32m[25-08-19 07:54:09][0m[       3.648s] [_network_device_init:3196]EN_SYS_STATUS_NETWORK_TYPE_WIFI
 [32m [INFO] [_match_proc:222]:nPairType:2.
@@ -669,7 +669,7 @@ thread stack_size = 1048576B, 1024k
 [32m[25-08-19 07:54:12][0m[       6.519s] N1: Discoverer Assign to Ether WiFi IP 172.20.14.231.
 [33m[25-08-19 07:54:12][0m[       6.520s] "SockUDP_addMulticast:1269" Expect Cond ( "0 == setsockopt(Privated->sock, IPPROTO_IP, 32, &AddrIn, si
 [35;1m[25-08-19 07:54:12][0m[       6.520s] N1: Discoverer Join Multcast Failed.
-[37m[25-08-19 07:54:12][0m[       6.533s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[37m[25-08-19 07:54:12][0m[       6.533s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
 [32m[25-08-19 07:54:12][0m[       6.571s] JFSDK-REC-FILE: [_RebuileReadFrame: 947] Rebuild frame to the next file.
 [32m[25-08-19 07:54:12][0m[       6.572s] JFSDK-REC-FILE: [NK_JFSDK_REC_WRITER_HandleEnqueue:2611] writer handle(0x18f7e60) enqueue.
 [32m[25-08-19 07:54:12][0m[       6.572s] JFSDK-REC: [chn_open_recfile: 186] chn(0x18f87d0 @0) recfile(0x49bf68,0x18f7e60 @0).
@@ -957,15 +957,15 @@ ifconf_ioctl: No such process
  [0m[32m [WIFISELF_System]:echo 1 > /proc/sys/net/ipv4/conf/eth0/arp_ignore;echo 1 > /proc/sys/net/ipv4/conf/wlan0/arp_ignore;echo 1 > /proc/sys/net/ipv4/conf/wlan1/arp_ignore 
  [0m[32m[25-08-19 07:54:14][0m[       8.407s] [_setup_proc:1755]AUTOLINK:Start Sta.
 [32m[25-08-19 07:54:14][0m[       8.407s] [WIFI_SetStaMode:448]Mode:1
-[32m[25-08-19 07:54:14][0m[       8.407s] [WIFI_SetStaMode:449]Sta Essid:NVRa486db457113 passphrase:44799179
+[32m[25-08-19 07:54:14][0m[       8.407s] [WIFI_SetStaMode:449]Sta Essid:NVRxxxxxxxxxxxx passphrase:XXXXXXXX
 
 [32m[25-08-19 07:54:14][0m[       8.407s] [WIFI_SetStaMode:450]IpAddr:172.20.14.231 Mask:255.255.255.0 Gateway:172.20.14.1 Dhcp:0
 
-[32m[25-08-19 07:54:14][0m[       8.407s] [WIFI_SetStaMode:490]Set Root:NVRa486db457113 44799179
+[32m[25-08-19 07:54:14][0m[       8.407s] [WIFI_SetStaMode:490]Set Root:NVRxxxxxxxxxxxx XXXXXXXX
 [32m[25-08-19 07:54:14][0m[       8.427s] [NETWORK_WIFI_Module_DevUP:2895]Now wlan0 up success
 
 [32m [STA_System]:ifconfig wlan0 172.20.14.231 netmask 255.255.255.0 up
- [0m[32m [STA_System]:wpa_supplicant -Dnl80211 -iwlan0 -C/tmp/wpa_supplicant -c/tmp/wpa_supplicant.conf -SNVRa486db457113_231 -B &
+ [0m[32m [STA_System]:wpa_supplicant -Dnl80211 -iwlan0 -C/tmp/wpa_supplicant -c/tmp/wpa_supplicant.conf -SNVRxxxxxxxxxxxx_231 -B &
  [0m[31m[25-08-19 07:54:14][0m[       8.467s] [NK_CONFIG_SetParam:1974]set cmd[10547209] OK
 
 [32m [INFO] [_data_proc:440]:Exit _data_proc.
@@ -976,9 +976,9 @@ ifconf_ioctl: No such process
 [32m[25-08-19 07:54:17][0m[      10.680s] N1: Discoverer Assign to Ether WiFi IP 172.20.14.231.
 [37m[25-08-19 07:54:17][0m[      10.681s] N1: Discoverer Startup.
 [37m[25-08-19 07:54:17][0m[      10.681s] N1: Discoverer Startup.
-[37m[25-08-19 07:54:17][0m[      10.718s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[37m[25-08-19 07:54:17][0m[      10.718s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
 [1;33m[APIS_MediaBuffer/src//media_buf.c: 673][0m id=0, i-frame interval=349
-[37m[25-08-19 07:54:21][0m[      14.779s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[37m[25-08-19 07:54:21][0m[      14.779s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
 [32m[25-08-19 07:54:21][0m[      14.960s] [ak3918av100_venc_Setfps:50]Setfps Ch0-0 -- 1
 
 [32m[25-08-19 07:54:21][0m[      14.961s] [ak3918av100_venc_Setfps:50]Setfps Ch0-1 -- 1
@@ -986,26 +986,26 @@ ifconf_ioctl: No such process
 [32m[25-08-19 07:54:21][0m[      14.963s] [ak3918av100_venc_SetSmartQuality:237]smart_mode:0 nQuality:20
 
 [1;33m[APIS_MediaBuffer/src//media_buf.c: 673][0m id=1, i-frame interval=349
-[37m[25-08-19 07:54:25][0m[      18.839s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
-[37m[25-08-19 07:54:29][0m[      22.918s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[37m[25-08-19 07:54:25][0m[      18.839s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
+[37m[25-08-19 07:54:29][0m[      22.918s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
 [33m[25-08-19 07:54:30][0m[      23.869s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:10
-[37m[25-08-19 07:54:33][0m[      26.985s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[37m[25-08-19 07:54:33][0m[      26.985s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
 [1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_0.264 MaxDelta=539 LossTime=0Ms Counter=0(last=0) @43
 [1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_1.264 MaxDelta=540 LossTime=0Ms Counter=0(last=0) @43
 [      MD][2025-08-19 07:54:36 785] [ak_md_set_day_night_mode:790] day_night_mode:1 
 [32m[25-08-19 07:54:36][0m[      30.452s] [anyka_vmotdet_SetSensitivity:86]set md nSensitivity:80
 
 [      MD][2025-08-19 07:54:36 786] [ak_md_set_sensitivity:665] sensitivity:80 
-[37m[25-08-19 07:54:37][0m[      31.064s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[37m[25-08-19 07:54:37][0m[      31.064s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
 [32m[25-08-19 07:54:40][0m[      33.856s] [_action_proc:738]###BAD NET###
-[33m[25-08-19 07:54:40][0m[      34.631s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[33m[25-08-19 07:54:40][0m[      34.631s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
 [33m[25-08-19 07:54:41][0m[      34.845s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:20
-[37m[25-08-19 07:54:41][0m[      35.142s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
+[37m[25-08-19 07:54:41][0m[      35.142s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
 [1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_0.264 Clear delta maxRange=30000 @49, 
 [1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_1.264 Clear delta maxRange=30000 @49, 
-[32m[25-08-19 07:54:41][0m[      35.638s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:54:43][0m[      36.700s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[32m[25-08-19 07:54:44][0m[      37.702s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[32m[25-08-19 07:54:41][0m[      35.638s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:54:43][0m[      36.700s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[32m[25-08-19 07:54:44][0m[      37.702s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
 [32m[25-08-19 07:54:44][0m[      38.426s] JFSDK-REC: [NK_JFSDK_REC_Stop: 449] handle(0x18fd618 @0) stopped.
 [32m[25-08-19 07:54:44][0m[      38.426s] JFSDK-REC: [NK_JFSDK_REC_Start: 428] handle(0x18fd618 @0) recid(1538747703) type(2) started.
 [37m[25-08-19 07:54:44][0m[      38.427s] JFSDK-REC-FILE: [_AddRecIndex: 802] 0]Id 1538747696 Chn0 T 1
@@ -1024,44 +1024,44 @@ ifconf_ioctl: No such process
 [37m[25-08-19 07:54:44][0m[      38.428s] JFSDK-REC-FILE: [_AddRecIndex: 804] 6]ReP(60092132:66445592)ReT(1755561247:1755561284 Tm:37)
 [32m[25-08-19 07:54:44][0m[      38.428s] JFSDK-REC-FILE: [_AddRecIndex: 833] nRecId change (nRecId:1538747702 pFrameInfo:1538747703).
 [32m[25-08-19 07:54:44][0m[      38.429s] JFSDK-REC-FILE: [_UpdateRecIndex: 684] file (nStartPos:66445592 nFileIdx:0).
-[33m[25-08-19 07:54:45][0m[      38.713s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[37m[25-08-19 07:54:45][0m[      39.217s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
-[32m[25-08-19 07:54:46][0m[      39.718s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:54:47][0m[      40.725s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[32m[25-08-19 07:54:48][0m[      41.734s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:54:49][0m[      42.737s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[37m[25-08-19 07:54:49][0m[      43.281s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
-[32m[25-08-19 07:54:50][0m[      43.745s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:54:51][0m[      44.751s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[32m[25-08-19 07:54:52][0m[      45.754s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:54:45][0m[      38.713s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[37m[25-08-19 07:54:45][0m[      39.217s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
+[32m[25-08-19 07:54:46][0m[      39.718s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:54:47][0m[      40.725s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[32m[25-08-19 07:54:48][0m[      41.734s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:54:49][0m[      42.737s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[37m[25-08-19 07:54:49][0m[      43.281s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
+[32m[25-08-19 07:54:50][0m[      43.745s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:54:51][0m[      44.751s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[32m[25-08-19 07:54:52][0m[      45.754s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
 [33m[25-08-19 07:54:52][0m[      45.857s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:30
-[33m[25-08-19 07:54:53][0m[      46.760s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[37m[25-08-19 07:54:53][0m[      47.350s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
-[32m[25-08-19 07:54:54][0m[      47.767s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:54:55][0m[      48.768s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[32m[25-08-19 07:54:56][0m[      49.772s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:54:57][0m[      50.780s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[37m[25-08-19 07:54:57][0m[      51.414s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
-[32m[25-08-19 07:54:58][0m[      51.785s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:54:59][0m[      52.788s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[32m[25-08-19 07:55:00][0m[      53.795s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:54:53][0m[      46.760s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[37m[25-08-19 07:54:53][0m[      47.350s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
+[32m[25-08-19 07:54:54][0m[      47.767s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:54:55][0m[      48.768s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[32m[25-08-19 07:54:56][0m[      49.772s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:54:57][0m[      50.780s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[37m[25-08-19 07:54:57][0m[      51.414s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
+[32m[25-08-19 07:54:58][0m[      51.785s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:54:59][0m[      52.788s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[32m[25-08-19 07:55:00][0m[      53.795s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
 [32m[25-08-19 07:55:00][0m[      54.170s] [_action_proc:738]###BAD NET###
-[33m[25-08-19 07:55:01][0m[      54.799s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[37m[25-08-19 07:55:01][0m[      55.472s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
-[32m[25-08-19 07:55:02][0m[      55.803s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:01][0m[      54.799s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[37m[25-08-19 07:55:01][0m[      55.472s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
+[32m[25-08-19 07:55:02][0m[      55.803s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
 [33m[25-08-19 07:55:03][0m[      56.714s] [WATCHER_WifiSta:2024]Sta Is Not Running,Timeout:40
-[33m[25-08-19 07:55:03][0m[      56.959s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[32m[25-08-19 07:55:04][0m[      57.968s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:55:05][0m[      58.974s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[37m[25-08-19 07:55:05][0m[      59.538s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
-[32m[25-08-19 07:55:06][0m[      59.981s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
+[33m[25-08-19 07:55:03][0m[      56.959s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[32m[25-08-19 07:55:04][0m[      57.968s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:55:05][0m[      58.974s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[37m[25-08-19 07:55:05][0m[      59.538s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
+[32m[25-08-19 07:55:06][0m[      59.981s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
 [1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_0.264 MaxDelta=539 LossTime=0Ms Counter=0(last=0) @73
 [1;33m[APIS_MediaBuffer/src//mediabuffer.c:2468][0m ch0_1.264 MaxDelta=540 LossTime=0Ms Counter=0(last=0) @73
-[33m[25-08-19 07:55:07][0m[      60.989s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[32m[25-08-19 07:55:08][0m[      61.998s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:55:09][0m[      63.000s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
-[37m[25-08-19 07:55:09][0m[      63.604s] [PLAM_AUTH_GetParam:438]strSNumber:Z7E17279205272
-[32m[25-08-19 07:55:10][0m[      64.007s] [_setup_proc:1890]AUTOLINK:Last:NVRa486db457113 Reset save ap(NVRa486db457113:44799179).
-[33m[25-08-19 07:55:11][0m[      65.014s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRa486db457113.
+[33m[25-08-19 07:55:07][0m[      60.989s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[32m[25-08-19 07:55:08][0m[      61.998s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:55:09][0m[      63.000s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
+[37m[25-08-19 07:55:09][0m[      63.604s] [PLAM_AUTH_GetParam:438]strSNumber:REDACTED_DEVID
+[32m[25-08-19 07:55:10][0m[      64.007s] [_setup_proc:1890]AUTOLINK:Last:NVRxxxxxxxxxxxx Reset save ap(NVRxxxxxxxxxxxx:XXXXXXXX).
+[33m[25-08-19 07:55:11][0m[      65.014s] [_setup_proc:1876]AUTOLINK:Allows device to search for Ap, current ssid:NVRxxxxxxxxxxxx.
 [1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_0.264 Clear delta maxRange=30000 @79, 
 [1;33m[APIS_MediaBuffer/src//mediabuffer.c:2428][0m ch0_1.264 Clear delta maxRange=

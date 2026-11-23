@@ -1,10 +1,11 @@
 # Full 8 MB SPI-flash reads of the XM25QH64D. Not committed: they are the
 # vendor's proprietary firmware image, and are reproducible by dumping the
-# flash on any SC49 unit (see README). The carved/unpacked analysis under
-# dump/carve/ IS tracked — this only ignores the raw top-level images.
+# flash on any SC49 unit (see docs/hardware.md). The carved/unpacked analysis
+# under dump/carve/ IS tracked — this only ignores the raw top-level images.
 dump/*.bin
 
 # Local secrets — real Wi-Fi credentials etc. Copy the *.template files,
 # fill them in, and keep the real ones out of git.
-dump/sd_artifacts/custom/configs/secrets.conf
-dump/sd_artifacts/_ak39_factory.ini
+sd/standalone/network.standalone.json
+sd/experimental/custom/configs/secrets.conf
+sd/experimental/_ak39_factory.ini
