@@ -1,0 +1,18 @@
+{
+	"nUserCount": 1,
+	"stUser": [
+		{
+			"bEnable": true,
+			"bCurUsed": true,
+			"strUserName": "admin",
+			"strUserpaswd": "<REDACTED \u2014 admin password hash removed before publishing>",
+			"enPriority": 2,
+			"LivePermission": 1,
+			"SetPermission": 1,
+			"PlayPermission": 1,
+			"PtzCtrlPermission": 1,
+			"BackupPermission": 1
+		}
+	],
+	"strDevID": "Z7E17279205272"
+}

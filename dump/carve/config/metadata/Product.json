@@ -1,0 +1,361 @@
+{
+	"default":	{
+		"LensCtrl/Magnification/Max":	0,
+		"Protocol/GB28181":	{
+			"Enabled":	false,
+			"SipServerIp":	"",
+			"SipServerPort":	5060,
+			"SipServerId":	"",
+			"LoginDomain":	"",
+			"AliveTime":	3600,
+			"HeartBeatTime":	20,
+			"RegisterInterval":	60,
+			"MaXHeartBeatTimeOutTimes":	3,
+			"UserName":	"IPCAM",
+			"UserId":	"",
+			"UserPwd":	"12345678",
+			"DevPort":	5060,
+			"StreamId":	0,
+			"VideoId":	"",
+			"AudioId":	"",
+			"AlarmId":	"",
+			"SipTransType":	0,
+			"BroadCastType":	0,
+			"SetGuard":	false
+		},
+		"LensCtrl/LensLinkageCtrl":	{
+			"Centre":	{
+				"X":	0.000,
+				"Y":	0.000
+			}
+		}
+	},
+	"odm":	{
+		"LensCtrl":	{
+			"Index":	[0, 0, 0],
+			"Centre":	[{
+					"X":	0.000,
+					"Y":	0.000
+				}, {
+					"X":	0.000,
+					"Y":	0.000
+				}, {
+					"X":	0.000,
+					"Y":	0.000
+				}],
+			"SwitchPosition":	[{
+					"Magnification":	0.0,
+					"MaxMagnification":	0.0,
+					"X":	0.000,
+					"Y":	0.000
+				}, {
+					"Magnification":	0.0,
+					"MaxMagnification":	0.0,
+					"X":	0.000,
+					"Y":	0.000
+				}, {
+					"Magnification":	0.0,
+					"MaxMagnification":	0.0,
+					"X":	0.000,
+					"Y":	0.000
+				}],
+			"LensLinkageCtrl":	{
+				"MaxAngle":	{
+					"AngleVertical":	47,
+					"AngleHorizontal":	88
+				}
+			}
+		},
+		"System":	{
+			"DmpSetting":	{
+				"Enabled":	false,
+				"UploadInterval":	60,
+				"Login":	{
+					"ProductKey":	"",
+					"ProductSecret":	""
+				}
+			}
+		},
+		"SmartPwm":	{
+			"Enabled":	true,
+			"MaxTemperature":	80,
+			"Ir":	{
+				"DefBrightness":	60,
+				"MaxBrightness":	100
+			},
+			"Light":	{
+				"DefBrightness":	60,
+				"MaxBrightness":	100
+			}
+		},
+		"Splicing":	{
+			"SplicingDir":	"Vertical",
+			"Stream":	[{
+					"W":	640,
+					"H":	720,
+					"Channel":	[{
+							"X":	0,
+							"Y":	0,
+							"W":	640,
+							"H":	360,
+							"Type":	"Ptz"
+						}, {
+							"X":	0,
+							"Y":	360,
+							"W":	640,
+							"H":	360,
+							"Type":	"Bullet"
+						}]
+				}, {
+					"W":	640,
+					"H":	720,
+					"Channel":	[{
+							"X":	0,
+							"Y":	0,
+							"W":	640,
+							"H":	360,
+							"Type":	"Ptz"
+						}, {
+							"X":	0,
+							"Y":	360,
+							"W":	640,
+							"H":	360,
+							"Type":	"Bullet"
+						}]
+				}]
+		},
+		"Blend":	{
+			"InnerParam":	{
+				"TransNum":	15,
+				"TransX":	[960, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 1938, 1853, 1768, 1683, 1598, 1513, 748, 663, 578, 833, 918, 1003, 1088, 1173, 1258, 1343, 1428],
+				"TransY":	[540, -6, 78, 162, 246, 330, 414, 498, 666, 750, 834, 918, 1002, 1086, 1170, 1170, 1170, 1170, 1170, 1170, 1170, 1170, 1170, 1170, 1086, 1086, 1086, 1086, 1086, 1086, 1086, 1086],
+				"TransXd":	[612, 1493, 1504, 1513, 1521, 1528, 1532, 1535, 1533, 1531, 1525, 1519, 1510, 1500, 1489, 1436, 1380, 1320, 1256, 1189, 1118, 416, 341, 268, 492, 572, 652, 734, 815, 896, 975, 1052],
+				"TransYd":	[501, 53, 117, 183, 252, 322, 393, 465, 610, 681, 751, 820, 888, 953, 1016, 1027, 1038, 1048, 1057, 1065, 1073, 1075, 1069, 1061, 1011, 1015, 1017, 1018, 1018, 1016, 1014, 1009],
+				"TransCoor1":	0.99,
+				"TransCoor2":	1.09,
+				"TransMrkW":	1920,
+				"TransMrkH":	1080
+			},
+			"Stream":	[{
+					"CorrParam":	{
+						"BlendWidth":	32,
+						"BlendWeight":	1,
+						"Bent":	1,
+						"CorrectW":	1890,
+						"CorrectH":	1130
+					},
+					"Img":	{
+						"Output":	{
+							"W":	2880,
+							"H":	1080
+						},
+						"Input":	[{
+								"W":	3072,
+								"H":	1080,
+								"Rotate":	0.15,
+								"TransX":	83,
+								"TransY":	-16,
+								"CenterX":	612,
+								"CenterY":	501,
+								"PosInfo":	{
+									"Left":	0,
+									"Top":	0,
+									"W":	0,
+									"H":	0
+								}
+							}, {
+								"W":	0,
+								"H":	0,
+								"Rotate":	0.15,
+								"TransX":	0,
+								"TransY":	-50,
+								"CenterX":	2460,
+								"CenterY":	501,
+								"PosInfo":	{
+									"Left":	0,
+									"Top":	0,
+									"W":	0,
+									"H":	0
+								}
+							}]
+					}
+				}, {
+					"CorrParam":	{
+						"BlendWidth":	32,
+						"BlendWeight":	1,
+						"Bent":	1,
+						"CorrectW":	780,
+						"CorrectH":	463
+					},
+					"Img":	{
+						"Output":	{
+							"W":	1200,
+							"H":	448
+						},
+						"Input":	[{
+								"W":	1280,
+								"H":	448,
+								"Rotate":	0.15,
+								"TransX":	36,
+								"TransY":	-11,
+								"CenterX":	612,
+								"CenterY":	501,
+								"PosInfo":	{
+									"Left":	0,
+									"Top":	0,
+									"W":	0,
+									"H":	0
+								}
+							}, {
+								"W":	0,
+								"H":	0,
+								"Rotate":	0.15,
+								"TransX":	0,
+								"TransY":	-25,
+								"CenterX":	2460,
+								"CenterY":	501,
+								"PosInfo":	{
+									"Left":	0,
+									"Top":	0,
+									"W":	0,
+									"H":	0
+								}
+							}]
+					}
+				}]
+		},
+		"VirtualSplicing":	[{
+				"SplicingChannel":	1,
+				"SplitScreen":	{
+					"Channel":	[{
+							"X":	0,
+							"Y":	0,
+							"W":	44,
+							"H":	100,
+							"DisplayScale":	{
+								"W":	8,
+								"H":	9
+							}
+						}, {
+							"X":	56,
+							"Y":	0,
+							"W":	44,
+							"H":	100,
+							"DisplayScale":	{
+								"W":	8,
+								"H":	9
+							}
+						}]
+				},
+				"FullScreen":	{
+					"Channel":	[{
+							"X":	0,
+							"Y":	0,
+							"W":	67,
+							"H":	100,
+							"DisplayScale":	{
+								"W":	16,
+								"H":	9
+							}
+						}, {
+							"X":	33,
+							"Y":	0,
+							"W":	67,
+							"H":	100,
+							"DisplayScale":	{
+								"W":	16,
+								"H":	9
+							}
+						}]
+				}
+			}, {
+				"SplicingChannel":	-1,
+				"SplitScreen":	{
+					"Channel":	[{
+							"X":	0,
+							"Y":	0,
+							"W":	0,
+							"H":	0,
+							"DisplayScale":	{
+								"W":	0,
+								"H":	0
+							}
+						}, {
+							"X":	0,
+							"Y":	0,
+							"W":	0,
+							"H":	0,
+							"DisplayScale":	{
+								"W":	0,
+								"H":	0
+							}
+						}]
+				},
+				"FullScreen":	{
+					"Channel":	[{
+							"X":	0,
+							"Y":	0,
+							"W":	0,
+							"H":	0,
+							"DisplayScale":	{
+								"W":	0,
+								"H":	0
+							}
+						}, {
+							"X":	0,
+							"Y":	0,
+							"W":	0,
+							"H":	0,
+							"DisplayScale":	{
+								"W":	0,
+								"H":	0
+							}
+						}]
+				}
+			}],
+		"Ptz":	{
+			"MtLimit":	true
+		},
+		"WifiBand":	{
+			"WifiBandLimit":	1,
+			"LimitBand":	[{
+					"BandType":	3,
+					"Section":	{
+						"RangeSize":	0,
+						"Range":	[{
+								"nChnStart":	0,
+								"nChnEnd":	0
+							}, {
+								"nChnStart":	0,
+								"nChnEnd":	0
+							}, {
+								"nChnStart":	0,
+								"nChnEnd":	0
+							}, {
+								"nChnStart":	0,
+								"nChnEnd":	0
+							}]
+					}
+				}, {
+					"BandType":	3,
+					"Section":	{
+						"RangeSize":	0,
+						"Range":	[{
+								"nChnStart":	0,
+								"nChnEnd":	0
+							}, {
+								"nChnStart":	0,
+								"nChnEnd":	0
+							}, {
+								"nChnStart":	0,
+								"nChnEnd":	0
+							}, {
+								"nChnStart":	0,
+								"nChnEnd":	0
+							}]
+					}
+				}]
+		}
+	},
+	"IspMode":	0
+}

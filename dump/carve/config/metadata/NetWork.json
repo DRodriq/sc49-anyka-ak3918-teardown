@@ -1,0 +1,7 @@
+{
+	"Rtmp":	{
+		"Enabled":	false,
+		"RtmpUrl":	"",
+		"Stream":	1
+	}
+}

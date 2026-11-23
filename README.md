@@ -6,8 +6,26 @@ is being written to fill that gap and to be published once complete (venue TBD: 
 Thingino wiki, IPCamTalk, GitHub). Everything here was measured on the bench; anything marked
 *unconfirmed* is a reading from a webcam frame, not a verified part number.
 
-All photos were taken by the lab's desk camera (Logitech C920, 1080p) as the board was held in
-front of it; crops are upscaled frames, not macro shots. See `photos/`.
+## STATUS 2026-11-23 — running standalone on home Wi-Fi; feed is the only open item
+
+The NVR lock is fully understood and defeated: the camera now runs as a plain **station on
+an ordinary home AP**, reachable over the LAN, root telnet on `:23`, no cloud (it does not
+even attempt WAN egress). The switch is `network.json` `enWiFiMode` (`1`=station,
+`0`=SoftAP) plus the fact that **NVR mode triggers only on an SSID starting with `NVR`** —
+point the station at a normal SSID and it associates plainly. Full recipe, gotchas
+(`mount --bind` doesn't take → direct-write; must also overwrite `network_backup.json`),
+and the sanitized config template: **see [`STANDALONE.md`](STANDALONE.md)**.
+
+One thing standalone does NOT give you: a **standard video feed**. The stock firmware ships
+**no `libXSDK_Rtsp.so`/`_Onvif.so`/`_Hls.so`** in `/usr/lib` — only the statically-built N1
+server (port 80, proprietary). The H.265 encoder runs, but nothing exposes it over RTSP/ONVIF
+until you add a server (drop-in `libXSDK_Rtsp.so` from a sibling firmware, or
+`onvif_simple_server`). Details in `STANDALONE.md`.
+
+The live jffs2 **CONFIG partition** (which this repo previously lacked) is now included under
+`dump/carve/config/` — `network.json`, `xsdk.json`, `oem.json`, `sysmisc.json`, etc. — the
+authoritative map of what gates the camera's behaviour. Board photos were dropped from the
+repo; the textual part IDs below are the durable record.
 
 ## STATUS 2026-11-04 — SOLVED: firmware extracted, device fully owned
 

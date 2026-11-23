@@ -1,0 +1,39 @@
+{
+	"PromptSound":	{
+		"Enable":	true,
+		"enType":	1,
+		"enFileFormat":	1,
+		"enFilePro":	0
+	},
+	"ConvenientSetting":	{
+		"Enable":	true,
+		"enType":	0
+	},
+	"SystemMaintenance":	{
+		"Enable":	true,
+		"nInterval":	604800,
+		"enType":	0
+	},
+	"UlinkToken":	"ulinktoken",
+	"SuccessWifi":	true,
+	"enNetMode":	0,
+	"bPrompt":	true,
+	"bReboot":	false,
+	"enWifiMode":	1,
+	"bPirEnabled":	true,
+	"bAlexa":	false,
+	"strRebootMsg":	"00-00-00",
+	"stMonoply":	{
+		"bMonopoly":	false,
+		"strDevicePsk":	""
+	},
+	"bInitOnvif":	false,
+	"nAlarmDurSec":	5,
+	"bPrivateMode":	false,
+	"LedEnabled":	true,
+	"bSetCurPos":	false,
+	"stRtmpUrl":	"",
+	"bRtmpEnable":	false,
+	"nMatchNetErrors":	0,
+	"bMatchCodeRepeater":	false
+}

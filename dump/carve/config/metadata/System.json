@@ -1,0 +1,17 @@
+{
+	"WifiBandLimit":	true,
+	"Bound":	true,
+	"PowerFrequency":	0,
+	"NetworkMode":	"Auto",
+	"DataLimit":	false,
+	"SoftProbe":	{
+		"UploadHealth":	{
+			"Enabled":	false,
+			"UploadPeriod":	3600
+		},
+		"UploadEvent":	{
+			"Enabled":	false,
+			"UploadPeriod":	3600
+		}
+	}
+}
